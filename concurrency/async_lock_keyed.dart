@@ -11,3 +11,15 @@ class KeyedLock {
     return result;
   }
 }
+
+Future<void> main() async {
+  final lock = KeyedLock();
+  final log = <String>[];
+  Future<void> job(String key, String name) => lock.run(key, () async {
+    log.add('start $name');
+    await Future.delayed(const Duration(milliseconds: 20));
+    log.add('end $name');
+  });
+  await Future.wait([job('x', 'x1'), job('x', 'x2'), job('y', 'y1')]);
+  print(log.join('\n'));
+}
