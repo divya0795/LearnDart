@@ -25,3 +25,12 @@ class Emitter {
     return hs.length;
   }
 }
+
+void main() {
+  final e = Emitter();
+  final off = e.on('msg', (d) => print('A: $d'));
+  e.once('msg', (d) => print('B (once): $d'));
+  print('delivered to ${e.emit('msg', 'hello')}');
+  off();
+  print('delivered to ${e.emit('msg', 'again')}');
+}
