@@ -14,3 +14,9 @@ double fromCelsius(double c, Scale to) => switch (to) {
   Scale.fahrenheit => c * 9 / 5 + 32,
   Scale.kelvin => c + 273.15,
 };
+
+double convert(double v, Scale from, Scale to) {
+  final c = toCelsius(v, from);
+  if (c < -273.15) throw ArgumentError('below absolute zero');
+  return fromCelsius(c, to);
+}
