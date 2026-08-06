@@ -11,3 +11,25 @@ class Source<T> {
 
   void listen(void Function(T) l) => _listeners.add(l);
 }
+
+Source<R> combineLatest<A, B, R>(Source<A> a, Source<B> b, R Function(A, B) f) {
+  final out = Source<R>();
+  A? la;
+  B? lb;
+  var ha = false, hb = false;
+  void fire() {
+    if (ha && hb) out.emit(f(la as A, lb as B));
+  }
+
+  a.listen((v) {
+    la = v;
+    ha = true;
+    fire();
+  });
+  b.listen((v) {
+    lb = v;
+    hb = true;
+    fire();
+  });
+  return out;
+}
