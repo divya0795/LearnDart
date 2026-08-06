@@ -20,3 +20,14 @@ double convert(double v, Scale from, Scale to) {
   if (c < -273.15) throw ArgumentError('below absolute zero');
   return fromCelsius(c, to);
 }
+
+void main() {
+  print('100C = ${convert(100, Scale.celsius, Scale.fahrenheit)}F');
+  print('0K = ${convert(0, Scale.kelvin, Scale.celsius)}C');
+  print('-40F = ${convert(-40, Scale.fahrenheit, Scale.celsius)}C');
+  try {
+    convert(-1, Scale.kelvin, Scale.celsius);
+  } on ArgumentError catch (e) {
+    print('error: ${e.message}');
+  }
+}
