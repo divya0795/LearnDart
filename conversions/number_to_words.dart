@@ -40,3 +40,14 @@ String _below1000(int n) {
   if (n < 100) return _tens[n ~/ 10] + (n % 10 == 0 ? '' : '-${_ones[n % 10]}');
   return '${_ones[n ~/ 100]} hundred${n % 100 == 0 ? '' : ' and ${_below1000(n % 100)}'}';
 }
+
+String numberToWords(int n) {
+  if (n == 0) return 'zero';
+  if (n < 0) return 'minus ${numberToWords(-n)}';
+  const names = ['', ' thousand', ' million', ' billion'];
+  final parts = <String>[];
+  for (var i = 0; n > 0; i++, n ~/= 1000) {
+    if (n % 1000 != 0) parts.add(_below1000(n % 1000) + names[i]);
+  }
+  return parts.reversed.join(', ');
+}
