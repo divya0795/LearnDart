@@ -51,3 +51,9 @@ String numberToWords(int n) {
   }
   return parts.reversed.join(', ');
 }
+
+void main() {
+  for (final n in [0, 7, 19, 42, 100, 305, 1234, 1000000, -52, 2147483647]) {
+    print('$n: ${numberToWords(n)}');
+  }
+}
