@@ -33,3 +33,17 @@ Source<R> combineLatest<A, B, R>(Source<A> a, Source<B> b, R Function(A, B) f) {
   });
   return out;
 }
+
+void main() {
+  final w = Source<int>(), h = Source<int>();
+  combineLatest<int, int, int>(
+    w,
+    h,
+    (a, b) => a * b,
+  ).listen((v) => print('area = $v'));
+  w.emit(2);
+  w.emit(3);
+  h.emit(10);
+  w.emit(4);
+  h.emit(5);
+}
