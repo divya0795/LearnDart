@@ -18,3 +18,15 @@ class FailureDetector {
       if (nowMs - e.value > timeoutMs) e.key,
   ]..sort();
 }
+
+void main() {
+  final d = FailureDetector(100);
+  d.heartbeat('a', 0);
+  d.heartbeat('b', 0);
+  d.heartbeat('a', 90);
+  d.heartbeat('a', 180);
+  print('t=150 suspected: ${d.suspected(150)}');
+  print('t=250 suspected: ${d.suspected(250)}');
+  d.heartbeat('b', 260);
+  print('t=270 b alive again: ${d.isAlive('b', 270)}');
+}
