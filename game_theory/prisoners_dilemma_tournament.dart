@@ -33,3 +33,24 @@ bool grudger(List<bool> mine, List<bool> theirs) => !theirs.contains(false);
   }
   return (sa, sb);
 }
+
+void main() {
+  final players = {
+    'tit-for-tat': titForTat,
+    'always-defect': alwaysDefect,
+    'always-cooperate': alwaysCooperate,
+    'grudger': grudger,
+  };
+  final totals = {for (final n in players.keys) n: 0};
+  for (final a in players.entries) {
+    for (final b in players.entries) {
+      if (a.key == b.key) continue;
+      totals[a.key] = totals[a.key]! + play(a.value, b.value, 100).$1;
+    }
+  }
+  final ranked = totals.entries.toList()
+    ..sort((x, y) => y.value.compareTo(x.value));
+  for (final e in ranked) {
+    print('${e.key.padRight(18)} ${e.value}');
+  }
+}
