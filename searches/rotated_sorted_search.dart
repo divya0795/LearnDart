@@ -39,3 +39,10 @@ int rotationIndex(List<int> a) {
   }
   return lo;
 }
+
+void main() {
+  final a = [4, 5, 6, 7, 0, 1, 2];
+  print('index of 0: ${searchRotated(a, 0)}');
+  print('index of 3: ${searchRotated(a, 3)}');
+  print('rotation index: ${rotationIndex(a)}');
+}
