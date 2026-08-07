@@ -29,3 +29,13 @@ bool isMagic(List<List<int>> m) {
       sum([for (var i = 0; i < n; i++) m[i][i]]) == target &&
       sum([for (var i = 0; i < n; i++) m[i][n - 1 - i]]) == target;
 }
+
+void main() {
+  for (final n in [3, 5]) {
+    final m = magicSquare(n);
+    for (final row in m) {
+      print(row.map((v) => v.toString().padLeft(3)).join());
+    }
+    print('magic: ${isMagic(m)}\n');
+  }
+}
