@@ -26,3 +26,16 @@ int searchRotated(List<int> a, int target) {
   }
   return -1;
 }
+
+int rotationIndex(List<int> a) {
+  var lo = 0, hi = a.length - 1;
+  while (lo < hi) {
+    final mid = lo + (hi - lo) ~/ 2;
+    if (a[mid] > a[hi]) {
+      lo = mid + 1;
+    } else {
+      hi = mid;
+    }
+  }
+  return lo;
+}
