@@ -12,6 +12,16 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [two_sum](arrays/two_sum.dart)
 - [validate_subsequence](arrays/validate_subsequence.dart)
 
+## backtracking
+- [combination_sum](backtracking/combination_sum.dart)
+- [hamiltonian_path](backtracking/hamiltonian_path.dart)
+- [knight_tour](backtracking/knight_tour.dart)
+- [n_queens](backtracking/n_queens.dart)
+- [rat_in_a_maze](backtracking/rat_in_a_maze.dart)
+- [subset_sum](backtracking/subset_sum.dart)
+- [sudoku_solver](backtracking/sudoku_solver.dart)
+- [word_break](backtracking/word_break.dart)
+
 ## basics/00_hello_world
 - [hello_world](basics/00_hello_world/hello_world.dart)
 
@@ -89,22 +99,6 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [throwing_exceptions](basics/11_errors/throwing_exceptions.dart)
 - [try_catch](basics/11_errors/try_catch.dart)
 
-## compilers
-- [ast](compilers/ast.dart)
-- [compiler](compilers/compiler.dart)
-- [interpreter](compilers/interpreter.dart)
-- [vm](compilers/vm.dart)
-
-## backtracking
-- [combination_sum](backtracking/combination_sum.dart)
-- [hamiltonian_path](backtracking/hamiltonian_path.dart)
-- [knight_tour](backtracking/knight_tour.dart)
-- [n_queens](backtracking/n_queens.dart)
-- [rat_in_a_maze](backtracking/rat_in_a_maze.dart)
-- [subset_sum](backtracking/subset_sum.dart)
-- [sudoku_solver](backtracking/sudoku_solver.dart)
-- [word_break](backtracking/word_break.dart)
-
 ## bit_manipulation
 - [count_set_bits](bit_manipulation/count_set_bits.dart)
 - [gray_code](bit_manipulation/gray_code.dart)
@@ -126,12 +120,19 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [vigenere_cipher](ciphers/vigenere_cipher.dart)
 - [xor_cipher](ciphers/xor_cipher.dart)
 
+## compilers
+- [ast](compilers/ast.dart)
+- [compiler](compilers/compiler.dart)
+- [interpreter](compilers/interpreter.dart)
+- [vm](compilers/vm.dart)
+
 ## compression
 - [arithmetic_coding](compression/arithmetic_coding.dart)
 - [burrows_wheeler](compression/burrows_wheeler.dart)
 - [lz77](compression/lz77.dart)
 
 ## concurrency
+- [async_lock_keyed](concurrency/async_lock_keyed.dart)
 - [cancellation_token](concurrency/cancellation_token.dart)
 - [circuit_breaker](concurrency/circuit_breaker.dart)
 - [completer_basics](concurrency/completer_basics.dart)
@@ -156,6 +157,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [decimal_to_hexadecimal](conversions/decimal_to_hexadecimal.dart)
 - [integer_to_roman](conversions/integer_to_roman.dart)
 - [roman_to_integer](conversions/roman_to_integer.dart)
+- [temperature_conversions](conversions/temperature_conversions.dart)
 
 ## crypto
 - [aes_sbox](crypto/aes_sbox.dart)
@@ -371,6 +373,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [sudoku_validator](puzzles/sudoku_validator.dart)
 
 ## reactive
+- [event_emitter_typed](reactive/event_emitter_typed.dart)
 - [observable](reactive/observable.dart)
 - [rx_operators](reactive/rx_operators.dart)
 - [switchmap](reactive/switchmap.dart)
