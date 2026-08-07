@@ -15,3 +15,9 @@ int longestArithSeq(List<int> a) {
   }
   return best;
 }
+
+void main() {
+  print(longestArithSeq([3, 6, 9, 12]));
+  print(longestArithSeq([9, 4, 7, 2, 10]));
+  print(longestArithSeq([20, 1, 15, 3, 10, 5, 8]));
+}
