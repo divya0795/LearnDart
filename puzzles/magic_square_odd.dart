@@ -18,3 +18,14 @@ List<List<int>> magicSquare(int n) {
   }
   return m;
 }
+
+bool isMagic(List<List<int>> m) {
+  final n = m.length, target = n * (n * n + 1) ~/ 2;
+  int sum(Iterable<int> xs) => xs.fold(0, (a, b) => a + b);
+  return [for (var i = 0; i < n; i++) sum(m[i])].every((s) => s == target) &&
+      [
+        for (var j = 0; j < n; j++) sum([for (var i = 0; i < n; i++) m[i][j]]),
+      ].every((s) => s == target) &&
+      sum([for (var i = 0; i < n; i++) m[i][i]]) == target &&
+      sum([for (var i = 0; i < n; i++) m[i][n - 1 - i]]) == target;
+}
