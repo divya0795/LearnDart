@@ -43,3 +43,16 @@ List<int> inorderIterative(TreeNode? root) {
   }
   return out;
 }
+
+void main() {
+  final t = TreeNode(
+    4,
+    TreeNode(2, TreeNode(1), TreeNode(3)),
+    TreeNode(6, TreeNode(5), TreeNode(7)),
+  );
+  print('in:    ${inorder(t)}');
+  print('pre:   ${preorder(t)}');
+  print('post:  ${postorder(t)}');
+  print('level: ${levelOrder(t)}');
+  print('in (iterative): ${inorderIterative(t)}');
+}
