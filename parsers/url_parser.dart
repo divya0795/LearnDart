@@ -32,3 +32,16 @@ ParsedUrl parseUrl(String url) {
     m[6],
   );
 }
+
+void main() {
+  for (final u in [
+    'https://user@example.com:8443/a/b?x=1&y=2#top',
+    'http://dart.dev',
+    'ftp://files.example.org/pub/',
+  ]) {
+    final p = parseUrl(u);
+    final b = Uri.parse(u);
+    print(p);
+    print('  matches Uri: ${p.host == b.host && p.scheme == b.scheme}');
+  }
+}
