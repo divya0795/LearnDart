@@ -13,3 +13,18 @@ List<int> preorder(TreeNode? n) =>
     n == null ? [] : [n.val, ...preorder(n.left), ...preorder(n.right)];
 List<int> postorder(TreeNode? n) =>
     n == null ? [] : [...postorder(n.left), ...postorder(n.right), n.val];
+
+List<List<int>> levelOrder(TreeNode? root) {
+  final out = <List<int>>[];
+  var level = [if (root != null) root];
+  while (level.isNotEmpty) {
+    out.add([for (final n in level) n.val]);
+    level = [
+      for (final n in level) ...[
+        if (n.left != null) n.left!,
+        if (n.right != null) n.right!,
+      ],
+    ];
+  }
+  return out;
+}
