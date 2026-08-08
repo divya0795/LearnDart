@@ -28,3 +28,18 @@ List<List<int>> levelOrder(TreeNode? root) {
   }
   return out;
 }
+
+List<int> inorderIterative(TreeNode? root) {
+  final out = <int>[], st = <TreeNode>[];
+  var cur = root;
+  while (cur != null || st.isNotEmpty) {
+    while (cur != null) {
+      st.add(cur);
+      cur = cur.left;
+    }
+    cur = st.removeLast();
+    out.add(cur.val);
+    cur = cur.right;
+  }
+  return out;
+}
