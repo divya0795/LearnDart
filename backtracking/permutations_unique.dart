@@ -30,3 +30,8 @@ List<List<int>> permuteUnique(List<int> nums) {
   go();
   return out;
 }
+
+void main() {
+  print(permuteUnique([1, 1, 2]));
+  print('count for [1,1,2,2]: ${permuteUnique([1, 1, 2, 2]).length}');
+}
