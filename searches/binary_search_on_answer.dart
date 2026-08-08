@@ -48,3 +48,9 @@ int shipCapacity(List<int> weights, int days) {
   }
   return lo;
 }
+
+void main() {
+  print(minEatingSpeed([3, 6, 7, 11], 8));
+  print(minEatingSpeed([30, 11, 23, 4, 20], 6));
+  print(shipCapacity([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5));
+}
