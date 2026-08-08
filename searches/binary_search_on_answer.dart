@@ -22,3 +22,29 @@ int minEatingSpeed(List<int> piles, int h) {
   }
   return lo;
 }
+
+int shipCapacity(List<int> weights, int days) {
+  bool fits(int cap) {
+    var d = 1, load = 0;
+    for (final w in weights) {
+      if (load + w > cap) {
+        d++;
+        load = 0;
+      }
+      load += w;
+    }
+    return d <= days;
+  }
+
+  var lo = weights.reduce((a, b) => a > b ? a : b),
+      hi = weights.reduce((a, b) => a + b);
+  while (lo < hi) {
+    final mid = (lo + hi) ~/ 2;
+    if (fits(mid)) {
+      hi = mid;
+    } else {
+      lo = mid + 1;
+    }
+  }
+  return lo;
+}
