@@ -156,6 +156,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [decimal_to_binary](conversions/decimal_to_binary.dart)
 - [decimal_to_hexadecimal](conversions/decimal_to_hexadecimal.dart)
 - [integer_to_roman](conversions/integer_to_roman.dart)
+- [number_to_words](conversions/number_to_words.dart)
 - [roman_to_integer](conversions/roman_to_integer.dart)
 - [temperature_conversions](conversions/temperature_conversions.dart)
 
@@ -218,6 +219,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [house_robber](dynamic_programming/house_robber.dart)
 - [kadane_max_subarray](dynamic_programming/kadane_max_subarray.dart)
 - [knapsack_01](dynamic_programming/knapsack_01.dart)
+- [longest_arithmetic_subsequence](dynamic_programming/longest_arithmetic_subsequence.dart)
 - [longest_common_subsequence](dynamic_programming/longest_common_subsequence.dart)
 - [longest_common_substring](dynamic_programming/longest_common_substring.dart)
 - [longest_increasing_subsequence](dynamic_programming/longest_increasing_subsequence.dart)
@@ -234,6 +236,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [alpha_beta_pruning](game_theory/alpha_beta_pruning.dart)
 - [mcts](game_theory/mcts.dart)
 - [minimax](game_theory/minimax.dart)
+- [prisoners_dilemma_tournament](game_theory/prisoners_dilemma_tournament.dart)
 
 ## geometry
 - [closest_pair](geometry/closest_pair.dart)
@@ -373,6 +376,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [sudoku_validator](puzzles/sudoku_validator.dart)
 
 ## reactive
+- [combine_latest](reactive/combine_latest.dart)
 - [event_emitter_typed](reactive/event_emitter_typed.dart)
 - [observable](reactive/observable.dart)
 - [rx_operators](reactive/rx_operators.dart)
@@ -398,6 +402,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [jump_search](searches/jump_search.dart)
 - [linear_search](searches/linear_search.dart)
 - [peak_element](searches/peak_element.dart)
+- [rotated_sorted_search](searches/rotated_sorted_search.dart)
 - [ternary_search](searches/ternary_search.dart)
 - [ternary_search_recursive](searches/ternary_search_recursive.dart)
 
