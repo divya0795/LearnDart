@@ -19,3 +19,9 @@ void stoogeSort(List<int> a, [int lo = 0, int? hi]) {
     stoogeSort(a, lo, hi - third);
   }
 }
+
+void main() {
+  final a = [5, 3, 9, 1, 7, 2, 8];
+  stoogeSort(a);
+  print(a);
+}
