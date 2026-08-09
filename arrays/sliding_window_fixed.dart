@@ -8,3 +8,13 @@ int maxWindowSum(List<int> a, int k) {
   }
   return best;
 }
+
+List<double> windowAverages(List<int> a, int k) {
+  var sum = a.take(k).fold(0, (x, y) => x + y);
+  final out = [sum / k];
+  for (var i = k; i < a.length; i++) {
+    sum += a[i] - a[i - k];
+    out.add(sum / k);
+  }
+  return out;
+}
