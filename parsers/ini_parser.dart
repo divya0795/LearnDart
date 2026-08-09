@@ -17,3 +17,14 @@ Map<String, Map<String, String>> parseIni(String text) {
   }
   return out;
 }
+
+extension IniAccess on Map<String, Map<String, String>> {
+  String? get(String section, String key) => this[section]?[key];
+  int getInt(String section, String key, int fallback) =>
+      int.tryParse(get(section, key) ?? '') ?? fallback;
+  bool getBool(String section, String key, bool fallback) {
+    final v = get(section, key)?.toLowerCase();
+    if (v == null) return fallback;
+    return const ['1', 'true', 'yes', 'on'].contains(v);
+  }
+}
