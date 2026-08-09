@@ -46,3 +46,18 @@ bool isWildcardMatch(String s, String p) {
   }
   return dp[s.length][p.length];
 }
+
+void main() {
+  for (final (s, p) in [
+    ('aa', 'a'),
+    ('aa', 'a*'),
+    ('ab', '.*'),
+    ('aab', 'c*a*b'),
+    ('mississippi', 'mis*is*p*.'),
+  ]) {
+    print('regex "$s" ~ "$p": ${isMatch(s, p)}');
+  }
+  for (final (s, p) in [('adceb', '*a*b'), ('acdcb', 'a*c?b')]) {
+    print('wild "$s" ~ "$p": ${isWildcardMatch(s, p)}');
+  }
+}
