@@ -30,3 +30,10 @@ int minSubarrayLen(int target, List<int> a) {
   }
   return best == a.length + 1 ? 0 : best;
 }
+
+void main() {
+  final a = [2, 1, 5, 1, 3, 2];
+  print(maxWindowSum(a, 3));
+  print(windowAverages(a, 3));
+  print(minSubarrayLen(7, [2, 3, 1, 2, 4, 3]));
+}
