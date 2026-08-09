@@ -19,3 +19,21 @@ int longestValidParentheses(String s) {
   }
   return best;
 }
+
+int longestValidStack(String s) {
+  final st = <int>[-1];
+  var best = 0;
+  for (var i = 0; i < s.length; i++) {
+    if (s[i] == '(') {
+      st.add(i);
+    } else {
+      st.removeLast();
+      if (st.isEmpty) {
+        st.add(i);
+      } else if (i - st.last > best) {
+        best = i - st.last;
+      }
+    }
+  }
+  return best;
+}
