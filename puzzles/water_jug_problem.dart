@@ -35,3 +35,8 @@ List<String>? solveJugs(int a, int b, int target) {
   }
   return null;
 }
+
+void main() {
+  print(solveJugs(3, 5, 4)?.join('\n'));
+  print('2 and 4 jugs for 3: ${solveJugs(2, 4, 3)}');
+}
