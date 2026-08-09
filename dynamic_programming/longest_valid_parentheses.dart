@@ -37,3 +37,9 @@ int longestValidStack(String s) {
   }
   return best;
 }
+
+void main() {
+  for (final s in ['(()', ')()())', '()(()', '', '((()))']) {
+    print('"$s" -> ${longestValidParentheses(s)} / ${longestValidStack(s)}');
+  }
+}
