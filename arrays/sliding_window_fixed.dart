@@ -18,3 +18,15 @@ List<double> windowAverages(List<int> a, int k) {
   }
   return out;
 }
+
+int minSubarrayLen(int target, List<int> a) {
+  var l = 0, sum = 0, best = a.length + 1;
+  for (var r = 0; r < a.length; r++) {
+    sum += a[r];
+    while (sum >= target) {
+      if (r - l + 1 < best) best = r - l + 1;
+      sum -= a[l++];
+    }
+  }
+  return best == a.length + 1 ? 0 : best;
+}
