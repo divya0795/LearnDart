@@ -201,6 +201,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## distributed
 - [consistent_hashing](distributed/consistent_hashing.dart)
 - [crdt](distributed/crdt.dart)
+- [heartbeat_failure_detector](distributed/heartbeat_failure_detector.dart)
 - [raft](distributed/raft.dart)
 - [vector_clock](distributed/vector_clock.dart)
 
@@ -373,6 +374,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## puzzles
 - [fizzbuzz](puzzles/fizzbuzz.dart)
 - [game_of_life](puzzles/game_of_life.dart)
+- [magic_square_odd](puzzles/magic_square_odd.dart)
 - [sudoku_validator](puzzles/sudoku_validator.dart)
 
 ## reactive
@@ -394,6 +396,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## searches
 - [binary_search](searches/binary_search.dart)
+- [binary_search_on_answer](searches/binary_search_on_answer.dart)
 - [binary_search_recursive](searches/binary_search_recursive.dart)
 - [depth_limited_search](searches/depth_limited_search.dart)
 - [exponential_search](searches/exponential_search.dart)
@@ -421,6 +424,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [radix_sort](sorts/radix_sort.dart)
 - [selection_sort](sorts/selection_sort.dart)
 - [shell_sort](sorts/shell_sort.dart)
+- [stooge_sort](sorts/stooge_sort.dart)
 - [tim_sort](sorts/tim_sort.dart)
 - [tree_sort](sorts/tree_sort.dart)
 
