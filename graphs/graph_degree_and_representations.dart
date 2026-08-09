@@ -31,3 +31,13 @@ List<int> degrees(List<List<int>> g) => [for (final l in g) l.length];
 
 bool handshakeHolds(List<List<int>> g, int edgeCount) =>
     degrees(g).fold(0, (a, b) => a + b) == 2 * edgeCount;
+
+void main() {
+  final edges = [(0, 1), (0, 2), (1, 2), (2, 3)];
+  final g = toAdjacencyList(4, edges);
+  print(g);
+  toMatrix(4, edges).forEach(print);
+  print(
+    'degrees ${degrees(g)}, handshake ok: ${handshakeHolds(g, edges.length)}',
+  );
+}
