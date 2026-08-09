@@ -26,3 +26,8 @@ List<List<int>> toMatrix(
   }
   return m;
 }
+
+List<int> degrees(List<List<int>> g) => [for (final l in g) l.length];
+
+bool handshakeHolds(List<List<int>> g, int edgeCount) =>
+    degrees(g).fold(0, (a, b) => a + b) == 2 * edgeCount;
