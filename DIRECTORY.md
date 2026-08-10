@@ -17,6 +17,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [hamiltonian_path](backtracking/hamiltonian_path.dart)
 - [knight_tour](backtracking/knight_tour.dart)
 - [n_queens](backtracking/n_queens.dart)
+- [permutations_unique](backtracking/permutations_unique.dart)
 - [rat_in_a_maze](backtracking/rat_in_a_maze.dart)
 - [subset_sum](backtracking/subset_sum.dart)
 - [sudoku_solver](backtracking/sudoku_solver.dart)
@@ -225,6 +226,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [longest_common_substring](dynamic_programming/longest_common_substring.dart)
 - [longest_increasing_subsequence](dynamic_programming/longest_increasing_subsequence.dart)
 - [longest_palindromic_subsequence](dynamic_programming/longest_palindromic_subsequence.dart)
+- [longest_valid_parentheses](dynamic_programming/longest_valid_parentheses.dart)
 - [matrix_chain_multiplication](dynamic_programming/matrix_chain_multiplication.dart)
 - [min_jumps](dynamic_programming/min_jumps.dart)
 - [min_path_sum](dynamic_programming/min_path_sum.dart)
@@ -347,6 +349,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [recursive_descent_expr](parsers/recursive_descent_expr.dart)
 - [shunting_yard](parsers/shunting_yard.dart)
 - [tokenizer](parsers/tokenizer.dart)
+- [url_parser](parsers/url_parser.dart)
 
 ## probabilistic
 - [count_min_sketch](probabilistic/count_min_sketch.dart)
@@ -448,3 +451,6 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [valid_parentheses](strings/valid_parentheses.dart)
 - [word_count](strings/word_count.dart)
 - [z_algorithm](strings/z_algorithm.dart)
+
+## trees
+- [binary_tree_traversals](trees/binary_tree_traversals.dart)
