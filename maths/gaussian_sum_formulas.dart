@@ -17,3 +17,19 @@ int geometricSum(int first, int ratio, int terms) {
   }
   return first * (pow - 1) ~/ (ratio - 1);
 }
+
+void main() {
+  for (final n in [1, 10, 100]) {
+    var s = 0, q = 0, c = 0;
+    for (var i = 1; i <= n; i++) {
+      s += i;
+      q += i * i;
+      c += i * i * i;
+    }
+    print(
+      'n=$n ok: ${s == sumToN(n) && q == sumSquares(n) && c == sumCubes(n)}',
+    );
+  }
+  print('arith 3,5,7,... x10 = ${arithmeticSum(3, 2, 10)}');
+  print('geom 1,2,4,... x10 = ${geometricSum(1, 2, 10)}');
+}
