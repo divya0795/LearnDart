@@ -28,3 +28,21 @@ extension IniAccess on Map<String, Map<String, String>> {
     return const ['1', 'true', 'yes', 'on'].contains(v);
   }
 }
+
+void main() {
+  const text = '''
+; global
+name = demo
+[server]
+port = 8080
+debug = yes
+# comment
+[client]
+retries = 3
+''';
+  final ini = parseIni(text);
+  print(ini);
+  print(ini.getInt('server', 'port', 80));
+  print(ini.getBool('server', 'debug', false));
+  print(ini.getInt('client', 'timeout', 30));
+}
