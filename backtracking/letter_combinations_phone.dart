@@ -31,3 +31,8 @@ List<String> letterCombinations(String digits) {
   go(0, '');
   return out;
 }
+
+void main() {
+  print(letterCombinations('23'));
+  print('"79" has ${letterCombinations('79').length} combinations');
+}
