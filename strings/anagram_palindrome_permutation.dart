@@ -9,3 +9,17 @@ bool canFormPalindrome(String s) {
   }
   return odd.length <= 1;
 }
+
+String? makePalindrome(String s) {
+  final counts = <String, int>{};
+  for (final c in s.split('')) {
+    counts[c] = (counts[c] ?? 0) + 1;
+  }
+  final odd = counts.entries
+      .where((e) => e.value.isOdd)
+      .map((e) => e.key)
+      .toList();
+  if (odd.length > 1) return null;
+  final half = [for (final e in counts.entries) e.key * (e.value ~/ 2)].join();
+  return half + (odd.isEmpty ? '' : odd.first) + half.split('').reversed.join();
+}
