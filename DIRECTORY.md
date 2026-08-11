@@ -8,6 +8,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [majority_element_boyer_moore](arrays/majority_element_boyer_moore.dart)
 - [move_zeroes](arrays/move_zeroes.dart)
 - [pivot_index](arrays/pivot_index.dart)
+- [sliding_window_fixed](arrays/sliding_window_fixed.dart)
 - [sorted_squared_array](arrays/sorted_squared_array.dart)
 - [two_sum](arrays/two_sum.dart)
 - [validate_subsequence](arrays/validate_subsequence.dart)
@@ -232,6 +233,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [min_path_sum](dynamic_programming/min_path_sum.dart)
 - [palindrome_partitioning](dynamic_programming/palindrome_partitioning.dart)
 - [partition_equal_subset_sum](dynamic_programming/partition_equal_subset_sum.dart)
+- [regex_matching_dp](dynamic_programming/regex_matching_dp.dart)
 - [rod_cutting](dynamic_programming/rod_cutting.dart)
 - [unique_paths](dynamic_programming/unique_paths.dart)
 
@@ -265,6 +267,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [eulerian_circuit](graphs/eulerian_circuit.dart)
 - [floyd_warshall](graphs/floyd_warshall.dart)
 - [graph_coloring](graphs/graph_coloring.dart)
+- [graph_degree_and_representations](graphs/graph_degree_and_representations.dart)
 - [iddfs](graphs/iddfs.dart)
 - [kosaraju_scc](graphs/kosaraju_scc.dart)
 - [kruskal](graphs/kruskal.dart)
@@ -346,6 +349,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [ntt](numeric/ntt.dart)
 
 ## parsers
+- [ini_parser](parsers/ini_parser.dart)
 - [recursive_descent_expr](parsers/recursive_descent_expr.dart)
 - [shunting_yard](parsers/shunting_yard.dart)
 - [tokenizer](parsers/tokenizer.dart)
@@ -379,6 +383,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [game_of_life](puzzles/game_of_life.dart)
 - [magic_square_odd](puzzles/magic_square_odd.dart)
 - [sudoku_validator](puzzles/sudoku_validator.dart)
+- [water_jug_problem](puzzles/water_jug_problem.dart)
 
 ## reactive
 - [combine_latest](reactive/combine_latest.dart)
