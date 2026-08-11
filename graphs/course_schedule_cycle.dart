@@ -23,3 +23,6 @@ List<int>? courseOrder(int n, List<(int, int)> prereqs) {
   }
   return order.length == n ? order : null;
 }
+
+bool canFinish(int n, List<(int, int)> prereqs) =>
+    courseOrder(n, prereqs) != null;
