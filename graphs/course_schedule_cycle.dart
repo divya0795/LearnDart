@@ -26,3 +26,9 @@ List<int>? courseOrder(int n, List<(int, int)> prereqs) {
 
 bool canFinish(int n, List<(int, int)> prereqs) =>
     courseOrder(n, prereqs) != null;
+
+void main() {
+  print(courseOrder(4, [(1, 0), (2, 0), (3, 1), (3, 2)]));
+  print('cycle: ${canFinish(2, [(1, 0), (0, 1)])}');
+  print('independent: ${courseOrder(3, [])}');
+}
