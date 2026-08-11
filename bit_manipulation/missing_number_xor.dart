@@ -13,3 +13,8 @@ int missingNumber(List<int> a) {
   }
   return x;
 }
+
+int missingNumberSum(List<int> a) {
+  final n = a.length;
+  return n * (n + 1) ~/ 2 - a.fold(0, (s, v) => s + v);
+}
