@@ -14,3 +14,20 @@ const _keys = {
   '8': 'tuv',
   '9': 'wxyz',
 };
+
+List<String> letterCombinations(String digits) {
+  if (digits.isEmpty) return [];
+  final out = <String>[];
+  void go(int i, String s) {
+    if (i == digits.length) {
+      out.add(s);
+      return;
+    }
+    for (final c in _keys[digits[i]]!.split('')) {
+      go(i + 1, s + c);
+    }
+  }
+
+  go(0, '');
+  return out;
+}
