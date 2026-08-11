@@ -23,3 +23,9 @@ String? makePalindrome(String s) {
   final half = [for (final e in counts.entries) e.key * (e.value ~/ 2)].join();
   return half + (odd.isEmpty ? '' : odd.first) + half.split('').reversed.join();
 }
+
+void main() {
+  for (final s in ['civic', 'ivicc', 'hello', 'aabb']) {
+    print('$s: ${canFormPalindrome(s)} -> ${makePalindrome(s)}');
+  }
+}
