@@ -42,3 +42,18 @@ class RequestBuilder {
     return HttpRequest._(_method, _url!, Map.unmodifiable(_headers), _body);
   }
 }
+
+void main() {
+  print(
+    RequestBuilder()
+        .url('https://example.com')
+        .header('Accept', 'json')
+        .build(),
+  );
+  print(RequestBuilder().method('POST').url('/items').body('{}').build());
+  try {
+    RequestBuilder().build();
+  } on StateError catch (e) {
+    print('error: ${e.message}');
+  }
+}
