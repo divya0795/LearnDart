@@ -10,3 +10,8 @@ int ways(int target, List<int> coins) {
   }
   return dp[target];
 }
+
+void main() {
+  print('5p with [1,2,5]: ${ways(5, [1, 2, 5])}');
+  print('200p: ${ways(200, [1, 2, 5, 10, 20, 50, 100, 200])}');
+}
