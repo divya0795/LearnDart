@@ -36,3 +36,11 @@ int maxSubarraySum(List<int> a) {
   }
   return (best, bs, be);
 }
+
+void main() {
+  final a = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
+  print('max sum = ${maxSubarraySum(a)}');
+  final (sum, s, e) = maxSubarrayRange(a);
+  print('range [$s..$e] = ${a.sublist(s, e + 1)} sums to $sum');
+  print('all negative: ${maxSubarraySum([-8, -3, -6])}');
+}
