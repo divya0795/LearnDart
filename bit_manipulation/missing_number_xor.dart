@@ -18,3 +18,9 @@ int missingNumberSum(List<int> a) {
   final n = a.length;
   return n * (n + 1) ~/ 2 - a.fold(0, (s, v) => s + v);
 }
+
+void main() {
+  final a = [9, 6, 4, 2, 3, 5, 7, 0, 1];
+  print('xor: ${missingNumber(a)}, sum: ${missingNumberSum(a)}');
+  print(missingNumber([0, 1]));
+}
