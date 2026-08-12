@@ -16,3 +16,23 @@ int maxSubarraySum(List<int> a) {
   }
   return best;
 }
+
+/// Returns (sum, start, endInclusive) of a maximum subarray.
+(int, int, int) maxSubarrayRange(List<int> a) {
+  var endingHere = a[0], best = a[0];
+  var s = 0, bs = 0, be = 0;
+  for (var i = 1; i < a.length; i++) {
+    if (a[i] > endingHere + a[i]) {
+      endingHere = a[i];
+      s = i;
+    } else {
+      endingHere += a[i];
+    }
+    if (endingHere > best) {
+      best = endingHere;
+      bs = s;
+      be = i;
+    }
+  }
+  return (best, bs, be);
+}
