@@ -310,6 +310,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [fibonacci_iterative](maths/fibonacci_iterative.dart)
 - [fibonacci_memoized](maths/fibonacci_memoized.dart)
 - [fibonacci_recursive](maths/fibonacci_recursive.dart)
+- [gaussian_sum_formulas](maths/gaussian_sum_formulas.dart)
 - [gcd](maths/gcd.dart)
 - [gcd_recursive](maths/gcd_recursive.dart)
 - [integer_square_root](maths/integer_square_root.dart)
@@ -438,6 +439,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## strings
 - [aho_corasick](strings/aho_corasick.dart)
+- [anagram_palindrome_permutation](strings/anagram_palindrome_permutation.dart)
 - [boyer_moore_search](strings/boyer_moore_search.dart)
 - [character_frequency](strings/character_frequency.dart)
 - [is_anagram](strings/is_anagram.dart)
