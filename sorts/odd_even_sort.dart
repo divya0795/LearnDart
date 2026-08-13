@@ -19,3 +19,9 @@ void oddEvenSort(List<int> a) {
     }
   }
 }
+
+void main() {
+  final a = [34, 2, 10, -9, 7, 7, 0];
+  oddEvenSort(a);
+  print(a);
+}
