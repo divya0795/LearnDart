@@ -17,3 +17,5 @@ Future<void> countdown(
   });
   return done.future;
 }
+
+Future<void> main() => countdown(3);
