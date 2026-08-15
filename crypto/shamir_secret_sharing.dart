@@ -8,3 +8,16 @@
 import 'dart:math';
 
 const p = 2147483647;
+
+int _pow(int b, int e) {
+  var r = 1;
+  b %= p;
+  while (e > 0) {
+    if (e & 1 == 1) r = r * b % p;
+    b = b * b % p;
+    e >>= 1;
+  }
+  return r;
+}
+
+int _inv(int a) => _pow(a, p - 2); // Fermat's little theorem
