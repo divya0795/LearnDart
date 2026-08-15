@@ -27,3 +27,15 @@ class Gen {
     return t;
   }
 }
+
+void main() {
+  final tree = Bin(
+    '-',
+    Bin('+', Lit('a'), Bin('*', Lit('b'), Lit('c'))),
+    Lit('d'),
+  );
+  final g = Gen();
+  final result = g.emit(tree);
+  g.code.forEach(print);
+  print('result in $result');
+}
