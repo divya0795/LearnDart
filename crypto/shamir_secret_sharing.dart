@@ -42,3 +42,11 @@ int combine(List<(int, int)> shares) {
   }
   return secret;
 }
+
+void main() {
+  final shares = split(123456789, 5, 3);
+  print('shares: $shares');
+  print('3 shares -> ${combine(shares.sublist(0, 3))}');
+  print('other 3  -> ${combine([shares[4], shares[1], shares[2]])}');
+  print('2 shares -> ${combine(shares.sublist(0, 2))} (wrong, as expected)');
+}
