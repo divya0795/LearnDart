@@ -21,3 +21,10 @@ int _pow(int b, int e) {
 }
 
 int _inv(int a) => _pow(a, p - 2); // Fermat's little theorem
+
+List<(int, int)> split(int secret, int n, int k, [Random? rng]) {
+  rng ??= Random.secure();
+  final coef = [secret, for (var i = 1; i < k; i++) rng.nextInt(p)];
+  int f(int x) => coef.reversed.fold(0, (acc, c) => (acc * x + c) % p);
+  return [for (var x = 1; x <= n; x++) (x, f(x))];
+}
