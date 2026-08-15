@@ -28,3 +28,17 @@ List<(int, int)> split(int secret, int n, int k, [Random? rng]) {
   int f(int x) => coef.reversed.fold(0, (acc, c) => (acc * x + c) % p);
   return [for (var x = 1; x <= n; x++) (x, f(x))];
 }
+
+int combine(List<(int, int)> shares) {
+  var secret = 0;
+  for (final (xi, yi) in shares) {
+    var num = 1, den = 1;
+    for (final (xj, _) in shares) {
+      if (xj == xi) continue;
+      num = num * (p - xj) % p;
+      den = den * ((xi - xj) % p) % p;
+    }
+    secret = (secret + yi * num % p * _inv(den)) % p;
+  }
+  return secret;
+}
