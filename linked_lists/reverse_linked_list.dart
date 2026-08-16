@@ -24,3 +24,19 @@ ListNode? reverseRecursive(ListNode? head) {
   head.next = null;
   return newHead;
 }
+
+ListNode? fromList(List<int> xs) {
+  ListNode? head;
+  for (final x in xs.reversed) {
+    head = ListNode(x, head);
+  }
+  return head;
+}
+
+List<int> toList(ListNode? n) => [for (var c = n; c != null; c = c.next) c.val];
+
+void main() {
+  print(toList(reverse(fromList([1, 2, 3, 4, 5]))));
+  print(toList(reverseRecursive(fromList([1, 2, 3]))));
+  print(toList(reverse(null)));
+}
