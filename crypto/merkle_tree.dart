@@ -23,3 +23,24 @@ List<List<int>> buildTree(List<String> blocks) {
   }
   return levels;
 }
+
+List<(int, bool)> proof(List<List<int>> levels, int index) {
+  final p = <(int, bool)>[];
+  for (var l = 0; l < levels.length - 1; l++) {
+    final sib = index.isEven ? index + 1 : index - 1;
+    p.add((
+      sib < levels[l].length ? levels[l][sib] : levels[l][index],
+      index.isEven,
+    ));
+    index ~/= 2;
+  }
+  return p;
+}
+
+bool verify(String block, List<(int, bool)> p, int root) {
+  var h = hash(block);
+  for (final (sib, isLeft) in p) {
+    h = isLeft ? hash('$h$sib') : hash('$sib$h');
+  }
+  return h == root;
+}
