@@ -16,3 +16,11 @@ ListNode? reverse(ListNode? head) {
   }
   return prev;
 }
+
+ListNode? reverseRecursive(ListNode? head) {
+  if (head == null || head.next == null) return head;
+  final newHead = reverseRecursive(head.next);
+  head.next!.next = head;
+  head.next = null;
+  return newHead;
+}
