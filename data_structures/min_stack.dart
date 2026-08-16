@@ -15,3 +15,15 @@ class MinStack {
   int get top => _items.last.$1;
   int get min => _items.last.$2;
 }
+
+void main() {
+  final s = MinStack();
+  for (final v in [5, 3, 7, 3, 8, 1]) {
+    s.push(v);
+    print('push $v -> min ${s.min}');
+  }
+  while (!s.isEmpty) {
+    final v = s.pop();
+    print('pop $v${s.isEmpty ? '' : ' -> min ${s.min}'}');
+  }
+}
