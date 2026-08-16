@@ -18,3 +18,8 @@ R reduce<T, R>(List<T> xs, R init, Reducer<T, R> f) {
   }
   return acc;
 }
+
+Predicate<T> not<T>(Predicate<T> p) =>
+    (x) => !p(x);
+Predicate<T> both<T>(Predicate<T> a, Predicate<T> b) =>
+    (x) => a(x) && b(x);
