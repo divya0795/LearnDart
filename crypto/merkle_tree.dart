@@ -44,3 +44,12 @@ bool verify(String block, List<(int, bool)> p, int root) {
   }
   return h == root;
 }
+
+void main() {
+  final blocks = ['a', 'b', 'c', 'd', 'e'];
+  final t = buildTree(blocks);
+  final root = t.last.first;
+  print('root $root');
+  print('c in tree: ${verify('c', proof(t, 2), root)}');
+  print('x in tree: ${verify('x', proof(t, 2), root)}');
+}
