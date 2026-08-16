@@ -6,6 +6,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [car_pooling](arrays/car_pooling.dart)
 - [fisher_yates_shuffle](arrays/fisher_yates_shuffle.dart)
 - [majority_element_boyer_moore](arrays/majority_element_boyer_moore.dart)
+- [max_subarray_with_range](arrays/max_subarray_with_range.dart)
 - [move_zeroes](arrays/move_zeroes.dart)
 - [pivot_index](arrays/pivot_index.dart)
 - [sliding_window_fixed](arrays/sliding_window_fixed.dart)
@@ -202,6 +203,9 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [treap](data_structures/treap.dart)
 - [trie](data_structures/trie.dart)
 
+## design_patterns
+- [builder](design_patterns/builder.dart)
+
 ## distributed
 - [consistent_hashing](distributed/consistent_hashing.dart)
 - [crdt](distributed/crdt.dart)
@@ -381,6 +385,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [problem_014_longest_collatz](project_euler/problem_014_longest_collatz.dart)
 - [problem_017_number_letter_counts](project_euler/problem_017_number_letter_counts.dart)
 - [problem_020_factorial_digit_sum](project_euler/problem_020_factorial_digit_sum.dart)
+- [problem_031_coin_sums](project_euler/problem_031_coin_sums.dart)
 
 ## puzzles
 - [fizzbuzz](puzzles/fizzbuzz.dart)
@@ -431,6 +436,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [heap_sort](sorts/heap_sort.dart)
 - [insertion_sort](sorts/insertion_sort.dart)
 - [merge_sort](sorts/merge_sort.dart)
+- [odd_even_sort](sorts/odd_even_sort.dart)
 - [pancake_sort](sorts/pancake_sort.dart)
 - [quick_sort](sorts/quick_sort.dart)
 - [radix_sort](sorts/radix_sort.dart)
