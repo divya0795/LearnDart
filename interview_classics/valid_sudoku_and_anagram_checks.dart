@@ -14,3 +14,20 @@ bool isValidSudoku(List<List<String>> b) {
   }
   return true;
 }
+
+void main() {
+  List<List<String>> empty() => List.generate(9, (_) => List.filled(9, '.'));
+  final ok = empty()
+    ..[0][0] = '5'
+    ..[0][1] = '3'
+    ..[1][0] = '6';
+  print(isValidSudoku(ok));
+  final badRow = empty()
+    ..[0][0] = '5'
+    ..[0][8] = '5';
+  print(isValidSudoku(badRow));
+  final badBox = empty()
+    ..[0][0] = '7'
+    ..[2][2] = '7';
+  print(isValidSudoku(badBox));
+}
