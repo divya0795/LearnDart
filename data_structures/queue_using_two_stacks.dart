@@ -29,3 +29,16 @@ class TwoStackQueue<T> {
     return _out.last;
   }
 }
+
+void main() {
+  final q = TwoStackQueue<int>();
+  for (var i = 1; i <= 3; i++) {
+    q.enqueue(i);
+  }
+  print('front ${q.front}');
+  print('dequeue ${q.dequeue()}');
+  q.enqueue(4);
+  while (!q.isEmpty) {
+    print('dequeue ${q.dequeue()}');
+  }
+}
