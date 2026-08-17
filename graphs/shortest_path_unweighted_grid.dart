@@ -28,3 +28,14 @@ List<(int, int)>? shortestPath(
   }
   return path.reversed.toList();
 }
+
+String render(List<List<int>> maze, List<(int, int)>? path) {
+  final on = path?.toSet() ?? {};
+  return [
+    for (var r = 0; r < maze.length; r++)
+      [
+        for (var c = 0; c < maze[0].length; c++)
+          maze[r][c] == 1 ? '#' : (on.contains((r, c)) ? '*' : '.'),
+      ].join(),
+  ].join('\n');
+}
