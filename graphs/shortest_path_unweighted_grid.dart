@@ -39,3 +39,21 @@ String render(List<List<int>> maze, List<(int, int)>? path) {
       ].join(),
   ].join('\n');
 }
+
+void main() {
+  final maze = [
+    [0, 0, 1, 0],
+    [1, 0, 1, 0],
+    [0, 0, 0, 0],
+    [0, 1, 1, 0],
+  ];
+  final p = shortestPath(maze, (0, 0), (3, 3));
+  print(render(maze, p));
+  print('length: ${p!.length - 1} steps');
+  print(
+    'blocked: ${shortestPath([
+      [0, 1],
+      [1, 0],
+    ], (0, 0), (1, 1))}',
+  );
+}
