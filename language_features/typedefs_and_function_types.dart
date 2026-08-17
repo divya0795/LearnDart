@@ -23,3 +23,13 @@ Predicate<T> not<T>(Predicate<T> p) =>
     (x) => !p(x);
 Predicate<T> both<T>(Predicate<T> a, Predicate<T> b) =>
     (x) => a(x) && b(x);
+
+void main() {
+  final xs = [1, 2, 3, 4, 5, 6];
+  bool even(int x) => x.isEven;
+  print(filter(xs, even));
+  print(filter(xs, not(even)));
+  print(filter(xs, both<int>(even, (x) => x > 2)));
+  print(mapAll(xs, (x) => 'n$x'));
+  print(reduce<int, int>(xs, 0, (a, b) => a + b));
+}
