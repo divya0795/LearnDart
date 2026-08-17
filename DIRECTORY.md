@@ -128,6 +128,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## compilers
 - [ast](compilers/ast.dart)
 - [compiler](compilers/compiler.dart)
+- [infix_to_three_address_code](compilers/infix_to_three_address_code.dart)
 - [interpreter](compilers/interpreter.dart)
 - [vm](compilers/vm.dart)
 
@@ -149,6 +150,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [isolate_worker_pool](concurrency/isolate_worker_pool.dart)
 - [mutex](concurrency/mutex.dart)
 - [parallel_map](concurrency/parallel_map.dart)
+- [periodic_timer_countdown](concurrency/periodic_timer_countdown.dart)
 - [producer_consumer_queue](concurrency/producer_consumer_queue.dart)
 - [rate_limiter_leaky_bucket](concurrency/rate_limiter_leaky_bucket.dart)
 - [rate_limiter_token_bucket](concurrency/rate_limiter_token_bucket.dart)
@@ -168,8 +170,10 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## crypto
 - [aes_sbox](crypto/aes_sbox.dart)
 - [diffie_hellman](crypto/diffie_hellman.dart)
+- [merkle_tree](crypto/merkle_tree.dart)
 - [rsa](crypto/rsa.dart)
 - [sha256](crypto/sha256.dart)
+- [shamir_secret_sharing](crypto/shamir_secret_sharing.dart)
 
 ## data_structures
 - [avl_tree](data_structures/avl_tree.dart)
@@ -292,6 +296,12 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [huffman_encoding](greedy/huffman_encoding.dart)
 - [job_sequencing](greedy/job_sequencing.dart)
 - [min_platforms](greedy/min_platforms.dart)
+
+## interview_classics
+- [valid_sudoku_and_anagram_checks](interview_classics/valid_sudoku_and_anagram_checks.dart)
+
+## linked_lists
+- [reverse_linked_list](linked_lists/reverse_linked_list.dart)
 
 ## machine_learning
 - [decision_tree](machine_learning/decision_tree.dart)
