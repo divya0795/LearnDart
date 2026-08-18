@@ -16,3 +16,19 @@ class Debouncer<T> {
 
   void dispose() => _timer?.cancel();
 }
+
+Future<void> main() async {
+  final d = Debouncer<String>(
+    const Duration(milliseconds: 30),
+    (v) => print('search for "$v"'),
+  );
+  var typed = '';
+  for (final c in 'dart'.split('')) {
+    typed += c;
+    d.add(typed);
+    await Future.delayed(const Duration(milliseconds: 10));
+  }
+  await Future.delayed(const Duration(milliseconds: 60));
+  d.add('flutter');
+  await Future.delayed(const Duration(milliseconds: 60));
+}
