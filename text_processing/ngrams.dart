@@ -26,3 +26,16 @@ double diceSimilarity(String a, String b) {
   }
   return 2 * shared / (x.length + y.length);
 }
+
+void main() {
+  final w = 'to be or not to be that is the question to be'.split(' ');
+  print(ngrams(w, 3).take(3).toList());
+  print(
+    (countNgrams(w, 2).entries.toList()
+          ..sort((a, b) => b.value.compareTo(a.value)))
+        .take(3)
+        .toList(),
+  );
+  print(diceSimilarity('night', 'nacht'));
+  print(diceSimilarity('context', 'contact'));
+}
