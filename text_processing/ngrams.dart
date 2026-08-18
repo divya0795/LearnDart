@@ -15,3 +15,14 @@ Map<String, int> countNgrams(List<String> words, int n) {
   }
   return counts;
 }
+
+double diceSimilarity(String a, String b) {
+  final x = charNgrams(a.toLowerCase(), 2), y = charNgrams(b.toLowerCase(), 2);
+  if (x.isEmpty || y.isEmpty) return 0;
+  final pool = [...y];
+  var shared = 0;
+  for (final g in x) {
+    if (pool.remove(g)) shared++;
+  }
+  return 2 * shared / (x.length + y.length);
+}
