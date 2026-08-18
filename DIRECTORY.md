@@ -197,9 +197,11 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [max_heap](data_structures/max_heap.dart)
 - [merge_sorted_lists](data_structures/merge_sorted_lists.dart)
 - [min_heap](data_structures/min_heap.dart)
+- [min_stack](data_structures/min_stack.dart)
 - [patricia_trie](data_structures/patricia_trie.dart)
 - [priority_queue](data_structures/priority_queue.dart)
 - [queue](data_structures/queue.dart)
+- [queue_using_two_stacks](data_structures/queue_using_two_stacks.dart)
 - [red_black_tree](data_structures/red_black_tree.dart)
 - [segment_tree](data_structures/segment_tree.dart)
 - [skip_list](data_structures/skip_list.dart)
@@ -299,6 +301,9 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## interview_classics
 - [valid_sudoku_and_anagram_checks](interview_classics/valid_sudoku_and_anagram_checks.dart)
+
+## language_features
+- [typedefs_and_function_types](language_features/typedefs_and_function_types.dart)
 
 ## linked_lists
 - [reverse_linked_list](linked_lists/reverse_linked_list.dart)
