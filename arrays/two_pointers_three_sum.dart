@@ -28,3 +28,23 @@ List<List<int>> threeSum(List<int> nums) {
   }
   return out;
 }
+
+int threeSumClosest(List<int> nums, int target) {
+  final a = [...nums]..sort();
+  var best = a[0] + a[1] + a[2];
+  for (var i = 0; i < a.length - 2; i++) {
+    var l = i + 1, r = a.length - 1;
+    while (l < r) {
+      final s = a[i] + a[l] + a[r];
+      if ((s - target).abs() < (best - target).abs()) best = s;
+      if (s < target) {
+        l++;
+      } else if (s > target) {
+        r--;
+      } else {
+        return s;
+      }
+    }
+  }
+  return best;
+}
