@@ -19,3 +19,9 @@ List<(int, int)> mergeIntervals(List<(int, int)> xs) {
   }
   return out;
 }
+
+void main() {
+  print(mergeIntervals([(1, 3), (8, 10), (2, 6), (15, 18), (17, 20)]));
+  print(mergeIntervals([(1, 4), (4, 5)]));
+  print(mergeIntervals([]));
+}
