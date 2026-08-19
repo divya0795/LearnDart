@@ -26,3 +26,12 @@ class Bus {
     return n;
   }
 }
+
+void main() {
+  final bus = Bus();
+  bus.subscribe('orders.created', (t, m) => print('billing got $t: $m'));
+  final off = bus.subscribe('orders.*', (t, m) => print('audit log: $t'));
+  print('delivered ${bus.publish('orders.created', {'id': 1})}');
+  off();
+  print('delivered ${bus.publish('orders.shipped', {'id': 1})}');
+}
