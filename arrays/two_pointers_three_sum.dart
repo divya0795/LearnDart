@@ -48,3 +48,9 @@ int threeSumClosest(List<int> nums, int target) {
   }
   return best;
 }
+
+void main() {
+  print(threeSum([-1, 0, 1, 2, -1, -4]));
+  print(threeSum([0, 0, 0, 0]));
+  print(threeSumClosest([-1, 2, 1, -4], 1));
+}
