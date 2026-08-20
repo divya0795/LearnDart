@@ -10,3 +10,15 @@ int modInverse(int a, int m) {
   }
   throw ArgumentError('$a has no inverse mod $m');
 }
+
+String _map(String s, int Function(int) f) {
+  return String.fromCharCodes(
+    s.codeUnits.map((u) {
+      if (u >= 97 && u <= 122) return 97 + f(u - 97);
+      if (u >= 65 && u <= 90) return 65 + f(u - 65);
+      return u;
+    }),
+  );
+}
+
+String encrypt(String s, int a, int b) => _map(s, (x) => (a * x + b) % 26);
