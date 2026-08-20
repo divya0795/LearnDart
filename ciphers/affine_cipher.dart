@@ -27,3 +27,15 @@ String decrypt(String s, int a, int b) {
   final inv = modInverse(a, 26);
   return _map(s, (y) => (inv * (y - b) % 26 + 26) % 26);
 }
+
+void main() {
+  final c = encrypt('Affine Cipher!', 5, 8);
+  print(c);
+  print(decrypt(c, 5, 8));
+  try {
+    encrypt('x', 2, 1);
+    decrypt('x', 2, 1);
+  } on ArgumentError catch (e) {
+    print('a=2 rejected: ${e.message}');
+  }
+}
