@@ -23,3 +23,9 @@ class Square implements Shape {
   @override
   String get name => 'square';
 }
+
+Shape makeShape(String kind, double size) => switch (kind) {
+  'circle' => Circle(size),
+  'square' => Square(size),
+  _ => throw ArgumentError('unknown shape $kind'),
+};
