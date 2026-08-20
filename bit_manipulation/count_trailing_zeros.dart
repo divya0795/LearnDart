@@ -12,3 +12,8 @@ int trailingZerosLoop(int n) {
   }
   return c;
 }
+
+int trailingZeros(int n) {
+  if (n == 0) return 64;
+  return (n & -n).bitLength - 1;
+}
