@@ -22,3 +22,8 @@ String _map(String s, int Function(int) f) {
 }
 
 String encrypt(String s, int a, int b) => _map(s, (x) => (a * x + b) % 26);
+
+String decrypt(String s, int a, int b) {
+  final inv = modInverse(a, 26);
+  return _map(s, (y) => (inv * (y - b) % 26 + 26) % 26);
+}
