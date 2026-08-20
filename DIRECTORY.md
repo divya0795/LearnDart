@@ -286,6 +286,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [kruskal](graphs/kruskal.dart)
 - [max_area_of_island](graphs/max_area_of_island.dart)
 - [prim](graphs/prim.dart)
+- [shortest_path_unweighted_grid](graphs/shortest_path_unweighted_grid.dart)
 - [tarjan_scc](graphs/tarjan_scc.dart)
 - [topological_sort](graphs/topological_sort.dart)
 - [union_find_cycle_detection](graphs/union_find_cycle_detection.dart)
@@ -383,6 +384,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [hyperloglog](probabilistic/hyperloglog.dart)
 - [minhash](probabilistic/minhash.dart)
 - [reservoir_sampling](probabilistic/reservoir_sampling.dart)
+- [skip_list_random_levels](probabilistic/skip_list_random_levels.dart)
 
 ## project_euler
 - [problem_001_multiples_of_3_or_5](project_euler/problem_001_multiples_of_3_or_5.dart)
@@ -411,6 +413,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## reactive
 - [combine_latest](reactive/combine_latest.dart)
+- [debounce_operator](reactive/debounce_operator.dart)
 - [event_emitter_typed](reactive/event_emitter_typed.dart)
 - [observable](reactive/observable.dart)
 - [rx_operators](reactive/rx_operators.dart)
@@ -482,6 +485,9 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [valid_parentheses](strings/valid_parentheses.dart)
 - [word_count](strings/word_count.dart)
 - [z_algorithm](strings/z_algorithm.dart)
+
+## text_processing
+- [ngrams](text_processing/ngrams.dart)
 
 ## trees
 - [binary_tree_traversals](trees/binary_tree_traversals.dart)
