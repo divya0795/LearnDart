@@ -29,3 +29,10 @@ Shape makeShape(String kind, double size) => switch (kind) {
   'square' => Square(size),
   _ => throw ArgumentError('unknown shape $kind'),
 };
+
+void main() {
+  for (final k in ['circle', 'square']) {
+    final s = makeShape(k, 2);
+    print('${s.name}: ${s.area.toStringAsFixed(2)}');
+  }
+}
