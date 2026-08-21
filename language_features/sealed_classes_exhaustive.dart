@@ -32,3 +32,12 @@ Result<int> parse(String s) {
   final n = int.tryParse(s);
   return n == null ? Err('not a number: "$s"') : Ok(n);
 }
+
+void main() {
+  for (final s in ['42', 'abc']) {
+    final r = parse(s);
+    print(show(r));
+    print(show(mapResult(r, (n) => n * 2)));
+    print(unwrapOr(r, -1));
+  }
+}
