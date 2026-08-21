@@ -17,3 +17,13 @@ String show<T>(Result<T> r) => switch (r) {
   Ok(:final value) => 'ok: $value',
   Err(:final message) => 'error: $message',
 };
+
+Result<R> mapResult<T, R>(Result<T> r, R Function(T) f) => switch (r) {
+  Ok(:final value) => Ok(f(value)),
+  Err(:final message) => Err(message),
+};
+
+T unwrapOr<T>(Result<T> r, T fallback) => switch (r) {
+  Ok(:final value) => value,
+  Err() => fallback,
+};
