@@ -11,8 +11,12 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [pivot_index](arrays/pivot_index.dart)
 - [sliding_window_fixed](arrays/sliding_window_fixed.dart)
 - [sorted_squared_array](arrays/sorted_squared_array.dart)
+- [two_pointers_three_sum](arrays/two_pointers_three_sum.dart)
 - [two_sum](arrays/two_sum.dart)
 - [validate_subsequence](arrays/validate_subsequence.dart)
+
+## async_patterns
+- [pub_sub_topics](async_patterns/pub_sub_topics.dart)
 
 ## backtracking
 - [combination_sum](backtracking/combination_sum.dart)
@@ -118,6 +122,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [xor_of_range](bit_manipulation/xor_of_range.dart)
 
 ## ciphers
+- [affine_cipher](ciphers/affine_cipher.dart)
 - [atbash_cipher](ciphers/atbash_cipher.dart)
 - [caesar_cipher](ciphers/caesar_cipher.dart)
 - [rail_fence_cipher](ciphers/rail_fence_cipher.dart)
@@ -297,6 +302,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [fractional_knapsack](greedy/fractional_knapsack.dart)
 - [gas_station](greedy/gas_station.dart)
 - [huffman_encoding](greedy/huffman_encoding.dart)
+- [interval_merging](greedy/interval_merging.dart)
 - [job_sequencing](greedy/job_sequencing.dart)
 - [min_platforms](greedy/min_platforms.dart)
 
