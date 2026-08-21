@@ -27,3 +27,8 @@ T unwrapOr<T>(Result<T> r, T fallback) => switch (r) {
   Ok(:final value) => value,
   Err() => fallback,
 };
+
+Result<int> parse(String s) {
+  final n = int.tryParse(s);
+  return n == null ? Err('not a number: "$s"') : Ok(n);
+}
