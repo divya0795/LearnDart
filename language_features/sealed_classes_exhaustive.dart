@@ -12,3 +12,8 @@ class Err<T> extends Result<T> {
   final String message;
   Err(this.message);
 }
+
+String show<T>(Result<T> r) => switch (r) {
+  Ok(:final value) => 'ok: $value',
+  Err(:final message) => 'error: $message',
+};
