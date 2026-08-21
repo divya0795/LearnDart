@@ -33,3 +33,17 @@ bool isPalindrome(ListNode? head) {
   }
   return true;
 }
+
+ListNode? build(List<int> xs) {
+  ListNode? h;
+  for (final x in xs.reversed) {
+    h = ListNode(x, h);
+  }
+  return h;
+}
+
+void main() {
+  print(isPalindrome(build([1, 2, 2, 1])));
+  print(isPalindrome(build([1, 2, 3, 2, 1])));
+  print(isPalindrome(build([1, 2, 3])));
+}
