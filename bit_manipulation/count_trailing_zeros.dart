@@ -17,3 +17,11 @@ int trailingZeros(int n) {
   if (n == 0) return 64;
   return (n & -n).bitLength - 1;
 }
+
+void main() {
+  for (final n in [1, 2, 8, 12, 40, 96, 1024]) {
+    print(
+      '${n.toRadixString(2).padLeft(11)}  loop=${trailingZerosLoop(n)} fast=${trailingZeros(n)}',
+    );
+  }
+}
