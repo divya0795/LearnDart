@@ -25,3 +25,10 @@ void demoCollections() {
   final unmod = List.unmodifiable(mutable);
   print('${mutable.length} ${unmod.length}');
 }
+
+void main() {
+  const a = Point(1, 2), b = Point(1, 2);
+  print('identical: ${identical(a, b)}');
+  print(a.copyWith(y: 9));
+  demoCollections();
+}
