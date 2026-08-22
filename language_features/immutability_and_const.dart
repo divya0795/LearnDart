@@ -12,3 +12,16 @@ class Point {
   @override
   String toString() => 'Point($x, $y)';
 }
+
+void demoCollections() {
+  final mutable = [1, 2, 3]; // the variable is final, the list is not
+  mutable.add(4);
+  const frozen = [1, 2, 3];
+  try {
+    frozen.add(4);
+  } on UnsupportedError {
+    print('const list cannot change');
+  }
+  final unmod = List.unmodifiable(mutable);
+  print('${mutable.length} ${unmod.length}');
+}
