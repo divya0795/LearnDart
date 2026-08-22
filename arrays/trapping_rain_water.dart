@@ -23,3 +23,19 @@ int trapPrefixSuffix(List<int> h) {
   }
   return water;
 }
+
+// Version 2: the side with the smaller wall is the limiting side, so move
+// that pointer inward. O(n) time, O(1) space.
+int trapTwoPointers(List<int> h) {
+  var l = 0, r = h.length - 1, lm = 0, rm = 0, water = 0;
+  while (l < r) {
+    if (h[l] < h[r]) {
+      lm = h[l] > lm ? h[l] : lm;
+      water += lm - h[l++];
+    } else {
+      rm = h[r] > rm ? h[r] : rm;
+      water += rm - h[r--];
+    }
+  }
+  return water;
+}
