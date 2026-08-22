@@ -39,3 +39,9 @@ int trapTwoPointers(List<int> h) {
   }
   return water;
 }
+
+void main() {
+  final h = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1];
+  print('prefix/suffix: ${trapPrefixSuffix(h)}');
+  print('two pointers:  ${trapTwoPointers(h)}');
+}
