@@ -15,3 +15,15 @@ bool isPerfectSquare(int n) {
   final r = isqrt(n);
   return r * r == n;
 }
+
+List<int> squaresBetween(int lo, int hi) {
+  final out = <int>[];
+  for (
+    var r = isqrt(lo > 0 ? lo - 1 : 0) + (lo > 0 ? 1 : 0);
+    r * r <= hi;
+    r++
+  ) {
+    if (r * r >= lo) out.add(r * r);
+  }
+  return out;
+}
