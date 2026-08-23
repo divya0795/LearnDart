@@ -7,3 +7,12 @@ T maxOf<T extends Comparable<dynamic>>(List<T> xs) {
   }
   return best;
 }
+
+class Stack<T> {
+  final _items = <T>[];
+  void push(T x) => _items.add(x);
+  T pop() => _items.removeLast();
+  T get peek => _items.last;
+  bool get isEmpty => _items.isEmpty;
+  int get length => _items.length;
+}
