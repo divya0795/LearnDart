@@ -14,3 +14,10 @@ int mex(Set<int> s) {
   while (s.contains(i)) i++;
   return i;
 }
+
+int grundy(int n, List<int> moves, Map<int, int> memo) {
+  return memo[n] ??= mex({
+    for (final m in moves)
+      if (m <= n) grundy(n - m, moves, memo),
+  });
+}
