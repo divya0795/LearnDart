@@ -109,6 +109,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## bit_manipulation
 - [count_set_bits](bit_manipulation/count_set_bits.dart)
+- [count_trailing_zeros](bit_manipulation/count_trailing_zeros.dart)
 - [gray_code](bit_manipulation/gray_code.dart)
 - [hamming_distance](bit_manipulation/hamming_distance.dart)
 - [is_power_of_two](bit_manipulation/is_power_of_two.dart)
@@ -216,6 +217,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## design_patterns
 - [builder](design_patterns/builder.dart)
+- [factory_method](design_patterns/factory_method.dart)
 
 ## distributed
 - [consistent_hashing](distributed/consistent_hashing.dart)
@@ -310,9 +312,11 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [valid_sudoku_and_anagram_checks](interview_classics/valid_sudoku_and_anagram_checks.dart)
 
 ## language_features
+- [sealed_classes_exhaustive](language_features/sealed_classes_exhaustive.dart)
 - [typedefs_and_function_types](language_features/typedefs_and_function_types.dart)
 
 ## linked_lists
+- [palindrome_linked_list](linked_lists/palindrome_linked_list.dart)
 - [reverse_linked_list](linked_lists/reverse_linked_list.dart)
 
 ## machine_learning
