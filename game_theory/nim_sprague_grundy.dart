@@ -21,3 +21,8 @@ int grundy(int n, List<int> moves, Map<int, int> memo) {
       if (m <= n) grundy(n - m, moves, memo),
   });
 }
+
+bool firstPlayerWins(List<int> piles, List<int> moves) {
+  final memo = <int, int>{};
+  return piles.fold(0, (x, p) => x ^ grundy(p, moves, memo)) != 0;
+}
