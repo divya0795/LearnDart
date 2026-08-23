@@ -17,3 +17,10 @@ int firstMissingPositive(List<int> nums) {
   }
   return n + 1;
 }
+
+void main() {
+  print(firstMissingPositive([1, 2, 0]));
+  print(firstMissingPositive([3, 4, -1, 1]));
+  print(firstMissingPositive([7, 8, 9, 11, 12]));
+  print(firstMissingPositive([1, 2, 3]));
+}
