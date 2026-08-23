@@ -26,3 +26,21 @@ bool firstPlayerWins(List<int> piles, List<int> moves) {
   final memo = <int, int>{};
   return piles.fold(0, (x, p) => x ^ grundy(p, moves, memo)) != 0;
 }
+
+void main() {
+  print(
+    'plain nim [3,4,5]: first wins = ${[3, 4, 5].fold(0, (a, b) => a ^ b) != 0}',
+  );
+  print(
+    'plain nim [1,2,3]: first wins = ${[1, 2, 3].fold(0, (a, b) => a ^ b) != 0}',
+  );
+  final memo = <int, int>{};
+  print(
+    'grundy for take {1,3,4}: ${[
+      for (var i = 0; i <= 10; i++) grundy(i, [1, 3, 4], memo),
+    ]}',
+  );
+  print(
+    'piles [5,7] with {1,3,4}: first wins = ${firstPlayerWins([5, 7], [1, 3, 4])}',
+  );
+}
