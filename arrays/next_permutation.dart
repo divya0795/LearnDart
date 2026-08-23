@@ -29,3 +29,11 @@ bool nextPermutation(List<int> a) {
   }
   return i >= 0;
 }
+
+void main() {
+  final a = [1, 2, 3];
+  do {
+    print(a);
+  } while (nextPermutation(a));
+  print('wrapped to $a');
+}
