@@ -27,3 +27,10 @@ List<int> squaresBetween(int lo, int hi) {
   }
   return out;
 }
+
+void main() {
+  for (final n in [0, 1, 2, 16, 99, 100, 1 << 40]) {
+    print('$n -> ${isPerfectSquare(n)}');
+  }
+  print(squaresBetween(10, 100));
+}
