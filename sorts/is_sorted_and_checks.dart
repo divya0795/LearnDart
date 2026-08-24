@@ -24,3 +24,10 @@ bool samePermutation(List<int> a, List<int> b) {
   }
   return true;
 }
+
+void main() {
+  final a = [4, 1, 3, 1, 9];
+  final s = [...a]..sort();
+  print('sorted: ${isSorted(s)}, permutation: ${samePermutation(a, s)}');
+  print('empty output is not a permutation: ${samePermutation(a, [])}');
+}
