@@ -34,3 +34,25 @@ List<double> solve(List<List<double>> a, List<double> b) {
   }
   return x;
 }
+
+void main() {
+  print(
+    solve(
+      [
+        [2, 1],
+        [1, 3],
+      ],
+      [5, 10],
+    ),
+  );
+  print(
+    solve(
+      [
+        [4, 3, 0],
+        [3, 4, -1],
+        [0, -1, 4],
+      ],
+      [24, 30, -24],
+    ),
+  );
+}
