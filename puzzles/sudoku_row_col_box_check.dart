@@ -12,3 +12,10 @@ bool canPlace(List<List<int>> b, int r, int c, int d) {
   }
   return true;
 }
+
+List<int> candidates(List<List<int>> b, int r, int c) => b[r][c] != 0
+    ? []
+    : [
+        for (var d = 1; d <= 9; d++)
+          if (canPlace(b, r, c, d)) d,
+      ];
