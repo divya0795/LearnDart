@@ -22,3 +22,8 @@ double bisect(
   }
   return (a + b) / 2;
 }
+
+void main() {
+  print('x^2-2 on [0,2]: ${bisect((x) => x * x - 2, 0, 2)}');
+  print('x^3-x-2 on [1,2]: ${bisect((x) => x * x * x - x - 2, 1, 2)}');
+}
