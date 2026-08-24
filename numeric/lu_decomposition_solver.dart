@@ -17,3 +17,20 @@
   }
   return (l, u);
 }
+
+List<double> solve(List<List<double>> a, List<double> b) {
+  final (l, u) = luDecompose(a);
+  final n = b.length;
+  final y = List.filled(n, 0.0), x = List.filled(n, 0.0);
+  for (var i = 0; i < n; i++) {
+    y[i] =
+        b[i] -
+        [for (var j = 0; j < i; j++) l[i][j] * y[j]].fold(0.0, (s, v) => s + v);
+  }
+  for (var i = n - 1; i >= 0; i--) {
+    final s = [for (var j = i + 1; j < n; j++) u[i][j] * x[j]]
+        .fold(0.0, (s, v) => s + v);
+    x[i] = (y[i] - s) / u[i][i];
+  }
+  return x;
+}
