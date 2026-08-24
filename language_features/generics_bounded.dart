@@ -16,3 +16,15 @@ class Stack<T> {
   bool get isEmpty => _items.isEmpty;
   int get length => _items.length;
 }
+
+class Pair<A, B> {
+  final A first;
+  final B second;
+  const Pair(this.first, this.second);
+
+  Pair<B, A> get swapped => Pair(second, first);
+  Pair<C, B> mapFirst<C>(C Function(A) f) => Pair(f(first), second);
+
+  @override
+  String toString() => '($first, $second)';
+}
