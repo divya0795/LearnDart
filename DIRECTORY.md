@@ -11,6 +11,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [pivot_index](arrays/pivot_index.dart)
 - [sliding_window_fixed](arrays/sliding_window_fixed.dart)
 - [sorted_squared_array](arrays/sorted_squared_array.dart)
+- [trapping_rain_water](arrays/trapping_rain_water.dart)
 - [two_pointers_three_sum](arrays/two_pointers_three_sum.dart)
 - [two_sum](arrays/two_sum.dart)
 - [validate_subsequence](arrays/validate_subsequence.dart)
@@ -260,6 +261,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [alpha_beta_pruning](game_theory/alpha_beta_pruning.dart)
 - [mcts](game_theory/mcts.dart)
 - [minimax](game_theory/minimax.dart)
+- [nim_sprague_grundy](game_theory/nim_sprague_grundy.dart)
 - [prisoners_dilemma_tournament](game_theory/prisoners_dilemma_tournament.dart)
 
 ## geometry
@@ -312,6 +314,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [valid_sudoku_and_anagram_checks](interview_classics/valid_sudoku_and_anagram_checks.dart)
 
 ## language_features
+- [immutability_and_const](language_features/immutability_and_const.dart)
 - [sealed_classes_exhaustive](language_features/sealed_classes_exhaustive.dart)
 - [typedefs_and_function_types](language_features/typedefs_and_function_types.dart)
 
