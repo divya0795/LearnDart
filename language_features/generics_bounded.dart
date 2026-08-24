@@ -28,3 +28,14 @@ class Pair<A, B> {
   @override
   String toString() => '($first, $second)';
 }
+
+void main() {
+  print(maxOf([3, 9, 2]));
+  print(maxOf(['pear', 'apple', 'zebra']));
+  final s = Stack<int>()
+    ..push(1)
+    ..push(2);
+  print('${s.pop()} ${s.peek} ${s.length}');
+  const p = Pair('x', 1);
+  print('${p.swapped} ${p.mapFirst((s) => s.length)}');
+}
