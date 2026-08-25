@@ -29,3 +29,9 @@ List<int> squaresFor(int n) {
   }
   return out;
 }
+
+void main() {
+  for (final n in [12, 13, 7, 100]) {
+    print('$n needs ${numSquares(n)}: ${squaresFor(n)}');
+  }
+}
