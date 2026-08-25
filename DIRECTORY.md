@@ -4,10 +4,12 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## arrays
 - [car_pooling](arrays/car_pooling.dart)
+- [first_missing_positive](arrays/first_missing_positive.dart)
 - [fisher_yates_shuffle](arrays/fisher_yates_shuffle.dart)
 - [majority_element_boyer_moore](arrays/majority_element_boyer_moore.dart)
 - [max_subarray_with_range](arrays/max_subarray_with_range.dart)
 - [move_zeroes](arrays/move_zeroes.dart)
+- [next_permutation](arrays/next_permutation.dart)
 - [pivot_index](arrays/pivot_index.dart)
 - [sliding_window_fixed](arrays/sliding_window_fixed.dart)
 - [sorted_squared_array](arrays/sorted_squared_array.dart)
@@ -314,6 +316,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [valid_sudoku_and_anagram_checks](interview_classics/valid_sudoku_and_anagram_checks.dart)
 
 ## language_features
+- [generics_bounded](language_features/generics_bounded.dart)
 - [immutability_and_const](language_features/immutability_and_const.dart)
 - [sealed_classes_exhaustive](language_features/sealed_classes_exhaustive.dart)
 - [typedefs_and_function_types](language_features/typedefs_and_function_types.dart)
@@ -357,6 +360,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [n_bonacci](maths/n_bonacci.dart)
 - [newton_method_root](maths/newton_method_root.dart)
 - [perfect_number](maths/perfect_number.dart)
+- [perfect_square_check](maths/perfect_square_check.dart)
 - [power_iterative](maths/power_iterative.dart)
 - [power_recursive](maths/power_recursive.dart)
 - [quadratic_formula](maths/quadratic_formula.dart)
@@ -421,6 +425,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [fizzbuzz](puzzles/fizzbuzz.dart)
 - [game_of_life](puzzles/game_of_life.dart)
 - [magic_square_odd](puzzles/magic_square_odd.dart)
+- [sudoku_row_col_box_check](puzzles/sudoku_row_col_box_check.dart)
 - [sudoku_validator](puzzles/sudoku_validator.dart)
 - [water_jug_problem](puzzles/water_jug_problem.dart)
 
