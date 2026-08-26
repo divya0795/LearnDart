@@ -131,3 +131,17 @@ class JsonParser {
     return num.parse(m[0]!);
   }
 }
+
+void main() {
+  final v = JsonParser.parse(
+    '{"name": "dart", "tags": ["a", "b\\n"], "n": -1.5e2, "ok": true, "x": null}',
+  );
+  print(v);
+  for (final bad in ['{"a": }', '[1, 2', '{"a": 1} x']) {
+    try {
+      JsonParser.parse(bad);
+    } on FormatException catch (e) {
+      print('error: ${e.message}');
+    }
+  }
+}
