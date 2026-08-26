@@ -14,3 +14,18 @@ class PrefixSums {
 
   int sum(int l, int r) => _p[r + 1] - _p[l];
 }
+
+class PrefixSums2D {
+  final List<List<int>> _p;
+  PrefixSums2D(List<List<int>> m)
+    : _p = List.generate(m.length + 1, (_) => List.filled(m[0].length + 1, 0)) {
+    for (var i = 0; i < m.length; i++) {
+      for (var j = 0; j < m[0].length; j++) {
+        _p[i + 1][j + 1] = m[i][j] + _p[i][j + 1] + _p[i + 1][j] - _p[i][j];
+      }
+    }
+  }
+
+  int sum(int r1, int c1, int r2, int c2) =>
+      _p[r2 + 1][c2 + 1] - _p[r1][c2 + 1] - _p[r2 + 1][c1] + _p[r1][c1];
+}
