@@ -29,3 +29,15 @@ class PrefixSums2D {
   int sum(int r1, int c1, int r2, int c2) =>
       _p[r2 + 1][c2 + 1] - _p[r1][c2 + 1] - _p[r2 + 1][c1] + _p[r1][c1];
 }
+
+void main() {
+  final ps = PrefixSums([3, 1, 4, 1, 5, 9, 2, 6]);
+  print(ps.sum(0, 7));
+  print(ps.sum(2, 4));
+  final g = PrefixSums2D([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+  ]);
+  print(g.sum(1, 1, 2, 2));
+}
