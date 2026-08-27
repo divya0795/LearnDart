@@ -19,3 +19,18 @@ String? winner(List<String> b) {
   }
   return null;
 }
+
+int minimax(List<String> b, bool xTurn) {
+  final w = winner(b);
+  if (w != null) return w == 'X' ? 1 : -1;
+  if (!b.contains(' ')) return 0;
+  var best = xTurn ? -2 : 2;
+  for (var i = 0; i < 9; i++) {
+    if (b[i] != ' ') continue;
+    b[i] = xTurn ? 'X' : 'O';
+    final s = minimax(b, !xTurn);
+    b[i] = ' ';
+    best = xTurn ? (s > best ? s : best) : (s < best ? s : best);
+  }
+  return best;
+}
