@@ -29,3 +29,14 @@ String justify(String line, int width) {
   }
   return b.toString();
 }
+
+void main() {
+  const t =
+      'The quick brown fox jumps over the lazy dog and keeps running far away';
+  final lines = wrap(t, 24);
+  for (var i = 0; i < lines.length; i++) {
+    print(
+      '|${i == lines.length - 1 ? lines[i].padRight(24) : justify(lines[i], 24)}|',
+    );
+  }
+}
