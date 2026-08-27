@@ -34,3 +34,18 @@ int minimax(List<String> b, bool xTurn) {
   }
   return best;
 }
+
+int bestMove(List<String> b, bool xTurn) {
+  var bestScore = xTurn ? -2 : 2, move = -1;
+  for (var i = 0; i < 9; i++) {
+    if (b[i] != ' ') continue;
+    b[i] = xTurn ? 'X' : 'O';
+    final s = minimax(b, !xTurn);
+    b[i] = ' ';
+    if (xTurn ? s > bestScore : s < bestScore) {
+      bestScore = s;
+      move = i;
+    }
+  }
+  return move;
+}
