@@ -255,6 +255,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [min_path_sum](dynamic_programming/min_path_sum.dart)
 - [palindrome_partitioning](dynamic_programming/palindrome_partitioning.dart)
 - [partition_equal_subset_sum](dynamic_programming/partition_equal_subset_sum.dart)
+- [perfect_squares_min](dynamic_programming/perfect_squares_min.dart)
 - [regex_matching_dp](dynamic_programming/regex_matching_dp.dart)
 - [rod_cutting](dynamic_programming/rod_cutting.dart)
 - [unique_paths](dynamic_programming/unique_paths.dart)
@@ -385,7 +386,9 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [sieve_of_atkin](number_theory/sieve_of_atkin.dart)
 
 ## numeric
+- [bisection_root_finding](numeric/bisection_root_finding.dart)
 - [fft](numeric/fft.dart)
+- [lu_decomposition_solver](numeric/lu_decomposition_solver.dart)
 - [newton_raphson](numeric/newton_raphson.dart)
 - [ntt](numeric/ntt.dart)
 
@@ -471,6 +474,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [gnome_sort](sorts/gnome_sort.dart)
 - [heap_sort](sorts/heap_sort.dart)
 - [insertion_sort](sorts/insertion_sort.dart)
+- [is_sorted_and_checks](sorts/is_sorted_and_checks.dart)
 - [merge_sort](sorts/merge_sort.dart)
 - [odd_even_sort](sorts/odd_even_sort.dart)
 - [pancake_sort](sorts/pancake_sort.dart)
