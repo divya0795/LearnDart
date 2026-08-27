@@ -49,3 +49,11 @@ int bestMove(List<String> b, bool xTurn) {
   }
   return move;
 }
+
+void main() {
+  final empty = List.filled(9, ' ');
+  print('value of empty board: ${minimax(empty, true)} (0 = draw)');
+  final b = ['X', 'X', ' ', 'O', 'O', ' ', ' ', ' ', ' '];
+  print('X to move should play ${bestMove(b, true)} (win at 2)');
+  print('O to move should play ${bestMove([...b], false)}');
+}
