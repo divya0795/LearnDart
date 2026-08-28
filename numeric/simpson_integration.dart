@@ -25,3 +25,12 @@ double trapezoid(double Function(double) f, double a, double b, int n) {
   }
   return sum * h;
 }
+
+void main() {
+  print('x^3 on [0,2]   simpson=${simpson((x) => x * x * x, 0, 2)} (exact 4)');
+  final s = simpson(math.sin, 0, math.pi, 10);
+  final t = trapezoid(math.sin, 0, math.pi, 10);
+  print(
+    'sin on [0,pi], n=10: simpson error=${(s - 2).abs()}, trapezoid error=${(t - 2).abs()}',
+  );
+}
