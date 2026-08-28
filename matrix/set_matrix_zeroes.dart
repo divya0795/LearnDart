@@ -29,3 +29,13 @@ void setZeroes(List<List<int>> m) {
     }
   }
 }
+
+void main() {
+  final m = [
+    [1, 1, 1],
+    [1, 0, 1],
+    [1, 1, 1],
+  ];
+  setZeroes(m);
+  m.forEach(print);
+}
