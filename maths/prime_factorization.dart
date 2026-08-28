@@ -14,3 +14,8 @@ Map<int, int> primeFactors(int n) {
   if (n > 1) f[n] = (f[n] ?? 0) + 1;
   return f;
 }
+
+String describe(int n) =>
+    primeFactors(n).entries
+        .map((e) => e.value == 1 ? '${e.key}' : '${e.key}^${e.value}')
+        .join(' x ');
