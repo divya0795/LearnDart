@@ -16,3 +16,12 @@ double simpson(double Function(double) f, double a, double b, [int n = 100]) {
   }
   return sum * h / 3;
 }
+
+double trapezoid(double Function(double) f, double a, double b, int n) {
+  final h = (b - a) / n;
+  var sum = (f(a) + f(b)) / 2;
+  for (var i = 1; i < n; i++) {
+    sum += f(a + i * h);
+  }
+  return sum * h;
+}
