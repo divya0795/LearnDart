@@ -19,3 +19,6 @@ String describe(int n) =>
     primeFactors(n).entries
         .map((e) => e.value == 1 ? '${e.key}' : '${e.key}^${e.value}')
         .join(' x ');
+
+int divisorCount(int n) =>
+    primeFactors(n).values.fold(1, (a, e) => a * (e + 1));
