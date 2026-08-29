@@ -11,6 +11,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [move_zeroes](arrays/move_zeroes.dart)
 - [next_permutation](arrays/next_permutation.dart)
 - [pivot_index](arrays/pivot_index.dart)
+- [prefix_sum_range_queries](arrays/prefix_sum_range_queries.dart)
 - [sliding_window_fixed](arrays/sliding_window_fixed.dart)
 - [sorted_squared_array](arrays/sorted_squared_array.dart)
 - [trapping_rain_water](arrays/trapping_rain_water.dart)
@@ -266,6 +267,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [minimax](game_theory/minimax.dart)
 - [nim_sprague_grundy](game_theory/nim_sprague_grundy.dart)
 - [prisoners_dilemma_tournament](game_theory/prisoners_dilemma_tournament.dart)
+- [tic_tac_toe_minimax](game_theory/tic_tac_toe_minimax.dart)
 
 ## geometry
 - [closest_pair](geometry/closest_pair.dart)
@@ -394,6 +396,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## parsers
 - [ini_parser](parsers/ini_parser.dart)
+- [json_parser](parsers/json_parser.dart)
 - [recursive_descent_expr](parsers/recursive_descent_expr.dart)
 - [shunting_yard](parsers/shunting_yard.dart)
 - [tokenizer](parsers/tokenizer.dart)
@@ -510,6 +513,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## text_processing
 - [ngrams](text_processing/ngrams.dart)
+- [word_wrap_and_justify](text_processing/word_wrap_and_justify.dart)
 
 ## trees
 - [binary_tree_traversals](trees/binary_tree_traversals.dart)
