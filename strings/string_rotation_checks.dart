@@ -11,3 +11,8 @@ String minRotation(String s) {
   }
   return best;
 }
+
+String? repeatingUnit(String s) {
+  final i = (s + s).indexOf(s, 1);
+  return i < s.length ? s.substring(0, i) : null;
+}
