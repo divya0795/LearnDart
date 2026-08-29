@@ -42,3 +42,17 @@ Map<String, String> huffmanCodes(String text) {
 
 String encode(String text, Map<String, String> codes) =>
     text.split('').map((c) => codes[c]!).join();
+
+String decode(String bits, Map<String, String> codes) {
+  final rev = {for (final e in codes.entries) e.value: e.key};
+  final out = StringBuffer();
+  var cur = '';
+  for (final b in bits.split('')) {
+    cur += b;
+    if (rev.containsKey(cur)) {
+      out.write(rev[cur]);
+      cur = '';
+    }
+  }
+  return out.toString();
+}
