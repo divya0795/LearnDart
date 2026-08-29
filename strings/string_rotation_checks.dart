@@ -16,3 +16,11 @@ String? repeatingUnit(String s) {
   final i = (s + s).indexOf(s, 1);
   return i < s.length ? s.substring(0, i) : null;
 }
+
+void main() {
+  print(isRotation('waterbottle', 'erbottlewat'));
+  print(isRotation('abc', 'acb'));
+  print(minRotation('bca'));
+  print(repeatingUnit('abcabcabc'));
+  print(repeatingUnit('abcd'));
+}
