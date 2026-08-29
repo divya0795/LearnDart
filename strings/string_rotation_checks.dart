@@ -2,3 +2,12 @@
 // appear inside a + a (e.g. "waterbottle" rotates to "erbottlewat").
 bool isRotation(String a, String b) =>
     a.length == b.length && (a + a).contains(b);
+
+String minRotation(String s) {
+  var best = s;
+  for (var i = 1; i < s.length; i++) {
+    final r = s.substring(i) + s.substring(0, i);
+    if (r.compareTo(best) < 0) best = r;
+  }
+  return best;
+}
