@@ -22,3 +22,9 @@ String describe(int n) =>
 
 int divisorCount(int n) =>
     primeFactors(n).values.fold(1, (a, e) => a * (e + 1));
+
+void main() {
+  for (final n in [12, 97, 360, 1001, 65536]) {
+    print('$n = ${describe(n)}  (${divisorCount(n)} divisors)');
+  }
+}
