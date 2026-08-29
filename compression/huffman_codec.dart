@@ -56,3 +56,12 @@ String decode(String bits, Map<String, String> codes) {
   }
   return out.toString();
 }
+
+void main() {
+  const text = 'abracadabra';
+  final codes = huffmanCodes(text);
+  final bits = encode(text, codes);
+  print(codes);
+  print('$bits (${bits.length} bits vs ${text.length * 8} raw)');
+  print('round trip ok: ${decode(bits, codes) == text}');
+}
