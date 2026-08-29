@@ -39,3 +39,6 @@ Map<String, String> huffmanCodes(String text) {
   walk(nodes.first, '');
   return codes;
 }
+
+String encode(String text, Map<String, String> codes) =>
+    text.split('').map((c) => codes[c]!).join();
