@@ -15,3 +15,16 @@ mixin Swimmer {
 class Duck with Walker, Swimmer {}
 
 class Dog with Walker {}
+
+abstract class Animal {
+  String get name;
+}
+
+mixin Greets on Animal {
+  void greet() => print('Hi, I am $name');
+}
+
+class Cat extends Animal with Greets {
+  @override
+  String get name => 'Tom';
+}
