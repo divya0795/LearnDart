@@ -3,3 +3,7 @@
 int gcd(int a, int b) => b == 0 ? a.abs() : gcd(b, a % b);
 
 int lcm(int a, int b) => a == 0 || b == 0 ? 0 : a ~/ gcd(a, b) * b;
+
+int gcdAll(List<int> xs) => xs.reduce(gcd);
+
+int lcmAll(List<int> xs) => xs.reduce(lcm);
