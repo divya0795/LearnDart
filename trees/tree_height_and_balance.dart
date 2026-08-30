@@ -35,3 +35,14 @@ bool isBalanced(Node? root) {
 
   return go(root) >= 0;
 }
+
+void main() {
+  final balanced = Node(Node(Node(), Node()), Node());
+  final skewed = Node(Node(Node(Node())));
+  print(
+    'balanced: height ${height(balanced)}, diameter ${diameter(balanced)}, ok ${isBalanced(balanced)}',
+  );
+  print(
+    'skewed:   height ${height(skewed)}, diameter ${diameter(skewed)}, ok ${isBalanced(skewed)}',
+  );
+}
