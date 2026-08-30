@@ -11,3 +11,7 @@ mixin Walker {
 mixin Swimmer {
   void swim() => print('$runtimeType swims');
 }
+
+class Duck with Walker, Swimmer {}
+
+class Dog with Walker {}
