@@ -7,3 +7,8 @@ int lcm(int a, int b) => a == 0 || b == 0 ? 0 : a ~/ gcd(a, b) * b;
 int gcdAll(List<int> xs) => xs.reduce(gcd);
 
 int lcmAll(List<int> xs) => xs.reduce(lcm);
+
+(int, int) simplify(int num, int den) {
+  final g = gcd(num, den);
+  return (num ~/ g, den ~/ g);
+}
