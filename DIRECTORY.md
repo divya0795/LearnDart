@@ -366,11 +366,15 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [perfect_square_check](maths/perfect_square_check.dart)
 - [power_iterative](maths/power_iterative.dart)
 - [power_recursive](maths/power_recursive.dart)
+- [prime_factorization](maths/prime_factorization.dart)
 - [quadratic_formula](maths/quadratic_formula.dart)
 - [sieve_of_eratosthenes](maths/sieve_of_eratosthenes.dart)
 - [simpson_rule](maths/simpson_rule.dart)
 - [symmetric_derivative](maths/symmetric_derivative.dart)
 - [ugly_number](maths/ugly_number.dart)
+
+## matrix
+- [set_matrix_zeroes](matrix/set_matrix_zeroes.dart)
 
 ## number_theory
 - [binary_exponentiation_mod](number_theory/binary_exponentiation_mod.dart)
@@ -393,6 +397,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [lu_decomposition_solver](numeric/lu_decomposition_solver.dart)
 - [newton_raphson](numeric/newton_raphson.dart)
 - [ntt](numeric/ntt.dart)
+- [simpson_integration](numeric/simpson_integration.dart)
 
 ## parsers
 - [ini_parser](parsers/ini_parser.dart)
