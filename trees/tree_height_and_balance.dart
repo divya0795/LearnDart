@@ -22,3 +22,16 @@ int diameter(Node? root) {
   go(root);
   return best;
 }
+
+bool isBalanced(Node? root) {
+  int go(Node? n) {
+    if (n == null) return 0;
+    final l = go(n.left);
+    if (l < 0) return -1;
+    final r = go(n.right);
+    if (r < 0 || (l - r).abs() > 1) return -1;
+    return 1 + _max(l, r);
+  }
+
+  return go(root) >= 0;
+}
