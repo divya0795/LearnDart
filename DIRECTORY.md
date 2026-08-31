@@ -145,6 +145,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## compression
 - [arithmetic_coding](compression/arithmetic_coding.dart)
 - [burrows_wheeler](compression/burrows_wheeler.dart)
+- [huffman_codec](compression/huffman_codec.dart)
 - [lz77](compression/lz77.dart)
 
 ## concurrency
@@ -382,6 +383,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [euler_totient](number_theory/euler_totient.dart)
 - [extended_euclidean](number_theory/extended_euclidean.dart)
 - [fermat_primality](number_theory/fermat_primality.dart)
+- [gcd_lcm_of_list](number_theory/gcd_lcm_of_list.dart)
 - [linear_diophantine](number_theory/linear_diophantine.dart)
 - [linear_sieve](number_theory/linear_sieve.dart)
 - [lucas_lehmer](number_theory/lucas_lehmer.dart)
@@ -511,6 +513,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [reverse_words_in_sentence](strings/reverse_words_in_sentence.dart)
 - [run_length_encoding](strings/run_length_encoding.dart)
 - [string_compression](strings/string_compression.dart)
+- [string_rotation_checks](strings/string_rotation_checks.dart)
 - [suffix_array](strings/suffix_array.dart)
 - [valid_parentheses](strings/valid_parentheses.dart)
 - [word_count](strings/word_count.dart)
