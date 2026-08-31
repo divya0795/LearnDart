@@ -28,3 +28,14 @@ class Cat extends Animal with Greets {
   @override
   String get name => 'Tom';
 }
+
+void main() {
+  final duck = Duck()
+    ..walk()
+    ..swim()
+    ..walk();
+  Dog().walk();
+  Cat().greet();
+  final Object d = duck, dog = Dog();
+  print('duck is Walker: ${d is Walker}, dog is Swimmer: ${dog is Swimmer}');
+}
