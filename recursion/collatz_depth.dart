@@ -6,3 +6,7 @@ int steps(int n) {
   if (n == 1) return 0;
   return 1 + steps(n.isEven ? n ~/ 2 : 3 * n + 1);
 }
+
+final _memo = <int, int>{1: 0};
+int stepsMemo(int n) =>
+    _memo[n] ??= 1 + stepsMemo(n.isEven ? n ~/ 2 : 3 * n + 1);
