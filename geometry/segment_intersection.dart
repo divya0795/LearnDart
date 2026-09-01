@@ -26,3 +26,12 @@ bool segmentsIntersect(P p1, P p2, P p3, P p4) {
   if (o4 == 0 && _onSegment(p3, p4, p2)) return true;
   return false;
 }
+
+void main() {
+  print('cross:    ${segmentsIntersect((0, 0), (4, 4), (0, 4), (4, 0))}');
+  print('parallel: ${segmentsIntersect((0, 0), (4, 0), (0, 1), (4, 1))}');
+  print('touching: ${segmentsIntersect((0, 0), (2, 2), (2, 2), (4, 0))}');
+  print(
+    'collinear overlap: ${segmentsIntersect((0, 0), (3, 0), (2, 0), (5, 0))}',
+  );
+}
