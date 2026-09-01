@@ -15,3 +15,10 @@ List<int> subsetsOf(int mask) {
 String show(int mask) =>
     '{${[for (var i = 0; i < 16; i++)
       if (mask >> i & 1 == 1) i].join(',')}}';
+
+void main() {
+  final mask = int.parse('1011', radix: 2);
+  for (final s in subsetsOf(mask)) {
+    print('${s.toRadixString(2).padLeft(4, '0')} ${show(s)}');
+  }
+}
