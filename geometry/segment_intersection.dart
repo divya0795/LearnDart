@@ -15,3 +15,14 @@ bool _onSegment(P a, P b, P p) =>
     p.$1 <= (a.$1 > b.$1 ? a.$1 : b.$1) &&
     p.$2 >= (a.$2 < b.$2 ? a.$2 : b.$2) &&
     p.$2 <= (a.$2 > b.$2 ? a.$2 : b.$2);
+
+bool segmentsIntersect(P p1, P p2, P p3, P p4) {
+  final o1 = _orient(p1, p2, p3), o2 = _orient(p1, p2, p4);
+  final o3 = _orient(p3, p4, p1), o4 = _orient(p3, p4, p2);
+  if (o1 != o2 && o3 != o4) return true;
+  if (o1 == 0 && _onSegment(p1, p2, p3)) return true;
+  if (o2 == 0 && _onSegment(p1, p2, p4)) return true;
+  if (o3 == 0 && _onSegment(p3, p4, p1)) return true;
+  if (o4 == 0 && _onSegment(p3, p4, p2)) return true;
+  return false;
+}
