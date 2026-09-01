@@ -322,6 +322,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## language_features
 - [generics_bounded](language_features/generics_bounded.dart)
 - [immutability_and_const](language_features/immutability_and_const.dart)
+- [mixins_and_composition](language_features/mixins_and_composition.dart)
 - [sealed_classes_exhaustive](language_features/sealed_classes_exhaustive.dart)
 - [typedefs_and_function_types](language_features/typedefs_and_function_types.dart)
 
@@ -525,3 +526,4 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## trees
 - [binary_tree_traversals](trees/binary_tree_traversals.dart)
+- [tree_height_and_balance](trees/tree_height_and_balance.dart)
