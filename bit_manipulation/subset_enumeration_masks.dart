@@ -11,3 +11,7 @@ List<int> subsetsOf(int mask) {
   }
   return out;
 }
+
+String show(int mask) =>
+    '{${[for (var i = 0; i < 16; i++)
+      if (mask >> i & 1 == 1) i].join(',')}}';
