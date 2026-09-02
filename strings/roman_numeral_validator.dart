@@ -18,3 +18,11 @@ int parseRoman(String s) {
   }
   return total;
 }
+
+void main() {
+  for (final s in ['MCMXCIV', 'XLII', 'IIII', 'VX', 'MMMM', '']) {
+    print(
+      '"$s": valid=${isValidRoman(s)}${isValidRoman(s) ? ' = ${parseRoman(s)}' : ''}',
+    );
+  }
+}
