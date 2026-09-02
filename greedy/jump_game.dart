@@ -24,3 +24,9 @@ int minJumps(List<int> a) {
   }
   return jumps;
 }
+
+void main() {
+  print(canJump([2, 3, 1, 1, 4]));
+  print(canJump([3, 2, 1, 0, 4]));
+  print(minJumps([2, 3, 1, 1, 4]));
+}
