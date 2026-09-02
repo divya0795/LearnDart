@@ -11,3 +11,11 @@ List<List<double>> multiply(List<List<double>> a, List<List<double>> b) {
       ],
   ];
 }
+
+List<List<double>> transpose(List<List<double>> m) => [
+  for (var j = 0; j < m[0].length; j++) [for (final r in m) r[j]],
+];
+
+List<List<double>> identity(int n) => [
+  for (var i = 0; i < n; i++) [for (var j = 0; j < n; j++) i == j ? 1.0 : 0.0],
+];
