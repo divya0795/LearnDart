@@ -12,3 +12,15 @@ bool canJump(List<int> a) {
   }
   return true;
 }
+
+int minJumps(List<int> a) {
+  var jumps = 0, curEnd = 0, far = 0;
+  for (var i = 0; i < a.length - 1; i++) {
+    if (i + a[i] > far) far = i + a[i];
+    if (i == curEnd) {
+      jumps++;
+      curEnd = far;
+    }
+  }
+  return jumps;
+}
