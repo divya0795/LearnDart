@@ -19,3 +19,13 @@ List<List<double>> transpose(List<List<double>> m) => [
 List<List<double>> identity(int n) => [
   for (var i = 0; i < n; i++) [for (var j = 0; j < n; j++) i == j ? 1.0 : 0.0],
 ];
+
+void main() {
+  final a = [
+    [1.0, 2.0],
+    [3.0, 4.0],
+    [5.0, 6.0],
+  ];
+  print(multiply(a, transpose(a)));
+  print(multiply(identity(3), a));
+}
