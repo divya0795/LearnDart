@@ -6,3 +6,15 @@ final _roman = RegExp(
 );
 
 bool isValidRoman(String s) => s.isNotEmpty && _roman.hasMatch(s);
+
+int parseRoman(String s) {
+  if (!isValidRoman(s)) throw FormatException('not a roman numeral: $s');
+  const v = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000};
+  var total = 0;
+  for (var i = 0; i < s.length; i++) {
+    final cur = v[s[i]]!;
+    final next = i + 1 < s.length ? v[s[i + 1]]! : 0;
+    total += cur < next ? -cur : cur;
+  }
+  return total;
+}
