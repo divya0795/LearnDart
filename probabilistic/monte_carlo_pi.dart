@@ -13,3 +13,10 @@ double estimatePi(int samples, {int seed = 3}) {
   }
   return 4 * inside / samples;
 }
+
+void main() {
+  for (final n in [100, 10000, 1000000]) {
+    final e = estimatePi(n);
+    print('n=$n pi~$e error=${(e - pi).abs().toStringAsFixed(5)}');
+  }
+}
