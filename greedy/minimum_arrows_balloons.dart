@@ -16,3 +16,9 @@ int minArrows(List<(int, int)> balloons) {
   }
   return arrows;
 }
+
+void main() {
+  print(minArrows([(10, 16), (2, 8), (1, 6), (7, 12)]));
+  print(minArrows([(1, 2), (3, 4), (5, 6)]));
+  print(minArrows([(1, 2), (2, 3), (3, 4), (4, 5)]));
+}
