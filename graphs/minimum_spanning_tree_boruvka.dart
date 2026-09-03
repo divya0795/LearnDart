@@ -38,3 +38,8 @@ int boruvka(int n, List<WEdge> edges) {
   }
   return total;
 }
+
+void main() {
+  final edges = [(0, 1, 10), (0, 2, 6), (0, 3, 5), (1, 3, 15), (2, 3, 4)];
+  print('MST weight: ${boruvka(4, edges)}');
+}
