@@ -37,3 +37,11 @@ List<String> applyDiff(List<String> d) => [
   for (final l in d)
     if (!l.startsWith('- ')) l.substring(2),
 ];
+
+void main() {
+  final a = ['alpha', 'beta', 'gamma', 'delta'];
+  final b = ['alpha', 'gamma', 'epsilon', 'delta'];
+  final d = diff(a, b);
+  d.forEach(print);
+  print('applies cleanly: ${applyDiff(d).join(',') == b.join(',')}');
+}
