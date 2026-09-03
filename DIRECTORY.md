@@ -121,6 +121,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [power_set_via_bits](bit_manipulation/power_set_via_bits.dart)
 - [reverse_bits](bit_manipulation/reverse_bits.dart)
 - [single_number_xor](bit_manipulation/single_number_xor.dart)
+- [subset_enumeration_masks](bit_manipulation/subset_enumeration_masks.dart)
 - [swap_odd_even_bits](bit_manipulation/swap_odd_even_bits.dart)
 - [swap_without_temp](bit_manipulation/swap_without_temp.dart)
 - [toggle_bit](bit_manipulation/toggle_bit.dart)
@@ -279,6 +280,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [point_in_polygon](geometry/point_in_polygon.dart)
 - [polygon_area](geometry/polygon_area.dart)
 - [rotate_matrix](geometry/rotate_matrix.dart)
+- [segment_intersection](geometry/segment_intersection.dart)
 
 ## graphs
 - [a_star](graphs/a_star.dart)
@@ -453,6 +455,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## recursion
 - [ackermann](recursion/ackermann.dart)
+- [collatz_depth](recursion/collatz_depth.dart)
 - [combinations](recursion/combinations.dart)
 - [flatten_nested_list](recursion/flatten_nested_list.dart)
 - [palindrome_check_recursive](recursion/palindrome_check_recursive.dart)
