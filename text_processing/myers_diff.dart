@@ -32,3 +32,8 @@ List<String> diff(List<String> a, List<String> b) {
   }
   return out;
 }
+
+List<String> applyDiff(List<String> d) => [
+  for (final l in d)
+    if (!l.startsWith('- ')) l.substring(2),
+];
