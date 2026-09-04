@@ -20,3 +20,9 @@ void demoOperators(List<int>? maybe) {
   final n = parseOrNull('12')!; // asserts non-null; throws if wrong
   print(n + 1);
 }
+
+class User {
+  final String name;
+  late final String slug = name.toLowerCase().replaceAll(' ', '-');
+  User({required this.name});
+}
