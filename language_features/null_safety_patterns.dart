@@ -3,3 +3,8 @@
 String greet(String? name) => 'Hello, ${name ?? 'stranger'}!';
 
 int? parseOrNull(String s) => int.tryParse(s);
+
+int lengthOr(String? s, int fallback) {
+  if (s == null) return fallback;
+  return s.length; // s is promoted to String here
+}
