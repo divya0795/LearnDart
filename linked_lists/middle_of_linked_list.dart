@@ -15,3 +15,17 @@ ListNode? middle(ListNode? head) {
   }
   return slow;
 }
+
+ListNode? removeNthFromEnd(ListNode? head, int n) {
+  final dummy = ListNode(0, head);
+  var lead = dummy, lag = dummy;
+  for (var i = 0; i < n; i++) {
+    lead = lead.next!;
+  }
+  while (lead.next != null) {
+    lead = lead.next!;
+    lag = lag.next!;
+  }
+  lag.next = lag.next!.next;
+  return dummy.next;
+}
