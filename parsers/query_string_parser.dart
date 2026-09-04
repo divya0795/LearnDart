@@ -13,3 +13,12 @@ Map<String, List<String>> parseQuery(String q) {
   }
   return out;
 }
+
+String buildQuery(Map<String, List<String>> m) => m.entries
+    .expand(
+      (e) => e.value.map(
+        (v) =>
+            '${Uri.encodeQueryComponent(e.key)}=${Uri.encodeQueryComponent(v)}',
+      ),
+    )
+    .join('&');
