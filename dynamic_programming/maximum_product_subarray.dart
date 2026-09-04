@@ -12,3 +12,9 @@ int maxProduct(List<int> a) {
   }
   return best;
 }
+
+void main() {
+  print(maxProduct([2, 3, -2, 4]));
+  print(maxProduct([-2, 0, -1]));
+  print(maxProduct([-2, 3, -4]));
+}
