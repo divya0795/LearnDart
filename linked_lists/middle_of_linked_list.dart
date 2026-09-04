@@ -29,3 +29,19 @@ ListNode? removeNthFromEnd(ListNode? head, int n) {
   lag.next = lag.next!.next;
   return dummy.next;
 }
+
+ListNode? build(List<int> xs) {
+  ListNode? h;
+  for (final x in xs.reversed) {
+    h = ListNode(x, h);
+  }
+  return h;
+}
+
+List<int> values(ListNode? n) => [for (var c = n; c != null; c = c.next) c.val];
+
+void main() {
+  print('middle of 1..5: ${middle(build([1, 2, 3, 4, 5]))!.val}');
+  print('middle of 1..6: ${middle(build([1, 2, 3, 4, 5, 6]))!.val}');
+  print(values(removeNthFromEnd(build([1, 2, 3, 4, 5]), 2)));
+}
