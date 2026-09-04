@@ -316,6 +316,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [huffman_encoding](greedy/huffman_encoding.dart)
 - [interval_merging](greedy/interval_merging.dart)
 - [job_sequencing](greedy/job_sequencing.dart)
+- [jump_game](greedy/jump_game.dart)
 - [min_platforms](greedy/min_platforms.dart)
 
 ## interview_classics
@@ -400,6 +401,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [bisection_root_finding](numeric/bisection_root_finding.dart)
 - [fft](numeric/fft.dart)
 - [lu_decomposition_solver](numeric/lu_decomposition_solver.dart)
+- [matrix_multiplication](numeric/matrix_multiplication.dart)
 - [newton_raphson](numeric/newton_raphson.dart)
 - [ntt](numeric/ntt.dart)
 - [simpson_integration](numeric/simpson_integration.dart)
@@ -416,6 +418,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [count_min_sketch](probabilistic/count_min_sketch.dart)
 - [hyperloglog](probabilistic/hyperloglog.dart)
 - [minhash](probabilistic/minhash.dart)
+- [monte_carlo_pi](probabilistic/monte_carlo_pi.dart)
 - [reservoir_sampling](probabilistic/reservoir_sampling.dart)
 - [skip_list_random_levels](probabilistic/skip_list_random_levels.dart)
 
@@ -515,6 +518,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [rabin_karp](strings/rabin_karp.dart)
 - [reverse_string](strings/reverse_string.dart)
 - [reverse_words_in_sentence](strings/reverse_words_in_sentence.dart)
+- [roman_numeral_validator](strings/roman_numeral_validator.dart)
 - [run_length_encoding](strings/run_length_encoding.dart)
 - [string_compression](strings/string_compression.dart)
 - [string_rotation_checks](strings/string_rotation_checks.dart)
