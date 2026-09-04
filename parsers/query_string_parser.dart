@@ -22,3 +22,9 @@ String buildQuery(Map<String, List<String>> m) => m.entries
       ),
     )
     .join('&');
+
+void main() {
+  final m = parseQuery('?q=dart+lang&tag=a&tag=b&empty=&city=S%C3%A3o+Paulo');
+  print(m);
+  print(buildQuery(m));
+}
