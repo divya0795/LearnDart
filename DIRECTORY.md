@@ -254,6 +254,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [longest_palindromic_subsequence](dynamic_programming/longest_palindromic_subsequence.dart)
 - [longest_valid_parentheses](dynamic_programming/longest_valid_parentheses.dart)
 - [matrix_chain_multiplication](dynamic_programming/matrix_chain_multiplication.dart)
+- [maximum_product_subarray](dynamic_programming/maximum_product_subarray.dart)
 - [min_jumps](dynamic_programming/min_jumps.dart)
 - [min_path_sum](dynamic_programming/min_path_sum.dart)
 - [palindrome_partitioning](dynamic_programming/palindrome_partitioning.dart)
@@ -302,6 +303,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [kosaraju_scc](graphs/kosaraju_scc.dart)
 - [kruskal](graphs/kruskal.dart)
 - [max_area_of_island](graphs/max_area_of_island.dart)
+- [minimum_spanning_tree_boruvka](graphs/minimum_spanning_tree_boruvka.dart)
 - [prim](graphs/prim.dart)
 - [shortest_path_unweighted_grid](graphs/shortest_path_unweighted_grid.dart)
 - [tarjan_scc](graphs/tarjan_scc.dart)
@@ -318,6 +320,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [job_sequencing](greedy/job_sequencing.dart)
 - [jump_game](greedy/jump_game.dart)
 - [min_platforms](greedy/min_platforms.dart)
+- [minimum_arrows_balloons](greedy/minimum_arrows_balloons.dart)
 
 ## interview_classics
 - [valid_sudoku_and_anagram_checks](interview_classics/valid_sudoku_and_anagram_checks.dart)
@@ -528,6 +531,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [z_algorithm](strings/z_algorithm.dart)
 
 ## text_processing
+- [myers_diff](text_processing/myers_diff.dart)
 - [ngrams](text_processing/ngrams.dart)
 - [word_wrap_and_justify](text_processing/word_wrap_and_justify.dart)
 
