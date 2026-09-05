@@ -23,3 +23,15 @@ String encrypt(String text, String key) {
   }
   return out.toString();
 }
+
+String decrypt(String cipher, String key) {
+  final cols = key.length, rows = cipher.length ~/ cols;
+  final grid = List.filled(cipher.length, '');
+  var p = 0;
+  for (final c in _order(key)) {
+    for (var r = 0; r < rows; r++) {
+      grid[r * cols + c] = cipher[p++];
+    }
+  }
+  return grid.join();
+}
