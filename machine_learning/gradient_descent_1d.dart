@@ -21,3 +21,5 @@ void demoLearningRates() {
     print('lr=$lr -> x=${x.toStringAsFixed(4)}');
   }
 }
+
+void main() => demoLearningRates();
