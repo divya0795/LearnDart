@@ -26,3 +26,11 @@ class User {
   late final String slug = name.toLowerCase().replaceAll(' ', '-');
   User({required this.name});
 }
+
+void main() {
+  print(greet(null));
+  print(greet('Ada'));
+  print(lengthOr(null, -1));
+  demoOperators(null);
+  print(User(name: 'Grace Hopper').slug);
+}
