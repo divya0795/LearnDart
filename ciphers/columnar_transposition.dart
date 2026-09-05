@@ -10,3 +10,16 @@ List<int> _order(String key) {
   });
   return idx;
 }
+
+String encrypt(String text, String key) {
+  final t = text.replaceAll(' ', '').toLowerCase();
+  final cols = key.length;
+  final padded = t.padRight((t.length / cols).ceil() * cols, 'x');
+  final out = StringBuffer();
+  for (final c in _order(key)) {
+    for (var i = c; i < padded.length; i += cols) {
+      out.write(padded[i]);
+    }
+  }
+  return out.toString();
+}
