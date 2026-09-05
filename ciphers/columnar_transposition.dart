@@ -35,3 +35,9 @@ String decrypt(String cipher, String key) {
   }
   return grid.join();
 }
+
+void main() {
+  final c = encrypt('we are discovered', 'zebras');
+  print(c);
+  print(decrypt(c, 'zebras'));
+}
