@@ -24,3 +24,19 @@ String describe(Object? o) => switch (o) {
   null => 'null',
   _ => 'something else',
 };
+
+void main() {
+  demoDestructuring();
+  for (final o in [
+    -3,
+    7,
+    '',
+    'hey',
+    (2, 3),
+    [9, 8],
+    null,
+    2.5,
+  ]) {
+    print(describe(o));
+  }
+}
