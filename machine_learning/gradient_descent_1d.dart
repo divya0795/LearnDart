@@ -13,3 +13,11 @@ double descend(
   }
   return x;
 }
+
+void demoLearningRates() {
+  double grad(double x) => 2 * (x - 3);
+  for (final lr in [0.01, 0.1, 0.9, 1.1]) {
+    final x = descend(grad, 0, lr: lr, steps: 50);
+    print('lr=$lr -> x=${x.toStringAsFixed(4)}');
+  }
+}
