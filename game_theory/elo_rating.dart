@@ -4,3 +4,8 @@ import 'dart:math';
 
 double expectedScore(double ra, double rb) =>
     1 / (1 + pow(10, (rb - ra) / 400));
+
+(double, double) update(double ra, double rb, double scoreA, {double k = 32}) {
+  final ea = expectedScore(ra, rb);
+  return (ra + k * (scoreA - ea), rb + k * ((1 - scoreA) - (1 - ea)));
+}
