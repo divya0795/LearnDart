@@ -13,3 +13,14 @@ void demoDestructuring() {
   final [first, second, ...rest] = [1, 2, 3, 4, 5];
   print('$first $second $rest');
 }
+
+String describe(Object? o) => switch (o) {
+  int n when n < 0 => 'negative int',
+  int n => 'int $n',
+  String s when s.isEmpty => 'empty string',
+  String s => 'string of ${s.length}',
+  (int a, int b) => 'pair summing ${a + b}',
+  [var x, ...] => 'list starting with $x',
+  null => 'null',
+  _ => 'something else',
+};
