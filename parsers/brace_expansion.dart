@@ -29,3 +29,9 @@ List<String> expand(String s) {
         ...expand(s.substring(0, open) + c).map((p) => p + rest),
   ];
 }
+
+void main() {
+  print(expand('file{1,2,3}.txt'));
+  print(expand('{a,b}{x,y}'));
+  print(expand('pre{A,B{1,2}}post'));
+}
