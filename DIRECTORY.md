@@ -329,10 +329,13 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [generics_bounded](language_features/generics_bounded.dart)
 - [immutability_and_const](language_features/immutability_and_const.dart)
 - [mixins_and_composition](language_features/mixins_and_composition.dart)
+- [null_safety_patterns](language_features/null_safety_patterns.dart)
+- [records_and_patterns](language_features/records_and_patterns.dart)
 - [sealed_classes_exhaustive](language_features/sealed_classes_exhaustive.dart)
 - [typedefs_and_function_types](language_features/typedefs_and_function_types.dart)
 
 ## linked_lists
+- [middle_of_linked_list](linked_lists/middle_of_linked_list.dart)
 - [palindrome_linked_list](linked_lists/palindrome_linked_list.dart)
 - [reverse_linked_list](linked_lists/reverse_linked_list.dart)
 
@@ -412,6 +415,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## parsers
 - [ini_parser](parsers/ini_parser.dart)
 - [json_parser](parsers/json_parser.dart)
+- [query_string_parser](parsers/query_string_parser.dart)
 - [recursive_descent_expr](parsers/recursive_descent_expr.dart)
 - [shunting_yard](parsers/shunting_yard.dart)
 - [tokenizer](parsers/tokenizer.dart)
