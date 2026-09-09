@@ -42,3 +42,10 @@ List<int> findAnagrams(String text, String pattern) {
   }
   return out;
 }
+
+void main() {
+  const words = ['eat', 'tea', 'tan', 'ate', 'nat', 'bat'];
+  print(groupAnagrams(words));
+  print(groupAnagramsByCount(words));
+  print(findAnagrams('cbaebabacd', 'abc'));
+}
