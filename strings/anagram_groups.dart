@@ -24,3 +24,21 @@ List<List<String>> groupAnagramsByCount(List<String> words) {
   }
   return groups.values.toList();
 }
+
+/// Start indices in [text] of every anagram of [pattern] (sliding window).
+List<int> findAnagrams(String text, String pattern) {
+  final out = <int>[];
+  if (pattern.length > text.length) return out;
+  final need = List.filled(26, 0), have = List.filled(26, 0);
+  for (final c in pattern.codeUnits) {
+    need[c - 97]++;
+  }
+  for (var i = 0; i < text.length; i++) {
+    have[text.codeUnitAt(i) - 97]++;
+    if (i >= pattern.length) have[text.codeUnitAt(i - pattern.length) - 97]--;
+    if (i >= pattern.length - 1 && need.join() == have.join()) {
+      out.add(i - pattern.length + 1);
+    }
+  }
+  return out;
+}
