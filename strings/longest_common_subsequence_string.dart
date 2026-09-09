@@ -46,3 +46,9 @@ String diffView(String a, String b) {
 
   return '${mark(a)}  |  ${mark(b)}';
 }
+
+void main() {
+  print(lcs('AGGTAB', 'GXTXAYB'));
+  print(lcs('abc', 'xyz').isEmpty);
+  print(diffView('kitten', 'sitting'));
+}
