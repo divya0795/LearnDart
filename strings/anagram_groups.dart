@@ -11,3 +11,16 @@ List<List<String>> groupAnagrams(List<String> words) {
   }
   return groups.values.toList();
 }
+
+/// Same grouping with a 26-slot letter count as the key: O(n * k).
+List<List<String>> groupAnagramsByCount(List<String> words) {
+  final groups = <String, List<String>>{};
+  for (final w in words) {
+    final counts = List.filled(26, 0);
+    for (final c in w.codeUnits) {
+      counts[c - 97]++;
+    }
+    groups.putIfAbsent(counts.join(','), () => []).add(w);
+  }
+  return groups.values.toList();
+}
