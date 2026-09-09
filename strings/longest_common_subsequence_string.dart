@@ -30,3 +30,19 @@ String lcs(String a, String b) {
   }
   return out.reversed.join();
 }
+
+String diffView(String a, String b) {
+  final common = lcs(a, b);
+  String mark(String s) {
+    var k = 0;
+    return s
+        .split('')
+        .map(
+          (c) =>
+              k < common.length && c == common[k] ? (k++ >= 0 ? c : c) : '[$c]',
+        )
+        .join();
+  }
+
+  return '${mark(a)}  |  ${mark(b)}';
+}
