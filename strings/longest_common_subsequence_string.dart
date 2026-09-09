@@ -12,3 +12,21 @@ List<List<int>> lcsTable(String a, String b) {
   }
   return dp;
 }
+
+String lcs(String a, String b) {
+  final dp = lcsTable(a, b);
+  final out = <String>[];
+  var i = a.length, j = b.length;
+  while (i > 0 && j > 0) {
+    if (a[i - 1] == b[j - 1]) {
+      out.add(a[i - 1]);
+      i--;
+      j--;
+    } else if (dp[i - 1][j] >= dp[i][j - 1]) {
+      i--;
+    } else {
+      j--;
+    }
+  }
+  return out.reversed.join();
+}
