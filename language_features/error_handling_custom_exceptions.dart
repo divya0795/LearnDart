@@ -35,3 +35,12 @@ void attempt(Account a, double amount) {
     print('-- transaction logged');
   }
 }
+
+void process(Account a) {
+  try {
+    a.withdraw(1000);
+  } on InsufficientFunds {
+    print('cleaning up before propagating');
+    rethrow;
+  }
+}
