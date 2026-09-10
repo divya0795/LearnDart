@@ -20,3 +20,25 @@ ListNode? addNumbers(ListNode? a, ListNode? b) {
   }
   return dummy.next;
 }
+
+ListNode? fromInt(String digits) {
+  ListNode? h;
+  for (final c in digits.split('')) {
+    h = ListNode(int.parse(c), h);
+  }
+  return h;
+}
+
+String toStr(ListNode? n) {
+  final d = <int>[];
+  for (var c = n; c != null; c = c.next) {
+    d.add(c.val);
+  }
+  return d.reversed.join();
+}
+
+void main() {
+  print(toStr(addNumbers(fromInt('342'), fromInt('465'))));
+  print(toStr(addNumbers(fromInt('999'), fromInt('1'))));
+  print(toStr(addNumbers(fromInt('99999999999999999999'), fromInt('1'))));
+}
