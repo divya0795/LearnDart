@@ -22,3 +22,16 @@ class Account {
 
   double get balance => _balance;
 }
+
+void attempt(Account a, double amount) {
+  try {
+    a.withdraw(amount);
+    print('withdrew $amount, balance ${a.balance}');
+  } on InsufficientFunds catch (e) {
+    print('declined: $e');
+  } on ArgumentError catch (e) {
+    print('bad request: ${e.message}');
+  } finally {
+    print('-- transaction logged');
+  }
+}
