@@ -131,6 +131,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [affine_cipher](ciphers/affine_cipher.dart)
 - [atbash_cipher](ciphers/atbash_cipher.dart)
 - [caesar_cipher](ciphers/caesar_cipher.dart)
+- [columnar_transposition](ciphers/columnar_transposition.dart)
 - [rail_fence_cipher](ciphers/rail_fence_cipher.dart)
 - [rot13](ciphers/rot13.dart)
 - [vigenere_cipher](ciphers/vigenere_cipher.dart)
@@ -266,6 +267,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## game_theory
 - [alpha_beta_pruning](game_theory/alpha_beta_pruning.dart)
+- [elo_rating](game_theory/elo_rating.dart)
 - [mcts](game_theory/mcts.dart)
 - [minimax](game_theory/minimax.dart)
 - [nim_sprague_grundy](game_theory/nim_sprague_grundy.dart)
@@ -341,6 +343,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## machine_learning
 - [decision_tree](machine_learning/decision_tree.dart)
+- [gradient_descent_1d](machine_learning/gradient_descent_1d.dart)
 - [k_means](machine_learning/k_means.dart)
 - [knn_classifier](machine_learning/knn_classifier.dart)
 - [linear_regression](machine_learning/linear_regression.dart)
@@ -413,6 +416,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [simpson_integration](numeric/simpson_integration.dart)
 
 ## parsers
+- [brace_expansion](parsers/brace_expansion.dart)
 - [ini_parser](parsers/ini_parser.dart)
 - [json_parser](parsers/json_parser.dart)
 - [query_string_parser](parsers/query_string_parser.dart)
@@ -472,6 +476,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [permutations](recursion/permutations.dart)
 - [reverse_string_recursive](recursion/reverse_string_recursive.dart)
 - [subset_generation](recursion/subset_generation.dart)
+- [sum_of_digits](recursion/sum_of_digits.dart)
 - [tower_of_hanoi](recursion/tower_of_hanoi.dart)
 
 ## searches
