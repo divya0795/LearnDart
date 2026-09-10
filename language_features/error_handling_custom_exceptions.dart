@@ -44,3 +44,15 @@ void process(Account a) {
     rethrow;
   }
 }
+
+void main() {
+  final a = Account(100);
+  attempt(a, 30);
+  attempt(a, 500);
+  attempt(a, -5);
+  try {
+    process(a);
+  } catch (e) {
+    print('caught outside: $e');
+  }
+}
