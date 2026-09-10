@@ -16,3 +16,9 @@ int candy(List<int> ratings) {
   }
   return c.fold(0, (a, b) => a + b);
 }
+
+void main() {
+  print(candy([1, 0, 2]));
+  print(candy([1, 2, 2]));
+  print(candy([1, 3, 4, 5, 2]));
+}
