@@ -23,3 +23,12 @@ List<int> hmac(Hash h, List<int> key, List<int> msg, {int block = 64}) {
     ...h([...ipad, ...msg]),
   ]);
 }
+
+bool constantTimeEquals(List<int> a, List<int> b) {
+  if (a.length != b.length) return false;
+  var diff = 0;
+  for (var i = 0; i < a.length; i++) {
+    diff |= a[i] ^ b[i];
+  }
+  return diff == 0;
+}
