@@ -52,3 +52,23 @@ class Parser {
     return lhs;
   }
 }
+
+double eval(Expr e) => switch (e) {
+  Num(:final v) => v,
+  Neg(:final e) => -eval(e),
+  Bin(:final op, :final l, :final r) => switch (op) {
+    '+' => eval(l) + eval(r),
+    '-' => eval(l) - eval(r),
+    '*' => eval(l) * eval(r),
+    '/' => eval(l) / eval(r),
+    _ => _pow(eval(l), eval(r)),
+  },
+};
+
+double _pow(double b, double e) {
+  var r = 1.0;
+  for (var k = 0; k < e; k++) {
+    r *= b;
+  }
+  return r;
+}
