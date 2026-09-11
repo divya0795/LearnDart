@@ -314,6 +314,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## greedy
 - [activity_selection](greedy/activity_selection.dart)
+- [candy_distribution](greedy/candy_distribution.dart)
 - [coin_change_greedy](greedy/coin_change_greedy.dart)
 - [fractional_knapsack](greedy/fractional_knapsack.dart)
 - [gas_station](greedy/gas_station.dart)
@@ -337,6 +338,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [typedefs_and_function_types](language_features/typedefs_and_function_types.dart)
 
 ## linked_lists
+- [add_two_numbers_lists](linked_lists/add_two_numbers_lists.dart)
 - [middle_of_linked_list](linked_lists/middle_of_linked_list.dart)
 - [palindrome_linked_list](linked_lists/palindrome_linked_list.dart)
 - [reverse_linked_list](linked_lists/reverse_linked_list.dart)
@@ -517,6 +519,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## strings
 - [aho_corasick](strings/aho_corasick.dart)
+- [anagram_groups](strings/anagram_groups.dart)
 - [anagram_palindrome_permutation](strings/anagram_palindrome_permutation.dart)
 - [boyer_moore_search](strings/boyer_moore_search.dart)
 - [character_frequency](strings/character_frequency.dart)
@@ -525,6 +528,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [isomorphic_strings](strings/isomorphic_strings.dart)
 - [kmp_search](strings/kmp_search.dart)
 - [longest_common_prefix](strings/longest_common_prefix.dart)
+- [longest_common_subsequence_string](strings/longest_common_subsequence_string.dart)
 - [longest_substring_without_repeat](strings/longest_substring_without_repeat.dart)
 - [manacher](strings/manacher.dart)
 - [rabin_karp](strings/rabin_karp.dart)
