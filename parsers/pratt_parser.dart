@@ -72,3 +72,15 @@ double _pow(double b, double e) {
   }
   return r;
 }
+
+void main() {
+  for (final s in [
+    '1 + 2 * 3',
+    '2 ^ 3 ^ 2',
+    '-(1 + 2) * 4',
+    '10 - 4 - 3',
+    '8 / 4 / 2',
+  ]) {
+    print('$s = ${eval(Parser(s).parse())}');
+  }
+}
