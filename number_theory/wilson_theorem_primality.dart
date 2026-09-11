@@ -17,3 +17,16 @@ bool isPrimeTrial(int n) {
   }
   return true;
 }
+
+void main() {
+  final a = [
+    for (var n = 0; n < 60; n++)
+      if (isPrimeWilson(n)) n,
+  ];
+  final b = [
+    for (var n = 0; n < 60; n++)
+      if (isPrimeTrial(n)) n,
+  ];
+  print(a);
+  print('agree: ${a.toString() == b.toString()}');
+}
