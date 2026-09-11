@@ -12,3 +12,14 @@ List<int> toyHash(List<int> data) {
   }
   return [h >> 24, (h >> 16) & 255, (h >> 8) & 255, h & 255];
 }
+
+List<int> hmac(Hash h, List<int> key, List<int> msg, {int block = 64}) {
+  var k = key.length > block ? h(key) : key;
+  k = [...k, ...List.filled(block - k.length, 0)];
+  final ipad = [for (final b in k) b ^ 0x36];
+  final opad = [for (final b in k) b ^ 0x5c];
+  return h([
+    ...opad,
+    ...h([...ipad, ...msg]),
+  ]);
+}
