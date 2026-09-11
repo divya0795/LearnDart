@@ -32,3 +32,13 @@ bool constantTimeEquals(List<int> a, List<int> b) {
   }
   return diff == 0;
 }
+
+void main() {
+  final key = 'secret'.codeUnits, msg = 'amount=100'.codeUnits;
+  final tag = hmac(toyHash, key, msg);
+  print('tag: $tag');
+  print('verify ok: ${constantTimeEquals(tag, hmac(toyHash, key, msg))}');
+  print(
+    'tampered: ${constantTimeEquals(tag, hmac(toyHash, key, 'amount=900'.codeUnits))}',
+  );
+}
