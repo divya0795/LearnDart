@@ -28,3 +28,14 @@ String render(String template, Map<String, Object?> ctx) => template
       RegExp(r'\{\{(.+?)\}\}'),
       (m) => _escape('${_lookup(ctx, m[1]!) ?? ''}'),
     );
+
+void main() {
+  const t =
+      'Hello {{user.name}}! Bio: {{bio}} | raw: {{{bio}}} | missing: [{{nope}}]';
+  print(
+    render(t, {
+      'user': {'name': 'Ada'},
+      'bio': '<b>pioneer</b>',
+    }),
+  );
+}
