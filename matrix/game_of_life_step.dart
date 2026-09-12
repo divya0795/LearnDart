@@ -23,3 +23,21 @@ List<List<int>> step(List<List<int>> g) => [
         },
     ],
 ];
+
+void show(List<List<int>> g) =>
+    print(g.map((r) => r.map((v) => v == 1 ? '#' : '.').join()).join('\n'));
+
+void main() {
+  var g = [
+    [0, 0, 0, 0, 0],
+    [0, 0, 1, 0, 0],
+    [0, 0, 1, 0, 0],
+    [0, 0, 1, 0, 0],
+    [0, 0, 0, 0, 0],
+  ];
+  for (var i = 0; i < 3; i++) {
+    print('gen $i');
+    show(g);
+    g = step(g);
+  }
+}
