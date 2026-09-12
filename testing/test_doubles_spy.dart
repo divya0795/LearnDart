@@ -12,3 +12,12 @@ class Spy<A, R> {
 
   int get callCount => calls.length;
 }
+
+int sumWithLogging(List<int> xs, void Function(int) log) {
+  var total = 0;
+  for (final x in xs) {
+    total += x;
+    log(total);
+  }
+  return total;
+}
