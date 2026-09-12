@@ -329,6 +329,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [valid_sudoku_and_anagram_checks](interview_classics/valid_sudoku_and_anagram_checks.dart)
 
 ## language_features
+- [error_handling_custom_exceptions](language_features/error_handling_custom_exceptions.dart)
 - [generics_bounded](language_features/generics_bounded.dart)
 - [immutability_and_const](language_features/immutability_and_const.dart)
 - [mixins_and_composition](language_features/mixins_and_composition.dart)
@@ -407,6 +408,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [modular_inverse](number_theory/modular_inverse.dart)
 - [pollard_rho](number_theory/pollard_rho.dart)
 - [sieve_of_atkin](number_theory/sieve_of_atkin.dart)
+- [wilson_theorem_primality](number_theory/wilson_theorem_primality.dart)
 
 ## numeric
 - [bisection_root_finding](numeric/bisection_root_finding.dart)
@@ -421,6 +423,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [brace_expansion](parsers/brace_expansion.dart)
 - [ini_parser](parsers/ini_parser.dart)
 - [json_parser](parsers/json_parser.dart)
+- [pratt_parser](parsers/pratt_parser.dart)
 - [query_string_parser](parsers/query_string_parser.dart)
 - [recursive_descent_expr](parsers/recursive_descent_expr.dart)
 - [shunting_yard](parsers/shunting_yard.dart)
