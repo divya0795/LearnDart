@@ -21,3 +21,9 @@ int sumWithLogging(List<int> xs, void Function(int) log) {
   }
   return total;
 }
+
+void main() {
+  final spy = Spy<int, void>((_) {});
+  final t = sumWithLogging([1, 2, 3, 4], spy.call);
+  print('total $t, logged ${spy.callCount} times: ${spy.calls}');
+}
