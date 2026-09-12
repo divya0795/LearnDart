@@ -11,3 +11,15 @@ int neighbours(List<List<int>> g, int r, int c) {
   }
   return n;
 }
+
+List<List<int>> step(List<List<int>> g) => [
+  for (var r = 0; r < g.length; r++)
+    [
+      for (var c = 0; c < g[0].length; c++)
+        switch ((g[r][c], neighbours(g, r, c))) {
+          (1, 2) || (1, 3) => 1,
+          (0, 3) => 1,
+          _ => 0,
+        },
+    ],
+];
