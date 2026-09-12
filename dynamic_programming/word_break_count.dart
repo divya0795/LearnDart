@@ -28,3 +28,10 @@ List<String> allSegmentations(String s, Set<String> dict) {
 
   return go(0);
 }
+
+void main() {
+  final dict = {'cat', 'cats', 'and', 'sand', 'dog'};
+  print(countSegmentations('catsanddog', dict));
+  print(allSegmentations('catsanddog', dict));
+  print(countSegmentations('catsandog', dict));
+}
