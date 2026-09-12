@@ -11,3 +11,20 @@ int countSegmentations(String s, Set<String> dict) {
   }
   return ways[s.length];
 }
+
+List<String> allSegmentations(String s, Set<String> dict) {
+  final memo = <int, List<String>>{};
+  List<String> go(int start) {
+    if (start == s.length) return [''];
+    return memo[start] ??= [
+      for (var end = start + 1; end <= s.length; end++)
+        if (dict.contains(s.substring(start, end)))
+          for (final rest in go(end))
+            rest.isEmpty
+                ? s.substring(start, end)
+                : '${s.substring(start, end)} $rest',
+    ];
+  }
+
+  return go(0);
+}
