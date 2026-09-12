@@ -20,3 +20,20 @@ void floodFill(List<List<int>> img, int r, int c, int newColor) {
 
   go(r, c);
 }
+
+void floodFillIterative(List<List<int>> img, int r, int c, int newColor) {
+  final old = img[r][c];
+  if (old == newColor) return;
+  final st = [(r, c)];
+  while (st.isNotEmpty) {
+    final (y, x) = st.removeLast();
+    if (y < 0 ||
+        x < 0 ||
+        y >= img.length ||
+        x >= img[0].length ||
+        img[y][x] != old)
+      continue;
+    img[y][x] = newColor;
+    st.addAll([(y + 1, x), (y - 1, x), (y, x + 1), (y, x - 1)]);
+  }
+}
