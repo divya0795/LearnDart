@@ -183,6 +183,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## crypto
 - [aes_sbox](crypto/aes_sbox.dart)
 - [diffie_hellman](crypto/diffie_hellman.dart)
+- [hmac_construction](crypto/hmac_construction.dart)
 - [merkle_tree](crypto/merkle_tree.dart)
 - [rsa](crypto/rsa.dart)
 - [sha256](crypto/sha256.dart)
@@ -391,6 +392,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [ugly_number](maths/ugly_number.dart)
 
 ## matrix
+- [game_of_life_step](matrix/game_of_life_step.dart)
 - [set_matrix_zeroes](matrix/set_matrix_zeroes.dart)
 
 ## number_theory
@@ -546,9 +548,13 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [word_count](strings/word_count.dart)
 - [z_algorithm](strings/z_algorithm.dart)
 
+## testing
+- [test_doubles_spy](testing/test_doubles_spy.dart)
+
 ## text_processing
 - [myers_diff](text_processing/myers_diff.dart)
 - [ngrams](text_processing/ngrams.dart)
+- [template_renderer](text_processing/template_renderer.dart)
 - [word_wrap_and_justify](text_processing/word_wrap_and_justify.dart)
 
 ## trees
