@@ -13,3 +13,11 @@ void _reverse(List<int> a, int i, int j) {
     a[j--] = t;
   }
 }
+
+void rotateRight(List<int> a, int k) {
+  if (a.isEmpty) return;
+  k %= a.length;
+  _reverse(a, 0, a.length - 1);
+  _reverse(a, 0, k - 1);
+  _reverse(a, k, a.length - 1);
+}
