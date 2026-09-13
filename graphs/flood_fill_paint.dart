@@ -37,3 +37,16 @@ void floodFillIterative(List<List<int>> img, int r, int c, int newColor) {
     st.addAll([(y + 1, x), (y - 1, x), (y, x + 1), (y, x - 1)]);
   }
 }
+
+void main() {
+  List<List<int>> make() => [
+    [1, 1, 1, 2],
+    [1, 1, 0, 2],
+    [1, 0, 1, 1],
+  ];
+  final a = make(), b = make();
+  floodFill(a, 1, 1, 9);
+  floodFillIterative(b, 1, 1, 9);
+  a.forEach(print);
+  print('same result: ${a.toString() == b.toString()}');
+}
