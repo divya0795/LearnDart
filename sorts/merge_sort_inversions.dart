@@ -41,3 +41,10 @@ int countInversionsBrute(List<int> a) {
   }
   return n;
 }
+
+void main() {
+  final a = [8, 4, 2, 1];
+  print('brute: ${countInversionsBrute(a)}');
+  print('merge: ${countInversions([...a])}');
+  print('sorted input: ${countInversions([1, 2, 3, 4])}');
+}
