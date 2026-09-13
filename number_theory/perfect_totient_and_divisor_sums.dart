@@ -9,3 +9,9 @@ List<int> sigmaSieve(int limit) {
   }
   return s;
 }
+
+String classify(int n, List<int> sigma) {
+  final aliquot = sigma[n] - n;
+  if (aliquot == n) return 'perfect';
+  return aliquot > n ? 'abundant' : 'deficient';
+}
