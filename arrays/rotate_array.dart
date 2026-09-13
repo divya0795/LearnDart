@@ -21,3 +21,8 @@ void rotateRight(List<int> a, int k) {
   _reverse(a, 0, k - 1);
   _reverse(a, k, a.length - 1);
 }
+
+void rotateLeft(List<int> a, int k) {
+  if (a.isEmpty) return;
+  rotateRight(a, a.length - k % a.length);
+}
