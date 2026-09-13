@@ -31,3 +31,13 @@ int countInversions(List<int> a) {
 
   return sort(0, a.length);
 }
+
+int countInversionsBrute(List<int> a) {
+  var n = 0;
+  for (var i = 0; i < a.length; i++) {
+    for (var j = i + 1; j < a.length; j++) {
+      if (a[i] > a[j]) n++;
+    }
+  }
+  return n;
+}
