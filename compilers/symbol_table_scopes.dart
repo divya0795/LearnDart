@@ -24,3 +24,14 @@ class SymbolTable {
 
   int get depth => _scopes.length;
 }
+
+void main() {
+  final t = SymbolTable();
+  t.declare('x', 'int');
+  t.enter();
+  t.declare('x', 'String');
+  print('inner x: ${t.lookup('x')}');
+  print('redeclare in same scope: ${t.declare('x', 'bool')}');
+  t.leave();
+  print('outer x: ${t.lookup('x')}, y: ${t.lookup('y')}');
+}
