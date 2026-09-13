@@ -26,3 +26,13 @@ void rotateLeft(List<int> a, int k) {
   if (a.isEmpty) return;
   rotateRight(a, a.length - k % a.length);
 }
+
+void main() {
+  final a = [1, 2, 3, 4, 5, 6, 7];
+  rotateRight(a, 3);
+  print('right 3: $a');
+  rotateLeft(a, 3);
+  print('left 3 (back): $a');
+  rotateRight(a, 10);
+  print('right 10 == right 3: $a');
+}
