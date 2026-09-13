@@ -15,3 +15,14 @@ String classify(int n, List<int> sigma) {
   if (aliquot == n) return 'perfect';
   return aliquot > n ? 'abundant' : 'deficient';
 }
+
+void main() {
+  final s = sigmaSieve(30);
+  for (final n in [6, 12, 15, 28]) {
+    print('$n is ${classify(n, s)} (sigma=${s[n]})');
+  }
+  print(
+    'perfect numbers <= 500: ${[for (var n = 2; n <= 500; n++)
+      if (classify(n, sigmaSieve(500)) == 'perfect') n]}',
+  );
+}
