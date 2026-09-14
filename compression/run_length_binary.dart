@@ -24,3 +24,10 @@ String rleDecode(String first, List<int> runs) {
   }
   return b.toString();
 }
+
+void main() {
+  const s = '000000111100000000011';
+  final e = rleEncode(s);
+  print('${e.first} ${e.runs}');
+  print('round trip: ${rleDecode(e.first, e.runs) == s}');
+}
