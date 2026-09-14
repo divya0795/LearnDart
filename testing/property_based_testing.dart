@@ -26,3 +26,25 @@ bool isSorted(List<int> a) {
   }
   return true;
 }
+
+List<int> goodSort(List<int> a) => [...a]..sort();
+List<int> buggySort(List<int> a) =>
+    ([...a]..sort()).toSet().toList(); // drops duplicates
+
+void main() {
+  print(
+    checkProperty('sorted output', (a) => isSorted(goodSort(a))) ??
+        'sorted output ok',
+  );
+  print(
+    checkProperty('same length', (a) => goodSort(a).length == a.length) ??
+        'same length ok',
+  );
+  print(
+    checkProperty(
+          'buggy keeps length',
+          (a) => buggySort(a).length == a.length,
+        ) ??
+        'ok',
+  );
+}
