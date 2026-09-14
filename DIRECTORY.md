@@ -265,6 +265,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [regex_matching_dp](dynamic_programming/regex_matching_dp.dart)
 - [rod_cutting](dynamic_programming/rod_cutting.dart)
 - [unique_paths](dynamic_programming/unique_paths.dart)
+- [word_break_count](dynamic_programming/word_break_count.dart)
 
 ## game_theory
 - [alpha_beta_pruning](game_theory/alpha_beta_pruning.dart)
@@ -299,6 +300,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [dijkstra](graphs/dijkstra.dart)
 - [edmonds_karp_max_flow](graphs/edmonds_karp_max_flow.dart)
 - [eulerian_circuit](graphs/eulerian_circuit.dart)
+- [flood_fill_paint](graphs/flood_fill_paint.dart)
 - [floyd_warshall](graphs/floyd_warshall.dart)
 - [graph_coloring](graphs/graph_coloring.dart)
 - [graph_degree_and_representations](graphs/graph_degree_and_representations.dart)
@@ -408,6 +410,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [miller_rabin](number_theory/miller_rabin.dart)
 - [modular_exponentiation](number_theory/modular_exponentiation.dart)
 - [modular_inverse](number_theory/modular_inverse.dart)
+- [perfect_totient_and_divisor_sums](number_theory/perfect_totient_and_divisor_sums.dart)
 - [pollard_rho](number_theory/pollard_rho.dart)
 - [sieve_of_atkin](number_theory/sieve_of_atkin.dart)
 - [wilson_theorem_primality](number_theory/wilson_theorem_primality.dart)
