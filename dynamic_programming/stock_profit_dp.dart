@@ -28,3 +28,10 @@ int maxProfitK(int k, List<int> prices) {
   }
   return sell[k];
 }
+
+void main() {
+  const p = [7, 1, 5, 3, 6, 4];
+  print('once: ${maxProfitOnce(p)}');
+  print('unlimited: ${maxProfitUnlimited(p)}');
+  print('k=2: ${maxProfitK(2, [3, 3, 5, 0, 0, 3, 1, 4])}');
+}
