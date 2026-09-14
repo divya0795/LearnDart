@@ -14,3 +14,13 @@
   }
   return (first: bits.isEmpty ? '' : bits[0], runs: runs);
 }
+
+String rleDecode(String first, List<int> runs) {
+  final b = StringBuffer();
+  var bit = first;
+  for (final r in runs) {
+    b.write(bit * r);
+    bit = bit == '0' ? '1' : '0';
+  }
+  return b.toString();
+}
