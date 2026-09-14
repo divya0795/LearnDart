@@ -24,3 +24,31 @@ class MinMaxScaler {
       ],
   ];
 }
+
+class StandardScaler {
+  late List<double> _mean, _std;
+
+  void fit(List<List<double>> rows) {
+    final d = rows.first.length, n = rows.length;
+    _mean = List.generate(d, (j) => rows.fold(0.0, (s, r) => s + r[j]) / n);
+    _std = List.generate(d, (j) {
+      final v =
+          rows.fold(0.0, (s, r) => s + (r[j] - _mean[j]) * (r[j] - _mean[j])) /
+          n;
+      return v == 0 ? 1.0 : _sqrt(v);
+    });
+  }
+
+  List<List<double>> transform(List<List<double>> rows) => [
+    for (final r in rows)
+      [for (var j = 0; j < r.length; j++) (r[j] - _mean[j]) / _std[j]],
+  ];
+}
+
+double _sqrt(double v) {
+  var x = v;
+  for (var i = 0; i < 40; i++) {
+    x = (x + v / x) / 2;
+  }
+  return x;
+}
