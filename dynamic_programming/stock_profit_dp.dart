@@ -16,3 +16,15 @@ int maxProfitUnlimited(List<int> prices) {
   }
   return profit;
 }
+
+int maxProfitK(int k, List<int> prices) {
+  if (prices.isEmpty) return 0;
+  final buy = List.filled(k + 1, -(1 << 30)), sell = List.filled(k + 1, 0);
+  for (final p in prices) {
+    for (var t = 1; t <= k; t++) {
+      if (sell[t - 1] - p > buy[t]) buy[t] = sell[t - 1] - p;
+      if (buy[t] + p > sell[t]) sell[t] = buy[t] + p;
+    }
+  }
+  return sell[k];
+}
