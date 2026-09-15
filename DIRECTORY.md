@@ -12,6 +12,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [next_permutation](arrays/next_permutation.dart)
 - [pivot_index](arrays/pivot_index.dart)
 - [prefix_sum_range_queries](arrays/prefix_sum_range_queries.dart)
+- [rotate_array](arrays/rotate_array.dart)
 - [sliding_window_fixed](arrays/sliding_window_fixed.dart)
 - [sorted_squared_array](arrays/sorted_squared_array.dart)
 - [trapping_rain_water](arrays/trapping_rain_water.dart)
@@ -142,6 +143,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [compiler](compilers/compiler.dart)
 - [infix_to_three_address_code](compilers/infix_to_three_address_code.dart)
 - [interpreter](compilers/interpreter.dart)
+- [symbol_table_scopes](compilers/symbol_table_scopes.dart)
 - [vm](compilers/vm.dart)
 
 ## compression
@@ -149,6 +151,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [burrows_wheeler](compression/burrows_wheeler.dart)
 - [huffman_codec](compression/huffman_codec.dart)
 - [lz77](compression/lz77.dart)
+- [run_length_binary](compression/run_length_binary.dart)
 
 ## concurrency
 - [async_lock_keyed](concurrency/async_lock_keyed.dart)
@@ -515,6 +518,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [insertion_sort](sorts/insertion_sort.dart)
 - [is_sorted_and_checks](sorts/is_sorted_and_checks.dart)
 - [merge_sort](sorts/merge_sort.dart)
+- [merge_sort_inversions](sorts/merge_sort_inversions.dart)
 - [odd_even_sort](sorts/odd_even_sort.dart)
 - [pancake_sort](sorts/pancake_sort.dart)
 - [quick_sort](sorts/quick_sort.dart)
