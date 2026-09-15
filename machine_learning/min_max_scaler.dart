@@ -52,3 +52,15 @@ double _sqrt(double v) {
   }
   return x;
 }
+
+void main() {
+  final data = [
+    [1.0, 200.0],
+    [2.0, 400.0],
+    [3.0, 800.0],
+  ];
+  final mm = MinMaxScaler()..fit(data);
+  print(mm.transform(data));
+  final ss = StandardScaler()..fit(data);
+  print(ss.transform(data));
+}
