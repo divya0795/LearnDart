@@ -29,3 +29,20 @@ class Ring {
     return _points[k]!;
   }
 }
+
+void main() {
+  final ring = Ring(100)
+    ..add('A')
+    ..add('B')
+    ..add('C');
+  final keys = [for (var i = 0; i < 3000; i++) 'key$i'];
+  final counts = <String, int>{};
+  final before = {for (final k in keys) k: ring.lookup(k)};
+  for (final n in before.values) {
+    counts[n] = (counts[n] ?? 0) + 1;
+  }
+  print('load: $counts');
+  ring.remove('C');
+  final moved = keys.where((k) => before[k] != ring.lookup(k)).length;
+  print('moved after removing C: $moved (C owned ${counts['C']})');
+}
