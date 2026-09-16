@@ -25,3 +25,10 @@ List<int> shrink(List<int> failing, bool Function(List<int>) holds) {
   }
   return cur;
 }
+
+void main() {
+  bool holds(List<int> a) => a.fold(0, (x, y) => x + y) <= 100;
+  final big = [3, 80, 12, 7, 55, 9, 30];
+  print('fails: ${!holds(big)}');
+  print('shrunk to: ${shrink(big, holds)}');
+}
