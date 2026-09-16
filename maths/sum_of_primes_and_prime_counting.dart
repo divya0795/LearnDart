@@ -18,3 +18,25 @@ List<int> primeCounts(int n) {
   var c = 0;
   return [for (var i = 0; i <= n; i++) c += s[i] ? 1 : 0];
 }
+
+void main() {
+  final pi = primeCounts(100000);
+  for (final n in [10, 100, 1000, 10000, 100000]) {
+    final est = n / (n == 1 ? 1 : _ln(n));
+    print('pi($n) = ${pi[n]}  (n/ln n ~ ${est.round()})');
+  }
+}
+
+double _ln(int n) {
+  var x = n.toDouble(), r = 0.0;
+  while (x > 2) {
+    x /= 2.718281828459045;
+    r += 1;
+  }
+  var y = (x - 1) / (x + 1), term = y, sum = 0.0;
+  for (var k = 1; k < 40; k += 2) {
+    sum += term / k;
+    term *= y * y;
+  }
+  return r + 2 * sum;
+}
