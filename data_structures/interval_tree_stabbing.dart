@@ -31,3 +31,15 @@ class IntervalIndex {
     ];
   }
 }
+
+void main() {
+  final idx = IntervalIndex(const [
+    Interval(1, 5),
+    Interval(3, 9),
+    Interval(8, 12),
+    Interval(15, 20),
+  ]);
+  for (final x in [4, 8, 13, 17]) {
+    print('$x in ${idx.stab(x)}');
+  }
+}
