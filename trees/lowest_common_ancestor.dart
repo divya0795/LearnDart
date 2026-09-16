@@ -19,3 +19,10 @@ Node? lcaBst(Node? root, int a, int b) {
   }
   return null;
 }
+
+Node? lca(Node? root, int a, int b) {
+  if (root == null || root.val == a || root.val == b) return root;
+  final l = lca(root.left, a, b), r = lca(root.right, a, b);
+  if (l != null && r != null) return root;
+  return l ?? r;
+}
