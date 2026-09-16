@@ -12,3 +12,9 @@ List<bool> sieve(int n) {
   }
   return p;
 }
+
+List<int> primeCounts(int n) {
+  final s = sieve(n);
+  var c = 0;
+  return [for (var i = 0; i <= n; i++) c += s[i] ? 1 : 0];
+}
