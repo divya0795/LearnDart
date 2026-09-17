@@ -25,3 +25,13 @@ class Process {
     return clock;
   }
 }
+
+void main() {
+  final a = Process('A'), b = Process('B'), c = Process('C');
+  a.local('start');
+  final m1 = a.send('m1');
+  b.local('work');
+  b.receive(m1, 'm1');
+  final m2 = b.send('m2');
+  c.receive(m2, 'm2');
+}
