@@ -26,3 +26,14 @@ Node? lca(Node? root, int a, int b) {
   if (l != null && r != null) return root;
   return l ?? r;
 }
+
+void main() {
+  final t = Node(
+    6,
+    Node(2, Node(0), Node(4, Node(3), Node(5))),
+    Node(8, Node(7), Node(9)),
+  );
+  print('bst lca(2,8) = ${lcaBst(t, 2, 8)!.val}');
+  print('bst lca(3,5) = ${lcaBst(t, 3, 5)!.val}');
+  print('tree lca(0,5) = ${lca(t, 0, 5)!.val}');
+}
