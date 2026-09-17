@@ -267,6 +267,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [perfect_squares_min](dynamic_programming/perfect_squares_min.dart)
 - [regex_matching_dp](dynamic_programming/regex_matching_dp.dart)
 - [rod_cutting](dynamic_programming/rod_cutting.dart)
+- [stock_profit_dp](dynamic_programming/stock_profit_dp.dart)
 - [unique_paths](dynamic_programming/unique_paths.dart)
 - [word_break_count](dynamic_programming/word_break_count.dart)
 
@@ -357,6 +358,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [knn_classifier](machine_learning/knn_classifier.dart)
 - [linear_regression](machine_learning/linear_regression.dart)
 - [logistic_regression](machine_learning/logistic_regression.dart)
+- [min_max_scaler](machine_learning/min_max_scaler.dart)
 - [naive_bayes](machine_learning/naive_bayes.dart)
 - [neural_network](machine_learning/neural_network.dart)
 - [perceptron](machine_learning/perceptron.dart)
@@ -556,6 +558,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [z_algorithm](strings/z_algorithm.dart)
 
 ## testing
+- [property_based_testing](testing/property_based_testing.dart)
 - [test_doubles_spy](testing/test_doubles_spy.dart)
 
 ## text_processing
