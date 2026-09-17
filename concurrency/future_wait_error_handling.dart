@@ -27,3 +27,8 @@ Future<void> demoPartialFailure() async {
   ]);
   print(results);
 }
+
+Future<void> main() async {
+  await demoAllSucceed();
+  await demoPartialFailure();
+}
