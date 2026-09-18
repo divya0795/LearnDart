@@ -207,6 +207,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [fenwick_tree](data_structures/fenwick_tree.dart)
 - [graph_adjacency_list](data_structures/graph_adjacency_list.dart)
 - [hash_table](data_structures/hash_table.dart)
+- [interval_tree_stabbing](data_structures/interval_tree_stabbing.dart)
 - [kd_tree](data_structures/kd_tree.dart)
 - [linked_list](data_structures/linked_list.dart)
 - [linked_list_cycle_detection](data_structures/linked_list_cycle_detection.dart)
@@ -233,6 +234,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## distributed
 - [consistent_hashing](distributed/consistent_hashing.dart)
 - [crdt](distributed/crdt.dart)
+- [hash_ring_virtual_nodes](distributed/hash_ring_virtual_nodes.dart)
 - [heartbeat_failure_detector](distributed/heartbeat_failure_detector.dart)
 - [raft](distributed/raft.dart)
 - [vector_clock](distributed/vector_clock.dart)
@@ -395,6 +397,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [quadratic_formula](maths/quadratic_formula.dart)
 - [sieve_of_eratosthenes](maths/sieve_of_eratosthenes.dart)
 - [simpson_rule](maths/simpson_rule.dart)
+- [sum_of_primes_and_prime_counting](maths/sum_of_primes_and_prime_counting.dart)
 - [symmetric_derivative](maths/symmetric_derivative.dart)
 - [ugly_number](maths/ugly_number.dart)
 
@@ -559,6 +562,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## testing
 - [property_based_testing](testing/property_based_testing.dart)
+- [shrinking_counterexamples](testing/shrinking_counterexamples.dart)
 - [test_doubles_spy](testing/test_doubles_spy.dart)
 
 ## text_processing
@@ -569,4 +573,5 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## trees
 - [binary_tree_traversals](trees/binary_tree_traversals.dart)
+- [lowest_common_ancestor](trees/lowest_common_ancestor.dart)
 - [tree_height_and_balance](trees/tree_height_and_balance.dart)
