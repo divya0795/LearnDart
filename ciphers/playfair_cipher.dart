@@ -15,3 +15,23 @@ List<String> buildSquare(String key) {
   }
   return seen.toList();
 }
+
+List<String> _pairs(String text) {
+  final t = text
+      .toLowerCase()
+      .replaceAll('j', 'i')
+      .replaceAll(RegExp('[^a-z]'), '');
+  final out = <String>[];
+  for (var i = 0; i < t.length;) {
+    final a = t[i];
+    final b = i + 1 < t.length ? t[i + 1] : 'x';
+    if (a == b) {
+      out.add('${a}x');
+      i++;
+    } else {
+      out.add('$a$b');
+      i += 2;
+    }
+  }
+  return out;
+}
