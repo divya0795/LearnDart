@@ -19,3 +19,18 @@ List<num> mode(List<num> xs) {
       if (e.value == top) e.key,
   ]..sort();
 }
+
+double variance(List<num> xs, {bool sample = false}) {
+  final m = mean(xs);
+  final ss = xs.fold<double>(0, (a, b) => a + (b - m) * (b - m));
+  return ss / (xs.length - (sample ? 1 : 0));
+}
+
+double stdDev(List<num> xs, {bool sample = false}) {
+  final v = variance(xs, sample: sample);
+  var x = v == 0 ? 0.0 : v;
+  for (var i = 0; i < 50 && x > 0; i++) {
+    x = (x + v / x) / 2;
+  }
+  return x;
+}
