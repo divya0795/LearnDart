@@ -34,3 +34,10 @@ double stdDev(List<num> xs, {bool sample = false}) {
   }
   return x;
 }
+
+void main() {
+  final d = [2, 4, 4, 4, 5, 5, 7, 9];
+  print('mean ${mean(d)} median ${median(d)} mode ${mode(d)}');
+  print('population variance ${variance(d)} std ${stdDev(d)}');
+  print('sample std ${stdDev(d, sample: true).toStringAsFixed(4)}');
+}
