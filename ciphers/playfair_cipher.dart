@@ -35,3 +35,22 @@ List<String> _pairs(String text) {
   }
   return out;
 }
+
+String _shift(List<String> sq, String pair, int d) {
+  final i = sq.indexOf(pair[0]), j = sq.indexOf(pair[1]);
+  final r1 = i ~/ 5, c1 = i % 5, r2 = j ~/ 5, c2 = j % 5;
+  if (r1 == r2) return sq[r1 * 5 + (c1 + d) % 5] + sq[r2 * 5 + (c2 + d) % 5];
+  if (c1 == c2)
+    return sq[((r1 + d) % 5) * 5 + c1] + sq[((r2 + d) % 5) * 5 + c2];
+  return sq[r1 * 5 + c2] + sq[r2 * 5 + c1];
+}
+
+String encrypt(String text, String key) {
+  final sq = buildSquare(key);
+  return _pairs(text).map((p) => _shift(sq, p, 1)).join();
+}
+
+String decrypt(String cipher, String key) {
+  final sq = buildSquare(key);
+  return _pairs(cipher).map((p) => _shift(sq, p, 4)).join();
+}
