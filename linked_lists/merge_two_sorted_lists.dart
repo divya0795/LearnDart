@@ -22,3 +22,15 @@ ListNode? mergeTwo(ListNode? a, ListNode? b) {
   tail.next = a ?? b;
   return dummy.next;
 }
+
+ListNode? sortList(ListNode? head) {
+  if (head == null || head.next == null) return head;
+  var slow = head, fast = head.next;
+  while (fast != null && fast.next != null) {
+    slow = slow.next!;
+    fast = fast.next!.next;
+  }
+  final second = slow.next;
+  slow.next = null;
+  return mergeTwo(sortList(head), sortList(second));
+}
