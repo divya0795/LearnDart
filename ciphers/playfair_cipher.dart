@@ -54,3 +54,9 @@ String decrypt(String cipher, String key) {
   final sq = buildSquare(key);
   return _pairs(cipher).map((p) => _shift(sq, p, 4)).join();
 }
+
+void main() {
+  final c = encrypt('hide the gold', 'playfair');
+  print(c);
+  print(decrypt(c, 'playfair'));
+}
