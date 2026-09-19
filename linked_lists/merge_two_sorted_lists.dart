@@ -34,3 +34,18 @@ ListNode? sortList(ListNode? head) {
   slow.next = null;
   return mergeTwo(sortList(head), sortList(second));
 }
+
+ListNode? build(List<int> xs) {
+  ListNode? h;
+  for (final x in xs.reversed) {
+    h = ListNode(x, h);
+  }
+  return h;
+}
+
+List<int> values(ListNode? n) => [for (var c = n; c != null; c = c.next) c.val];
+
+void main() {
+  print(values(mergeTwo(build([1, 3, 5]), build([2, 4, 6, 8]))));
+  print(values(sortList(build([4, 2, 1, 3, 9, 0]))));
+}
