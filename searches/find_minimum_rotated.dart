@@ -18,3 +18,9 @@ int findMin(List<int> a) {
   }
   return a[lo];
 }
+
+void main() {
+  print(findMin([3, 4, 5, 1, 2]));
+  print(findMin([2, 2, 2, 0, 1, 2]));
+  print(findMin([1, 1, 1]));
+}
