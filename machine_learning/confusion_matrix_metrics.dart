@@ -23,3 +23,14 @@ extension Metrics on Confusion {
       ? 0
       : 2 * precision * recall / (precision + recall);
 }
+
+void main() {
+  final actual = [1, 0, 0, 0, 0, 0, 0, 0, 0, 1];
+  final lazy = List.filled(10, 0);
+  final c = Confusion(actual, lazy);
+  print('always-0: accuracy ${c.accuracy}, recall ${c.recall}, f1 ${c.f1}');
+  final better = Confusion(actual, [1, 0, 0, 1, 0, 0, 0, 0, 0, 1]);
+  print(
+    'better: precision ${better.precision.toStringAsFixed(2)}, recall ${better.recall}, f1 ${better.f1.toStringAsFixed(2)}',
+  );
+}
