@@ -10,3 +10,17 @@ List<int> newSalt([int n = 16]) {
 
 int toyHash(List<int> d) =>
     d.fold(0x811c9dc5, (h, x) => ((h ^ x) * 0x01000193) & 0xffffffff);
+
+class Credential {
+  final List<int> salt;
+  final int hash;
+  Credential._(this.salt, this.hash);
+
+  factory Credential.create(String password) {
+    final s = newSalt();
+    return Credential._(s, toyHash([...s, ...password.codeUnits]));
+  }
+
+  bool verify(String attempt) =>
+      toyHash([...salt, ...attempt.codeUnits]) == hash;
+}
