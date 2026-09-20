@@ -10,3 +10,8 @@ List<int> randomKey(int n) {
   final r = Random.secure();
   return List.generate(n, (_) => r.nextInt(256));
 }
+
+List<int> xorBytes(List<int> data, List<int> key) {
+  if (key.length < data.length) throw ArgumentError('key too short');
+  return [for (var i = 0; i < data.length; i++) data[i] ^ key[i]];
+}
