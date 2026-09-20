@@ -24,3 +24,11 @@ class Credential {
   bool verify(String attempt) =>
       toyHash([...salt, ...attempt.codeUnits]) == hash;
 }
+
+void main() {
+  final a = Credential.create('correct horse'),
+      b = Credential.create('correct horse');
+  print('same password, different hashes: ${a.hash != b.hash}');
+  print('right password: ${a.verify('correct horse')}');
+  print('wrong password: ${a.verify('battery staple')}');
+}
