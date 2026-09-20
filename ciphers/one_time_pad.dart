@@ -15,3 +15,16 @@ List<int> xorBytes(List<int> data, List<int> key) {
   if (key.length < data.length) throw ArgumentError('key too short');
   return [for (var i = 0; i < data.length; i++) data[i] ^ key[i]];
 }
+
+void main() {
+  final m = utf8.encode('attack at dawn');
+  final key = randomKey(m.length);
+  final c = xorBytes(m, key);
+  print('cipher: $c');
+  print('plain : ${utf8.decode(xorBytes(c, key))}');
+  final m2 = utf8.encode('retreat at six');
+  final c2 = xorBytes(m2, key);
+  final leak = xorBytes(c, c2);
+  final real = xorBytes(m, m2);
+  print('key reuse leaks m1^m2: ${leak.toString() == real.toString()}');
+}
