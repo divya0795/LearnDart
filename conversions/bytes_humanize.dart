@@ -13,3 +13,15 @@ String humanBytes(int bytes, {bool si = false}) {
   }
   return i == 0 ? '$bytes B' : '${v.toStringAsFixed(1)} ${units[i]}';
 }
+
+int parseBytes(String s) {
+  final m = RegExp(r'^\s*([\d.]+)\s*([kKMGT]?)(i?)B?\s*$').firstMatch(s);
+  if (m == null) throw FormatException('bad size: $s');
+  final base = m[3] == 'i' ? 1024 : 1000;
+  final exp = m[2]!.isEmpty ? 0 : 'kmgt'.indexOf(m[2]!.toLowerCase()) + 1;
+  var mult = 1;
+  for (var i = 0; i < exp; i++) {
+    mult *= base;
+  }
+  return (double.parse(m[1]!) * mult).round();
+}
