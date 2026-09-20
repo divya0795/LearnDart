@@ -14,3 +14,12 @@ class Confusion {
     }
   }
 }
+
+extension Metrics on Confusion {
+  double get accuracy => (tp + tn) / (tp + tn + fp + fn);
+  double get precision => tp + fp == 0 ? 0 : tp / (tp + fp);
+  double get recall => tp + fn == 0 ? 0 : tp / (tp + fn);
+  double get f1 => precision + recall == 0
+      ? 0
+      : 2 * precision * recall / (precision + recall);
+}
