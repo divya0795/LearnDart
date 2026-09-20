@@ -25,3 +25,11 @@ int parseBytes(String s) {
   }
   return (double.parse(m[1]!) * mult).round();
 }
+
+void main() {
+  for (final n in [0, 999, 1024, 1500000, 5368709120]) {
+    print('$n -> ${humanBytes(n)} | ${humanBytes(n, si: true)}');
+  }
+  print(parseBytes('1.5 MiB'));
+  print(parseBytes('2kB'));
+}
