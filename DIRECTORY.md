@@ -161,6 +161,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [debounce](concurrency/debounce.dart)
 - [event_bus](concurrency/event_bus.dart)
 - [future_pool](concurrency/future_pool.dart)
+- [future_wait_error_handling](concurrency/future_wait_error_handling.dart)
 - [isolate_hello](concurrency/isolate_hello.dart)
 - [isolate_parallel_map](concurrency/isolate_parallel_map.dart)
 - [isolate_worker_pool](concurrency/isolate_worker_pool.dart)
@@ -236,6 +237,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [crdt](distributed/crdt.dart)
 - [hash_ring_virtual_nodes](distributed/hash_ring_virtual_nodes.dart)
 - [heartbeat_failure_detector](distributed/heartbeat_failure_detector.dart)
+- [lamport_clock](distributed/lamport_clock.dart)
 - [raft](distributed/raft.dart)
 - [vector_clock](distributed/vector_clock.dart)
 
@@ -397,6 +399,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [quadratic_formula](maths/quadratic_formula.dart)
 - [sieve_of_eratosthenes](maths/sieve_of_eratosthenes.dart)
 - [simpson_rule](maths/simpson_rule.dart)
+- [stats_mean_median_mode](maths/stats_mean_median_mode.dart)
 - [sum_of_primes_and_prime_counting](maths/sum_of_primes_and_prime_counting.dart)
 - [symmetric_derivative](maths/symmetric_derivative.dart)
 - [ugly_number](maths/ugly_number.dart)
