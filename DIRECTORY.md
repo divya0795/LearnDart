@@ -133,6 +133,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [atbash_cipher](ciphers/atbash_cipher.dart)
 - [caesar_cipher](ciphers/caesar_cipher.dart)
 - [columnar_transposition](ciphers/columnar_transposition.dart)
+- [playfair_cipher](ciphers/playfair_cipher.dart)
 - [rail_fence_cipher](ciphers/rail_fence_cipher.dart)
 - [rot13](ciphers/rot13.dart)
 - [vigenere_cipher](ciphers/vigenere_cipher.dart)
@@ -177,6 +178,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [timeout_race](concurrency/timeout_race.dart)
 
 ## conversions
+- [bytes_humanize](conversions/bytes_humanize.dart)
 - [decimal_to_binary](conversions/decimal_to_binary.dart)
 - [decimal_to_hexadecimal](conversions/decimal_to_hexadecimal.dart)
 - [integer_to_roman](conversions/integer_to_roman.dart)
@@ -351,6 +353,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## linked_lists
 - [add_two_numbers_lists](linked_lists/add_two_numbers_lists.dart)
+- [merge_two_sorted_lists](linked_lists/merge_two_sorted_lists.dart)
 - [middle_of_linked_list](linked_lists/middle_of_linked_list.dart)
 - [palindrome_linked_list](linked_lists/palindrome_linked_list.dart)
 - [reverse_linked_list](linked_lists/reverse_linked_list.dart)
@@ -507,6 +510,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [depth_limited_search](searches/depth_limited_search.dart)
 - [exponential_search](searches/exponential_search.dart)
 - [fibonacci_search](searches/fibonacci_search.dart)
+- [find_minimum_rotated](searches/find_minimum_rotated.dart)
 - [interpolation_search](searches/interpolation_search.dart)
 - [jump_search](searches/jump_search.dart)
 - [linear_search](searches/linear_search.dart)
