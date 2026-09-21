@@ -34,3 +34,11 @@ String soundex(String name) {
   }
   return out.toString().padRight(4, '0');
 }
+
+Map<String, List<String>> groupBySound(List<String> names) {
+  final m = <String, List<String>>{};
+  for (final n in names) {
+    m.putIfAbsent(soundex(n), () => []).add(n);
+  }
+  return m;
+}
