@@ -42,3 +42,17 @@ Map<String, List<String>> groupBySound(List<String> names) {
   }
   return m;
 }
+
+void main() {
+  for (final n in [
+    'Robert',
+    'Rupert',
+    'Rubin',
+    'Ashcraft',
+    'Tymczak',
+    'Pfister',
+  ]) {
+    print('$n -> ${soundex(n)}');
+  }
+  print(groupBySound(['Smith', 'Smyth', 'Smythe', 'Jones', 'Johns']));
+}
