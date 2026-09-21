@@ -7,3 +7,13 @@ double clockAngle(int h, int m) {
   final diff = (hour - minute).abs();
   return diff > 180 ? 360 - diff : diff;
 }
+
+int overlapsIn12Hours() {
+  var count = 0;
+  for (var t = 0; t < 12 * 60; t++) {
+    final hour = (t / 60 % 12) * 30 + (t % 60) * 0.5;
+    final minute = (t % 60) * 6.0;
+    if ((hour - minute).abs() < 3) count++;
+  }
+  return count;
+}
