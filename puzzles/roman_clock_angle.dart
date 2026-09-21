@@ -17,3 +17,9 @@ int overlapsIn12Hours() {
   }
   return count;
 }
+
+void main() {
+  for (final (h, m) in [(3, 0), (12, 30), (6, 0), (9, 15), (12, 0)]) {
+    print('$h:${m.toString().padLeft(2, '0')} -> ${clockAngle(h, m)} degrees');
+  }
+}
