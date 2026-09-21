@@ -32,3 +32,19 @@ Stream<T> throttleStream<T>(Stream<T> s, Duration gap) async* {
     }
   }
 }
+
+Stream<int> burst() async* {
+  for (final (n, ms) in [(1, 5), (2, 5), (3, 60), (4, 5), (5, 5)]) {
+    await Future.delayed(Duration(milliseconds: ms));
+    yield n;
+  }
+}
+
+Future<void> main() async {
+  print(
+    'debounced: ${await debounceStream(burst(), const Duration(milliseconds: 30)).toList()}',
+  );
+  print(
+    'throttled: ${await throttleStream(burst(), const Duration(milliseconds: 40)).toList()}',
+  );
+}
