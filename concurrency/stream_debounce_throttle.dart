@@ -21,3 +21,14 @@ Stream<T> debounceStream<T>(Stream<T> s, Duration wait) {
   );
   return out.stream;
 }
+
+Stream<T> throttleStream<T>(Stream<T> s, Duration gap) async* {
+  DateTime? last;
+  await for (final v in s) {
+    final now = DateTime.now();
+    if (last == null || now.difference(last) >= gap) {
+      last = now;
+      yield v;
+    }
+  }
+}
