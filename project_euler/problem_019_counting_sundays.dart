@@ -10,3 +10,5 @@ int countSundays(int fromYear, int toYear) {
   }
   return n;
 }
+
+void main() => print(countSundays(1901, 2000));
