@@ -16,3 +16,9 @@ Future<void> demoChain() async {
       .toList();
   print('even squares: $out');
 }
+
+Future<void> demoFold() async {
+  final sum = await ticker(5).fold<int>(0, (a, b) => a + b);
+  print('sum: $sum');
+  print('first > 3: ${await ticker(10).firstWhere((x) => x > 3)}');
+}
