@@ -22,3 +22,18 @@ Future<void> demoFold() async {
   print('sum: $sum');
   print('first > 3: ${await ticker(10).firstWhere((x) => x > 3)}');
 }
+
+Stream<double> runningAverage(Stream<int> s) async* {
+  var n = 0, total = 0;
+  await for (final x in s) {
+    n++;
+    total += x;
+    yield total / n;
+  }
+}
+
+Future<void> main() async {
+  await demoChain();
+  await demoFold();
+  print('running average: ${await runningAverage(ticker(5)).toList()}');
+}
