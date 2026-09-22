@@ -25,3 +25,9 @@ void sortColors(List<int> a) {
     }
   }
 }
+
+void main() {
+  final a = [2, 0, 2, 1, 1, 0, 2, 0, 1];
+  sortColors(a);
+  print(a);
+}
