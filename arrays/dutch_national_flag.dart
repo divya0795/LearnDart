@@ -11,3 +11,17 @@ void _swap(List<int> a, int i, int j) {
   a[i] = a[j];
   a[j] = t;
 }
+
+void sortColors(List<int> a) {
+  var lo = 0, mid = 0, hi = a.length - 1;
+  while (mid <= hi) {
+    switch (a[mid]) {
+      case 0:
+        _swap(a, lo++, mid++);
+      case 1:
+        mid++;
+      default:
+        _swap(a, mid, hi--);
+    }
+  }
+}
