@@ -133,6 +133,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [atbash_cipher](ciphers/atbash_cipher.dart)
 - [caesar_cipher](ciphers/caesar_cipher.dart)
 - [columnar_transposition](ciphers/columnar_transposition.dart)
+- [one_time_pad](ciphers/one_time_pad.dart)
 - [playfair_cipher](ciphers/playfair_cipher.dart)
 - [rail_fence_cipher](ciphers/rail_fence_cipher.dart)
 - [rot13](ciphers/rot13.dart)
@@ -191,6 +192,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [diffie_hellman](crypto/diffie_hellman.dart)
 - [hmac_construction](crypto/hmac_construction.dart)
 - [merkle_tree](crypto/merkle_tree.dart)
+- [password_salt_storage](crypto/password_salt_storage.dart)
 - [rsa](crypto/rsa.dart)
 - [sha256](crypto/sha256.dart)
 - [shamir_secret_sharing](crypto/shamir_secret_sharing.dart)
@@ -359,6 +361,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [reverse_linked_list](linked_lists/reverse_linked_list.dart)
 
 ## machine_learning
+- [confusion_matrix_metrics](machine_learning/confusion_matrix_metrics.dart)
 - [decision_tree](machine_learning/decision_tree.dart)
 - [gradient_descent_1d](machine_learning/gradient_descent_1d.dart)
 - [k_means](machine_learning/k_means.dart)
@@ -472,6 +475,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [problem_013_large_sum](project_euler/problem_013_large_sum.dart)
 - [problem_014_longest_collatz](project_euler/problem_014_longest_collatz.dart)
 - [problem_017_number_letter_counts](project_euler/problem_017_number_letter_counts.dart)
+- [problem_019_counting_sundays](project_euler/problem_019_counting_sundays.dart)
 - [problem_020_factorial_digit_sum](project_euler/problem_020_factorial_digit_sum.dart)
 - [problem_031_coin_sums](project_euler/problem_031_coin_sums.dart)
 
@@ -575,6 +579,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## text_processing
 - [myers_diff](text_processing/myers_diff.dart)
 - [ngrams](text_processing/ngrams.dart)
+- [soundex_phonetic](text_processing/soundex_phonetic.dart)
 - [template_renderer](text_processing/template_renderer.dart)
 - [word_wrap_and_justify](text_processing/word_wrap_and_justify.dart)
 
