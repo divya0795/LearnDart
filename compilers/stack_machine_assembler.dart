@@ -25,3 +25,33 @@ List<Instr> assemble(String src) {
       ),
   ];
 }
+
+List<int> run(List<Instr> prog) {
+  final st = <int>[], out = <int>[];
+  var pc = 0;
+  while (pc < prog.length) {
+    final (op, arg) = prog[pc++];
+    switch (op) {
+      case Op.push:
+        st.add(arg);
+      case Op.add:
+        st.add(st.removeLast() + st.removeLast());
+      case Op.sub:
+        final b = st.removeLast();
+        st.add(st.removeLast() - b);
+      case Op.mul:
+        st.add(st.removeLast() * st.removeLast());
+      case Op.dup:
+        st.add(st.last);
+      case Op.jmp:
+        pc = arg;
+      case Op.jz:
+        if (st.removeLast() == 0) pc = arg;
+      case Op.print:
+        out.add(st.last);
+      case Op.halt:
+        return out;
+    }
+  }
+  return out;
+}
