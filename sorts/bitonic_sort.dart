@@ -20,3 +20,12 @@ void _merge(List<int> a, int lo, int n, bool asc) {
   _merge(a, lo, m, asc);
   _merge(a, lo + m, m, asc);
 }
+
+void bitonicSort(List<int> a, [int lo = 0, int? n, bool asc = true]) {
+  n ??= a.length;
+  if (n <= 1) return;
+  final m = n ~/ 2;
+  bitonicSort(a, lo, m, true);
+  bitonicSort(a, lo + m, m, false);
+  _merge(a, lo, n, asc);
+}
