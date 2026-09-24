@@ -10,3 +10,13 @@ void _cmp(List<int> a, int i, int j, bool asc) {
     a[j] = t;
   }
 }
+
+void _merge(List<int> a, int lo, int n, bool asc) {
+  if (n <= 1) return;
+  final m = n ~/ 2;
+  for (var i = lo; i < lo + m; i++) {
+    _cmp(a, i, i + m, asc);
+  }
+  _merge(a, lo, m, asc);
+  _merge(a, lo + m, m, asc);
+}
