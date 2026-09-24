@@ -55,3 +55,19 @@ List<int> run(List<Instr> prog) {
   }
   return out;
 }
+
+void main() {
+  final prog = assemble('''
+    push 3
+  loop:
+    print
+    push 1
+    sub
+    dup
+    jz end
+    jmp loop
+  end:
+    halt
+  ''');
+  print(run(prog));
+}
