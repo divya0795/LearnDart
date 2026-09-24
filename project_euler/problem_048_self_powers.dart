@@ -9,3 +9,8 @@ String lastDigitsOfSelfPowers(int n, int digits) {
   }
   return (sum % mod).toString().padLeft(digits, '0');
 }
+
+void main() {
+  print('1..10 last 10 digits: ${lastDigitsOfSelfPowers(10, 10)}');
+  print('1..1000 last 10 digits: ${lastDigitsOfSelfPowers(1000, 10)}');
+}
