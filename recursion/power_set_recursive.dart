@@ -12,3 +12,8 @@ List<List<T>> powerSet<T>(List<T> xs) {
     for (final s in rest) [xs.first, ...s],
   ];
 }
+
+void main() {
+  print(powerSet([1, 2, 3]));
+  print('size for 10 items: ${powerSet(List.generate(10, (i) => i)).length}');
+}
