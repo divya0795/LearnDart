@@ -29,3 +29,9 @@ void bitonicSort(List<int> a, [int lo = 0, int? n, bool asc = true]) {
   bitonicSort(a, lo + m, m, false);
   _merge(a, lo, n, asc);
 }
+
+void main() {
+  final a = [3, 7, 4, 8, 6, 2, 1, 5];
+  bitonicSort(a);
+  print(a);
+}
