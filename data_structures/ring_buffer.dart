@@ -27,3 +27,11 @@ class RingBuffer<T> {
 
   List<T> toList() => [for (var i = 0; i < _length; i++) this[i]];
 }
+
+void main() {
+  final b = RingBuffer<int>(3);
+  for (var i = 1; i <= 5; i++) {
+    b.add(i);
+    print('after $i: ${b.toList()}');
+  }
+}
