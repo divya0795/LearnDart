@@ -11,3 +11,9 @@ List<int> doubleBasePalindromes(int limit) => [
   for (var n = 1; n < limit; n++)
     if (isPalindrome('$n') && isPalindrome(n.toRadixString(2))) n,
 ];
+
+void main() {
+  print(doubleBasePalindromes(100));
+  final all = doubleBasePalindromes(1000000);
+  print('sum = ${all.fold(0, (a, b) => a + b)}');
+}
