@@ -4,6 +4,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## arrays
 - [car_pooling](arrays/car_pooling.dart)
+- [dutch_national_flag](arrays/dutch_national_flag.dart)
 - [first_missing_positive](arrays/first_missing_positive.dart)
 - [fisher_yates_shuffle](arrays/fisher_yates_shuffle.dart)
 - [majority_element_boyer_moore](arrays/majority_element_boyer_moore.dart)
@@ -175,6 +176,8 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [rate_limiter_token_bucket](concurrency/rate_limiter_token_bucket.dart)
 - [retry_with_backoff](concurrency/retry_with_backoff.dart)
 - [semaphore](concurrency/semaphore.dart)
+- [stream_debounce_throttle](concurrency/stream_debounce_throttle.dart)
+- [stream_transformers](concurrency/stream_transformers.dart)
 - [throttle](concurrency/throttle.dart)
 - [timeout_race](concurrency/timeout_race.dart)
 
@@ -483,6 +486,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [fizzbuzz](puzzles/fizzbuzz.dart)
 - [game_of_life](puzzles/game_of_life.dart)
 - [magic_square_odd](puzzles/magic_square_odd.dart)
+- [roman_clock_angle](puzzles/roman_clock_angle.dart)
 - [sudoku_row_col_box_check](puzzles/sudoku_row_col_box_check.dart)
 - [sudoku_validator](puzzles/sudoku_validator.dart)
 - [water_jug_problem](puzzles/water_jug_problem.dart)
