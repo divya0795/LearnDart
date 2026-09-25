@@ -6,3 +6,8 @@ bool isPalindrome(String s) {
   }
   return true;
 }
+
+List<int> doubleBasePalindromes(int limit) => [
+  for (var n = 1; n < limit; n++)
+    if (isPalindrome('$n') && isPalindrome(n.toRadixString(2))) n,
+];
