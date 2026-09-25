@@ -78,3 +78,11 @@ bool matches(String postfix, String input) {
   }
   return cur.contains(accept);
 }
+
+void main() {
+  print(matches('ab.c|', 'ab'));
+  print(matches('ab.c|', 'c'));
+  print(matches('ab.c|', 'a'));
+  print(matches('a*b.', 'aaab'));
+  print(matches('a*b.', 'aaa'));
+}
