@@ -51,3 +51,30 @@ class Frag {
   }
   return (f.start, accept);
 }
+
+bool matches(String postfix, String input) {
+  final (start, accept) = build(postfix);
+  Set<State> closure(Set<State> s) {
+    final out = {...s};
+    final work = [...s];
+    while (work.isNotEmpty) {
+      final x = work.removeLast();
+      if (x.char == null) {
+        for (final y in [x.out1, x.out2]) {
+          if (y != null && out.add(y)) work.add(y);
+        }
+      }
+    }
+    return out;
+  }
+
+  var cur = closure({start});
+  for (final c in input.codeUnits) {
+    final next = <State>{};
+    for (final s in cur) {
+      if (s.char == c && s.out1 != null) next.add(s.out1!);
+    }
+    cur = closure(next);
+  }
+  return cur.contains(accept);
+}
