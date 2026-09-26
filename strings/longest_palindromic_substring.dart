@@ -43,3 +43,9 @@ int countPalindromes(String s) {
   }
   return count;
 }
+
+void demoLongest() {
+  for (final s in ['babad', 'cbbd', 'forgeeksskeegfor', 'a', '']) {
+    print('"$s" -> "${longestPalindrome(s)}"');
+  }
+}
