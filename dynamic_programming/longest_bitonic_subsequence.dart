@@ -11,3 +11,13 @@ List<int> lisEndingAt(List<int> a) {
   }
   return lis;
 }
+
+int longestBitonic(List<int> a) {
+  final lis = lisEndingAt(a);
+  final lds = lisEndingAt(a.reversed.toList()).reversed.toList();
+  var best = 0;
+  for (var i = 0; i < a.length; i++) {
+    if (lis[i] + lds[i] - 1 > best) best = lis[i] + lds[i] - 1;
+  }
+  return best;
+}
