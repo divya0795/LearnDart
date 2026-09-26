@@ -26,3 +26,12 @@ class BitSet {
       if (contains(i)) i,
   ];
 }
+
+void main() {
+  final a = const BitSet().add(1).add(3).add(5).add(7);
+  final b = const BitSet().add(3).add(4).add(5);
+  print('a=${a.toList()} b=${b.toList()}');
+  print('union ${a.union(b).toList()}');
+  print('intersect ${a.intersect(b).toList()}');
+  print('a-b ${a.difference(b).toList()} size ${a.difference(b).length}');
+}
