@@ -43,3 +43,12 @@ class LfuCache<K, V> {
     _lastUsed.remove(victim);
   }
 }
+
+void main() {
+  final c = LfuCache<String, int>(2);
+  c.put('a', 1);
+  c.put('b', 2);
+  c.get('a'); // a now used twice
+  c.put('c', 3); // evicts b (least frequent)
+  print('a=${c.get('a')} b=${c.get('b')} c=${c.get('c')}');
+}
