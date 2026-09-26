@@ -25,3 +25,21 @@ String longestPalindrome(String s) {
   }
   return s.substring(start, start + len);
 }
+
+/// Counts every palindromic substring (by position, not distinct).
+int countPalindromes(String s) {
+  var count = 0;
+  void expand(int l, int r) {
+    while (l >= 0 && r < s.length && s[l] == s[r]) {
+      count++;
+      l--;
+      r++;
+    }
+  }
+
+  for (var i = 0; i < s.length; i++) {
+    expand(i, i);
+    expand(i, i + 1);
+  }
+  return count;
+}
