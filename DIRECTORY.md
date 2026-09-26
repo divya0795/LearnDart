@@ -146,6 +146,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [compiler](compilers/compiler.dart)
 - [infix_to_three_address_code](compilers/infix_to_three_address_code.dart)
 - [interpreter](compilers/interpreter.dart)
+- [stack_machine_assembler](compilers/stack_machine_assembler.dart)
 - [symbol_table_scopes](compilers/symbol_table_scopes.dart)
 - [vm](compilers/vm.dart)
 
@@ -229,6 +230,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [queue](data_structures/queue.dart)
 - [queue_using_two_stacks](data_structures/queue_using_two_stacks.dart)
 - [red_black_tree](data_structures/red_black_tree.dart)
+- [ring_buffer](data_structures/ring_buffer.dart)
 - [segment_tree](data_structures/segment_tree.dart)
 - [skip_list](data_structures/skip_list.dart)
 - [stack](data_structures/stack.dart)
@@ -481,6 +483,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [problem_019_counting_sundays](project_euler/problem_019_counting_sundays.dart)
 - [problem_020_factorial_digit_sum](project_euler/problem_020_factorial_digit_sum.dart)
 - [problem_031_coin_sums](project_euler/problem_031_coin_sums.dart)
+- [problem_048_self_powers](project_euler/problem_048_self_powers.dart)
 
 ## puzzles
 - [fizzbuzz](puzzles/fizzbuzz.dart)
@@ -506,6 +509,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [flatten_nested_list](recursion/flatten_nested_list.dart)
 - [palindrome_check_recursive](recursion/palindrome_check_recursive.dart)
 - [permutations](recursion/permutations.dart)
+- [power_set_recursive](recursion/power_set_recursive.dart)
 - [reverse_string_recursive](recursion/reverse_string_recursive.dart)
 - [subset_generation](recursion/subset_generation.dart)
 - [sum_of_digits](recursion/sum_of_digits.dart)
@@ -528,6 +532,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [ternary_search_recursive](searches/ternary_search_recursive.dart)
 
 ## sorts
+- [bitonic_sort](sorts/bitonic_sort.dart)
 - [bubble_sort](sorts/bubble_sort.dart)
 - [bucket_sort](sorts/bucket_sort.dart)
 - [cocktail_sort](sorts/cocktail_sort.dart)
