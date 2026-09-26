@@ -54,3 +54,8 @@ void demoCount() {
   print('"abc" has ${countPalindromes('abc')} palindromic substrings');
   print('"aaa" has ${countPalindromes('aaa')} palindromic substrings');
 }
+
+void main() {
+  demoLongest();
+  demoCount();
+}
