@@ -49,3 +49,8 @@ void demoLongest() {
     print('"$s" -> "${longestPalindrome(s)}"');
   }
 }
+
+void demoCount() {
+  print('"abc" has ${countPalindromes('abc')} palindromic substrings');
+  print('"aaa" has ${countPalindromes('aaa')} palindromic substrings');
+}
