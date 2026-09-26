@@ -21,3 +21,9 @@ int longestBitonic(List<int> a) {
   }
   return best;
 }
+
+void main() {
+  print(longestBitonic([1, 11, 2, 10, 4, 5, 2, 1]));
+  print(longestBitonic([12, 11, 40, 5, 3, 1]));
+  print(longestBitonic([80, 60, 30, 40, 20, 10]));
+}
