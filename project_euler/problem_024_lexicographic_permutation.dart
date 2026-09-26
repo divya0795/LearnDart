@@ -17,3 +17,8 @@ String nthPermutation(String digits, int n) {
   }
   return out.toString();
 }
+
+void main() {
+  print([for (var i = 1; i <= 6; i++) nthPermutation('012', i)]);
+  print(nthPermutation('0123456789', 1000000));
+}
