@@ -36,3 +36,10 @@ String lzwDecode(List<int> codes) {
   }
   return out.toString();
 }
+
+void main() {
+  const s = 'TOBEORNOTTOBEORTOBEORNOT';
+  final c = lzwEncode(s);
+  print('${s.length} chars -> ${c.length} codes: $c');
+  print('round trip: ${lzwDecode(c) == s}');
+}
