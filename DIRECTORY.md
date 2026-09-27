@@ -146,6 +146,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [compiler](compilers/compiler.dart)
 - [infix_to_three_address_code](compilers/infix_to_three_address_code.dart)
 - [interpreter](compilers/interpreter.dart)
+- [regex_to_nfa_thompson](compilers/regex_to_nfa_thompson.dart)
 - [stack_machine_assembler](compilers/stack_machine_assembler.dart)
 - [symbol_table_scopes](compilers/symbol_table_scopes.dart)
 - [vm](compilers/vm.dart)
@@ -218,6 +219,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [hash_table](data_structures/hash_table.dart)
 - [interval_tree_stabbing](data_structures/interval_tree_stabbing.dart)
 - [kd_tree](data_structures/kd_tree.dart)
+- [lfu_cache](data_structures/lfu_cache.dart)
 - [linked_list](data_structures/linked_list.dart)
 - [linked_list_cycle_detection](data_structures/linked_list_cycle_detection.dart)
 - [lru_cache](data_structures/lru_cache.dart)
@@ -482,7 +484,9 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [problem_017_number_letter_counts](project_euler/problem_017_number_letter_counts.dart)
 - [problem_019_counting_sundays](project_euler/problem_019_counting_sundays.dart)
 - [problem_020_factorial_digit_sum](project_euler/problem_020_factorial_digit_sum.dart)
+- [problem_024_lexicographic_permutation](project_euler/problem_024_lexicographic_permutation.dart)
 - [problem_031_coin_sums](project_euler/problem_031_coin_sums.dart)
+- [problem_036_double_base_palindromes](project_euler/problem_036_double_base_palindromes.dart)
 - [problem_048_self_powers](project_euler/problem_048_self_powers.dart)
 
 ## puzzles
@@ -596,3 +600,4 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [binary_tree_traversals](trees/binary_tree_traversals.dart)
 - [lowest_common_ancestor](trees/lowest_common_ancestor.dart)
 - [tree_height_and_balance](trees/tree_height_and_balance.dart)
+- [validate_bst](trees/validate_bst.dart)
