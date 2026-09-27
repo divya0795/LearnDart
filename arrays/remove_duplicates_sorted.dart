@@ -22,3 +22,12 @@ int removeDuplicatesAtMostTwo(List<int> a) {
   }
   return k;
 }
+
+void main() {
+  final a = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
+  final n = removeDuplicates(a);
+  print('unique: ${a.sublist(0, n)}');
+  final b = [1, 1, 1, 2, 2, 3];
+  final m = removeDuplicatesAtMostTwo(b);
+  print('at most twice: ${b.sublist(0, m)}');
+}
