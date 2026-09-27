@@ -21,3 +21,18 @@ List<int> lzwEncode(String s) {
   if (w.isNotEmpty) out.add(dict[w]!);
   return out;
 }
+
+String lzwDecode(List<int> codes) {
+  final dict = <int, String>{
+    for (var i = 0; i < 256; i++) i: String.fromCharCode(i),
+  };
+  var w = dict[codes.first]!;
+  final out = StringBuffer(w);
+  for (final k in codes.skip(1)) {
+    final entry = dict[k] ?? (w + w[0]);
+    out.write(entry);
+    dict[dict.length] = w + entry[0];
+    w = entry;
+  }
+  return out.toString();
+}
