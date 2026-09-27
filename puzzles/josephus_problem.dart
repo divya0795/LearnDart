@@ -18,3 +18,11 @@ int josephus(int n, int k) {
   }
   return r;
 }
+
+void main() {
+  for (final (n, k) in [(7, 3), (10, 2), (41, 3)]) {
+    print(
+      'n=$n k=$k survivor (0-based): ${josephus(n, k)} / sim ${josephusSimulate(n, k)}',
+    );
+  }
+}
