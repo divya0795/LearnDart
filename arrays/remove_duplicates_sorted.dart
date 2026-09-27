@@ -1,0 +1,16 @@
+// Remove duplicates from a sorted list in place and return the new length.
+//
+// Because equal values are adjacent, a slow pointer marks the end of the
+// unique prefix and a fast pointer scans ahead. Whenever the fast element
+// differs from the last unique one, copy it just past the prefix.
+//
+// Complexity: O(n) time, O(1) space.
+
+int removeDuplicates(List<int> a) {
+  if (a.isEmpty) return 0;
+  var slow = 0;
+  for (var fast = 1; fast < a.length; fast++) {
+    if (a[fast] != a[slow]) a[++slow] = a[fast];
+  }
+  return slow + 1;
+}
