@@ -14,3 +14,11 @@ int removeDuplicates(List<int> a) {
   }
   return slow + 1;
 }
+
+int removeDuplicatesAtMostTwo(List<int> a) {
+  var k = 0;
+  for (final x in a) {
+    if (k < 2 || x != a[k - 2]) a[k++] = x;
+  }
+  return k;
+}
