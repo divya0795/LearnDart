@@ -31,3 +31,13 @@ class RecordingMailer {
   final sent = <(String, String)>[];
   void send(String to, String body) => sent.add((to, body));
 }
+
+void main() {
+  final clock = FakeClock(DateTime.utc(2026, 1, 1));
+  final s = Session(clock, const Duration(minutes: 30));
+  print('fresh: expired=${s.expired}');
+  clock.advance(const Duration(minutes: 31));
+  print('later: expired=${s.expired}');
+  final m = RecordingMailer()..send('a@x.com', 'hi');
+  print('mailer got ${m.sent}');
+}
