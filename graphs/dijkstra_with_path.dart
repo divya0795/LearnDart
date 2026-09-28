@@ -33,3 +33,17 @@ List<int> pathTo(List<int> prev, int target) {
   }
   return p.reversed.toList();
 }
+
+void main() {
+  final g = <List<Edge>>[
+    [(1, 7), (2, 9), (5, 14)],
+    [(0, 7), (2, 10), (3, 15)],
+    [(0, 9), (1, 10), (3, 11), (5, 2)],
+    [(1, 15), (2, 11), (4, 6)],
+    [(3, 6), (5, 9)],
+    [(0, 14), (2, 2), (4, 9)],
+  ];
+  final r = dijkstra(g, 0);
+  print(r.dist);
+  print('path to 4: ${pathTo(r.prev, 4)}');
+}
