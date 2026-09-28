@@ -25,3 +25,11 @@ typedef Edge = (int to, int w);
   }
   return (dist: dist, prev: prev);
 }
+
+List<int> pathTo(List<int> prev, int target) {
+  final p = <int>[];
+  for (var v = target; v != -1; v = prev[v]) {
+    p.add(v);
+  }
+  return p.reversed.toList();
+}
