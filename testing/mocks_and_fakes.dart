@@ -16,3 +16,13 @@ class FakeClock implements Clock {
   @override
   DateTime now() => _t;
 }
+
+class Session {
+  final Clock clock;
+  final Duration ttl;
+  late final DateTime _created = clock.now();
+  Session(this.clock, this.ttl) {
+    _created;
+  }
+  bool get expired => clock.now().difference(_created) >= ttl;
+}
