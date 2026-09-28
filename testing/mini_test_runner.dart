@@ -16,3 +16,21 @@ void expect(Object? actual, Object? expected) {
   if (actual != expected)
     throw TestFailure('expected <$expected> but got <$actual>');
 }
+
+int runAll() {
+  var failed = 0;
+  for (final (name, body) in _tests) {
+    try {
+      body();
+      print('  ok   $name');
+    } on TestFailure catch (e) {
+      failed++;
+      print('  FAIL $name: $e');
+    } catch (e) {
+      failed++;
+      print('  ERR  $name: $e');
+    }
+  }
+  print('${_tests.length - failed}/${_tests.length} passed');
+  return failed;
+}
