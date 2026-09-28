@@ -26,3 +26,8 @@ class Session {
   }
   bool get expired => clock.now().difference(_created) >= ttl;
 }
+
+class RecordingMailer {
+  final sent = <(String, String)>[];
+  void send(String to, String body) => sent.add((to, body));
+}
