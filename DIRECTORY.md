@@ -114,6 +114,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [try_catch](basics/11_errors/try_catch.dart)
 
 ## bit_manipulation
+- [bit_set_class](bit_manipulation/bit_set_class.dart)
 - [count_set_bits](bit_manipulation/count_set_bits.dart)
 - [count_trailing_zeros](bit_manipulation/count_trailing_zeros.dart)
 - [gray_code](bit_manipulation/gray_code.dart)
@@ -268,6 +269,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [kadane_max_subarray](dynamic_programming/kadane_max_subarray.dart)
 - [knapsack_01](dynamic_programming/knapsack_01.dart)
 - [longest_arithmetic_subsequence](dynamic_programming/longest_arithmetic_subsequence.dart)
+- [longest_bitonic_subsequence](dynamic_programming/longest_bitonic_subsequence.dart)
 - [longest_common_subsequence](dynamic_programming/longest_common_subsequence.dart)
 - [longest_common_substring](dynamic_programming/longest_common_substring.dart)
 - [longest_increasing_subsequence](dynamic_programming/longest_increasing_subsequence.dart)
@@ -492,6 +494,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## puzzles
 - [fizzbuzz](puzzles/fizzbuzz.dart)
 - [game_of_life](puzzles/game_of_life.dart)
+- [josephus_problem](puzzles/josephus_problem.dart)
 - [magic_square_odd](puzzles/magic_square_odd.dart)
 - [roman_clock_angle](puzzles/roman_clock_angle.dart)
 - [sudoku_row_col_box_check](puzzles/sudoku_row_col_box_check.dart)
@@ -570,6 +573,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [kmp_search](strings/kmp_search.dart)
 - [longest_common_prefix](strings/longest_common_prefix.dart)
 - [longest_common_subsequence_string](strings/longest_common_subsequence_string.dart)
+- [longest_palindromic_substring](strings/longest_palindromic_substring.dart)
 - [longest_substring_without_repeat](strings/longest_substring_without_repeat.dart)
 - [manacher](strings/manacher.dart)
 - [rabin_karp](strings/rabin_karp.dart)
