@@ -34,3 +34,11 @@ int runAll() {
   print('${_tests.length - failed}/${_tests.length} passed');
   return failed;
 }
+
+void main() {
+  test('addition', () => expect(2 + 2, 4));
+  test('string length', () => expect('dart'.length, 4));
+  test('deliberate failure', () => expect(1 + 1, 3));
+  test('throws', () => throw StateError('boom'));
+  runAll();
+}
