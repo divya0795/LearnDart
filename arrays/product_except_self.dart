@@ -20,3 +20,9 @@ List<int> productExceptSelf(List<int> a) {
   }
   return out;
 }
+
+void main() {
+  print(productExceptSelf([1, 2, 3, 4]));
+  print(productExceptSelf([-1, 1, 0, -3, 3]));
+  print(productExceptSelf([0, 0, 2]));
+}
