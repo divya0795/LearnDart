@@ -13,6 +13,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [next_permutation](arrays/next_permutation.dart)
 - [pivot_index](arrays/pivot_index.dart)
 - [prefix_sum_range_queries](arrays/prefix_sum_range_queries.dart)
+- [remove_duplicates_sorted](arrays/remove_duplicates_sorted.dart)
 - [rotate_array](arrays/rotate_array.dart)
 - [sliding_window_fixed](arrays/sliding_window_fixed.dart)
 - [sorted_squared_array](arrays/sorted_squared_array.dart)
@@ -157,6 +158,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [burrows_wheeler](compression/burrows_wheeler.dart)
 - [huffman_codec](compression/huffman_codec.dart)
 - [lz77](compression/lz77.dart)
+- [lzw_compression](compression/lzw_compression.dart)
 - [run_length_binary](compression/run_length_binary.dart)
 
 ## concurrency
@@ -319,6 +321,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [course_schedule_cycle](graphs/course_schedule_cycle.dart)
 - [dfs](graphs/dfs.dart)
 - [dijkstra](graphs/dijkstra.dart)
+- [dijkstra_with_path](graphs/dijkstra_with_path.dart)
 - [edmonds_karp_max_flow](graphs/edmonds_karp_max_flow.dart)
 - [eulerian_circuit](graphs/eulerian_circuit.dart)
 - [flood_fill_paint](graphs/flood_fill_paint.dart)
@@ -589,6 +592,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [z_algorithm](strings/z_algorithm.dart)
 
 ## testing
+- [mini_test_runner](testing/mini_test_runner.dart)
 - [property_based_testing](testing/property_based_testing.dart)
 - [shrinking_counterexamples](testing/shrinking_counterexamples.dart)
 - [test_doubles_spy](testing/test_doubles_spy.dart)
