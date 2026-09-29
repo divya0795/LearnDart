@@ -9,3 +9,17 @@ List<int>? twoSum(List<int> a, int target) {
   }
   return null;
 }
+
+List<int>? twoSumSorted(List<int> a, int target) {
+  var l = 0, r = a.length - 1;
+  while (l < r) {
+    final s = a[l] + a[r];
+    if (s == target) return [l, r];
+    if (s < target) {
+      l++;
+    } else {
+      r--;
+    }
+  }
+  return null;
+}
