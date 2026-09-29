@@ -13,3 +13,7 @@ Future<List<int>> sleepSort(List<int> xs) async {
   ]);
   return out;
 }
+
+Future<void> main() async {
+  print(await sleepSort([8, 3, 9, 1, 5, 2]));
+}
