@@ -33,3 +33,10 @@ int countPairs(List<int> a, int target) {
   }
   return pairs;
 }
+
+void main() {
+  print(twoSum([2, 7, 11, 15], 9));
+  print(twoSumSorted([1, 2, 4, 6, 10], 8));
+  print(countPairs([1, 5, 7, -1, 5], 6));
+  print(twoSum([1, 2], 10));
+}
