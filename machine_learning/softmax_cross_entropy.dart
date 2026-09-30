@@ -8,3 +8,6 @@ List<double> softmax(List<double> z) {
   final s = e.fold(0.0, (a, b) => a + b);
   return [for (final x in e) x / s];
 }
+
+double crossEntropy(List<double> probs, int trueClass) =>
+    -log(probs[trueClass] + 1e-12);
