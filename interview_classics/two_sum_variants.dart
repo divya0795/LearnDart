@@ -23,3 +23,13 @@ List<int>? twoSumSorted(List<int> a, int target) {
   }
   return null;
 }
+
+int countPairs(List<int> a, int target) {
+  final freq = <int, int>{};
+  var pairs = 0;
+  for (final x in a) {
+    pairs += freq[target - x] ?? 0;
+    freq[x] = (freq[x] ?? 0) + 1;
+  }
+  return pairs;
+}
