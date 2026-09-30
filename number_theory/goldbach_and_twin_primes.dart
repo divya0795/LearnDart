@@ -14,3 +14,19 @@ bool isPrime(int n) {
   }
   return null;
 }
+
+List<(int, int)> twinPrimes(int limit) => [
+  for (var p = 3; p + 2 <= limit; p += 2)
+    if (isPrime(p) && isPrime(p + 2)) (p, p + 2),
+];
+
+int largestGapBelow(int limit) {
+  var best = 0, prev = 2;
+  for (var n = 3; n <= limit; n++) {
+    if (isPrime(n)) {
+      if (n - prev > best) best = n - prev;
+      prev = n;
+    }
+  }
+  return best;
+}
