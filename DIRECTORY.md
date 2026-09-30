@@ -13,6 +13,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [next_permutation](arrays/next_permutation.dart)
 - [pivot_index](arrays/pivot_index.dart)
 - [prefix_sum_range_queries](arrays/prefix_sum_range_queries.dart)
+- [product_except_self](arrays/product_except_self.dart)
 - [remove_duplicates_sorted](arrays/remove_duplicates_sorted.dart)
 - [rotate_array](arrays/rotate_array.dart)
 - [sliding_window_fixed](arrays/sliding_window_fixed.dart)
@@ -486,6 +487,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [problem_012_highly_divisible_triangular](project_euler/problem_012_highly_divisible_triangular.dart)
 - [problem_013_large_sum](project_euler/problem_013_large_sum.dart)
 - [problem_014_longest_collatz](project_euler/problem_014_longest_collatz.dart)
+- [problem_016_power_digit_sum](project_euler/problem_016_power_digit_sum.dart)
 - [problem_017_number_letter_counts](project_euler/problem_017_number_letter_counts.dart)
 - [problem_019_counting_sundays](project_euler/problem_019_counting_sundays.dart)
 - [problem_020_factorial_digit_sum](project_euler/problem_020_factorial_digit_sum.dart)
@@ -560,6 +562,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [radix_sort](sorts/radix_sort.dart)
 - [selection_sort](sorts/selection_sort.dart)
 - [shell_sort](sorts/shell_sort.dart)
+- [sleep_sort_simulated](sorts/sleep_sort_simulated.dart)
 - [stooge_sort](sorts/stooge_sort.dart)
 - [tim_sort](sorts/tim_sort.dart)
 - [tree_sort](sorts/tree_sort.dart)
@@ -593,6 +596,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## testing
 - [mini_test_runner](testing/mini_test_runner.dart)
+- [mocks_and_fakes](testing/mocks_and_fakes.dart)
 - [property_based_testing](testing/property_based_testing.dart)
 - [shrinking_counterexamples](testing/shrinking_counterexamples.dart)
 - [test_doubles_spy](testing/test_doubles_spy.dart)
