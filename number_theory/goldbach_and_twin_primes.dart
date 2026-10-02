@@ -30,3 +30,11 @@ int largestGapBelow(int limit) {
   }
   return best;
 }
+
+void main() {
+  for (final n in [4, 28, 100, 1000]) {
+    print('$n = ${goldbach(n)}');
+  }
+  print(twinPrimes(60));
+  print('largest prime gap below 1000: ${largestGapBelow(1000)}');
+}
