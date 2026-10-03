@@ -8,3 +8,13 @@ int binomial(int n, int k) {
   }
   return r;
 }
+
+int latticePathsDp(int n) {
+  final dp = List.generate(n + 1, (_) => List.filled(n + 1, 1));
+  for (var i = 1; i <= n; i++) {
+    for (var j = 1; j <= n; j++) {
+      dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+    }
+  }
+  return dp[n][n];
+}
