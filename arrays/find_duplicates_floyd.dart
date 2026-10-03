@@ -28,3 +28,9 @@ List<int> findAllDuplicates(List<int> nums) {
   }
   return out;
 }
+
+void main() {
+  print(findDuplicate([1, 3, 4, 2, 2]));
+  print(findDuplicate([3, 1, 3, 4, 2]));
+  print(findAllDuplicates([4, 3, 2, 7, 8, 2, 3, 1]));
+}
