@@ -8,3 +8,11 @@ class Closed extends DoorState {}
 class Open extends DoorState {}
 
 class Locked extends DoorState {}
+
+DoorState handle(DoorState s, String event) => switch ((s, event)) {
+  (Closed(), 'open') => Open(),
+  (Open(), 'close') => Closed(),
+  (Closed(), 'lock') => Locked(),
+  (Locked(), 'unlock') => Closed(),
+  _ => s, // ignore invalid events
+};
