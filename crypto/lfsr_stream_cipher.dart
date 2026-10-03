@@ -32,3 +32,10 @@ List<int> crypt(List<int> data, int seed) {
   final l = Lfsr(seed, [0, 2, 3, 5], 16); // x^16+x^14+x^13+x^11+1
   return [for (final b in data) b ^ l.nextByte()];
 }
+
+void main() {
+  final msg = 'stream me'.codeUnits;
+  final c = crypt(msg, 0xACE1);
+  print(c);
+  print(String.fromCharCodes(crypt(c, 0xACE1)));
+}
