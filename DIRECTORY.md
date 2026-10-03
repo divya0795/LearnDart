@@ -354,6 +354,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [minimum_arrows_balloons](greedy/minimum_arrows_balloons.dart)
 
 ## interview_classics
+- [two_sum_variants](interview_classics/two_sum_variants.dart)
 - [valid_sudoku_and_anagram_checks](interview_classics/valid_sudoku_and_anagram_checks.dart)
 
 ## language_features
@@ -387,6 +388,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [perceptron](machine_learning/perceptron.dart)
 - [relu](machine_learning/relu.dart)
 - [sigmoid](machine_learning/sigmoid.dart)
+- [softmax_cross_entropy](machine_learning/softmax_cross_entropy.dart)
 
 ## maths
 - [amicable_numbers](maths/amicable_numbers.dart)
@@ -520,6 +522,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [combinations](recursion/combinations.dart)
 - [flatten_nested_list](recursion/flatten_nested_list.dart)
 - [palindrome_check_recursive](recursion/palindrome_check_recursive.dart)
+- [pascal_triangle](recursion/pascal_triangle.dart)
 - [permutations](recursion/permutations.dart)
 - [power_set_recursive](recursion/power_set_recursive.dart)
 - [reverse_string_recursive](recursion/reverse_string_recursive.dart)
