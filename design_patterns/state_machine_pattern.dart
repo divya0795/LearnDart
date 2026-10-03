@@ -16,3 +16,14 @@ DoorState handle(DoorState s, String event) => switch ((s, event)) {
   (Locked(), 'unlock') => Closed(),
   _ => s, // ignore invalid events
 };
+
+void main() {
+  DoorState s = Closed();
+  for (final e in ['open', 'lock', 'close', 'lock', 'open', 'unlock', 'open']) {
+    final next = handle(s, e);
+    print(
+      '${s.runtimeType} --$e--> ${next.runtimeType}${identical(s, next) ? ' (ignored)' : ''}',
+    );
+    s = next;
+  }
+}
