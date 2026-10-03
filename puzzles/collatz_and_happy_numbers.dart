@@ -19,3 +19,12 @@ bool isHappy(int n) {
   }
   return fast == 1;
 }
+
+void main() {
+  final happy = [
+    for (var n = 1; n < 100; n++)
+      if (isHappy(n)) n,
+  ];
+  print(happy);
+  print('19 chain: ${[19, next(19), next(next(19)), next(next(next(19)))]}');
+}
