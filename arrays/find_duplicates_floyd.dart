@@ -14,3 +14,17 @@ int findDuplicate(List<int> a) {
   }
   return slow;
 }
+
+List<int> findAllDuplicates(List<int> nums) {
+  final a = [...nums];
+  final out = <int>[];
+  for (final x in a.toList()) {
+    final i = x.abs() - 1;
+    if (a[i] < 0) {
+      out.add(x.abs());
+    } else {
+      a[i] = -a[i];
+    }
+  }
+  return out;
+}
