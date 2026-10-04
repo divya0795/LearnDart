@@ -7,3 +7,9 @@ import 'dart:math' as math;
 
 bool isTriangle(double a, double b, double c) =>
     a > 0 && b > 0 && c > 0 && a + b > c && a + c > b && b + c > a;
+
+double heron(double a, double b, double c) {
+  if (!isTriangle(a, b, c)) throw ArgumentError('not a triangle');
+  final s = (a + b + c) / 2;
+  return math.sqrt(s * (s - a) * (s - b) * (s - c));
+}
