@@ -13,3 +13,13 @@ double heron(double a, double b, double c) {
   final s = (a + b + c) / 2;
   return math.sqrt(s * (s - a) * (s - b) * (s - c));
 }
+
+void main() {
+  print('3,4,5 -> ${heron(3, 4, 5)}');
+  print('equilateral 2 -> ${heron(2, 2, 2)}');
+  try {
+    heron(1, 2, 3);
+  } on ArgumentError catch (e) {
+    print('1,2,3 rejected: ${e.message}');
+  }
+}
