@@ -7,3 +7,11 @@ String? authHandler(String r) =>
 String? rateHandler(String r) =>
     r.contains('spam') ? 'denied: rate limited' : null;
 String? appHandler(String r) => 'ok: handled "$r"';
+
+String process(String request, List<Handler> chain) {
+  for (final h in chain) {
+    final r = h(request);
+    if (r != null) return r;
+  }
+  return 'unhandled';
+}
