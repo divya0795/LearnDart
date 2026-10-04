@@ -18,3 +18,8 @@ int latticePathsDp(int n) {
   }
   return dp[n][n];
 }
+
+void main() {
+  print('2x2: ${binomial(4, 2)}');
+  print('20x20: ${binomial(40, 20)} (dp: ${latticePathsDp(20)})');
+}
