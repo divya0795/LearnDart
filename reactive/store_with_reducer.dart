@@ -23,3 +23,24 @@ class Store<S, A> {
     return () => _subs.remove(s);
   }
 }
+
+enum CounterAction { inc, dec, reset }
+
+int counter(int s, CounterAction a) => switch (a) {
+  CounterAction.inc => s + 1,
+  CounterAction.dec => s - 1,
+  CounterAction.reset => 0,
+};
+
+void main() {
+  final store = Store(0, counter);
+  store.subscribe((s) => print('state: $s'));
+  for (final a in [
+    CounterAction.inc,
+    CounterAction.inc,
+    CounterAction.dec,
+    CounterAction.reset,
+  ]) {
+    store.dispatch(a);
+  }
+}
