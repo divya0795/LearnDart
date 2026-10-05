@@ -44,3 +44,15 @@ class Trie {
     return out;
   }
 }
+
+void main() {
+  final t = Trie();
+  for (final w in ['car', 'card', 'care', 'careful', 'cat', 'dog', 'dot']) {
+    t.insert(w);
+  }
+  print(t.complete('car'));
+  print(t.complete('do'));
+  print(t.complete('x'));
+  print(t.contains('car'));
+  print(t.contains('ca'));
+}
