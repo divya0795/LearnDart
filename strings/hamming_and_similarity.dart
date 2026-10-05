@@ -8,3 +8,10 @@ int hamming(String a, String b) {
   }
   return d;
 }
+
+double jaccard(String a, String b) {
+  final x = a.toLowerCase().split(RegExp(r'\W+')).toSet()..remove('');
+  final y = b.toLowerCase().split(RegExp(r'\W+')).toSet()..remove('');
+  if (x.isEmpty && y.isEmpty) return 1;
+  return x.intersection(y).length / x.union(y).length;
+}
