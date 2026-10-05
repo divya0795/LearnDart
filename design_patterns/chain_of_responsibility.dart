@@ -15,3 +15,10 @@ String process(String request, List<Handler> chain) {
   }
   return 'unhandled';
 }
+
+void main() {
+  final chain = [authHandler, rateHandler, appHandler];
+  for (final r in ['user:get /home', 'anon:get /home', 'user:spam']) {
+    print('$r -> ${process(r, chain)}');
+  }
+}
