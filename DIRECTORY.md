@@ -5,6 +5,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## arrays
 - [car_pooling](arrays/car_pooling.dart)
 - [dutch_national_flag](arrays/dutch_national_flag.dart)
+- [find_duplicates_floyd](arrays/find_duplicates_floyd.dart)
 - [first_missing_positive](arrays/first_missing_positive.dart)
 - [fisher_yates_shuffle](arrays/fisher_yates_shuffle.dart)
 - [majority_element_boyer_moore](arrays/majority_element_boyer_moore.dart)
@@ -24,6 +25,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [validate_subsequence](arrays/validate_subsequence.dart)
 
 ## async_patterns
+- [future_memoize_cache](async_patterns/future_memoize_cache.dart)
 - [pub_sub_topics](async_patterns/pub_sub_topics.dart)
 
 ## backtracking
@@ -247,6 +249,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## design_patterns
 - [builder](design_patterns/builder.dart)
 - [factory_method](design_patterns/factory_method.dart)
+- [state_machine_pattern](design_patterns/state_machine_pattern.dart)
 
 ## distributed
 - [consistent_hashing](distributed/consistent_hashing.dart)
@@ -491,6 +494,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [problem_012_highly_divisible_triangular](project_euler/problem_012_highly_divisible_triangular.dart)
 - [problem_013_large_sum](project_euler/problem_013_large_sum.dart)
 - [problem_014_longest_collatz](project_euler/problem_014_longest_collatz.dart)
+- [problem_015_lattice_paths](project_euler/problem_015_lattice_paths.dart)
 - [problem_016_power_digit_sum](project_euler/problem_016_power_digit_sum.dart)
 - [problem_017_number_letter_counts](project_euler/problem_017_number_letter_counts.dart)
 - [problem_019_counting_sundays](project_euler/problem_019_counting_sundays.dart)
@@ -501,6 +505,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [problem_048_self_powers](project_euler/problem_048_self_powers.dart)
 
 ## puzzles
+- [collatz_and_happy_numbers](puzzles/collatz_and_happy_numbers.dart)
 - [fizzbuzz](puzzles/fizzbuzz.dart)
 - [game_of_life](puzzles/game_of_life.dart)
 - [josephus_problem](puzzles/josephus_problem.dart)
