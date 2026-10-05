@@ -14,3 +14,21 @@
 String rgbToHex(int r, int g, int b) =>
     '#${[r, g, b].map((v) => v.clamp(0, 255).toRadixString(16).padLeft(2, '0')).join()}'
         .toUpperCase();
+
+(double h, double s, double l) rgbToHsl(int r, int g, int b) {
+  final rf = r / 255, gf = g / 255, bf = b / 255;
+  final mx = [rf, gf, bf].reduce((a, c) => a > c ? a : c);
+  final mn = [rf, gf, bf].reduce((a, c) => a < c ? a : c);
+  final l = (mx + mn) / 2;
+  if (mx == mn) return (0, 0, l);
+  final d = mx - mn;
+  final s = l > 0.5 ? d / (2 - mx - mn) : d / (mx + mn);
+  final h =
+      (mx == rf
+          ? (gf - bf) / d + (gf < bf ? 6 : 0)
+          : mx == gf
+          ? (bf - rf) / d + 2
+          : (rf - gf) / d + 4) *
+      60;
+  return (h, s, l);
+}
