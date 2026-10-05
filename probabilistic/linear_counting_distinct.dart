@@ -20,3 +20,10 @@ double estimateDistinct(Iterable<String> items, int m) {
   final zeros = bits.where((b) => !b).length;
   return zeros == 0 ? double.infinity : m * log(m / zeros);
 }
+
+void main() {
+  final items = [for (var i = 0; i < 5000; i++) 'user${i % 1000}'];
+  print(
+    'true distinct: 1000, estimate: ${estimateDistinct(items, 8192).toStringAsFixed(0)}',
+  );
+}
