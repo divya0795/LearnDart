@@ -15,3 +15,10 @@ double jaccard(String a, String b) {
   if (x.isEmpty && y.isEmpty) return 1;
   return x.intersection(y).length / x.union(y).length;
 }
+
+void main() {
+  print(hamming('karolin', 'kathrin'));
+  print(hamming('1011101', '1001001'));
+  print(jaccard('the quick brown fox', 'the lazy brown dog'));
+  print(jaccard('same words', 'words same'));
+}
