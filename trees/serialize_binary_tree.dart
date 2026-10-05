@@ -9,3 +9,16 @@ class Node {
 
 String serialize(Node? n) =>
     n == null ? '#' : '${n.val},${serialize(n.left)},${serialize(n.right)}';
+
+Node? deserialize(String s) {
+  final it = s.split(',').iterator;
+  Node? go() {
+    if (!it.moveNext() || it.current == '#') return null;
+    final n = Node(int.parse(it.current));
+    n.left = go();
+    n.right = go();
+    return n;
+  }
+
+  return go();
+}
