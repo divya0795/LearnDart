@@ -32,3 +32,13 @@ String rgbToHex(int r, int g, int b) =>
       60;
   return (h, s, l);
 }
+
+void main() {
+  print(hexToRgb('#FF8800'));
+  print(hexToRgb('abc'));
+  print(rgbToHex(255, 136, 0));
+  final (h, s, l) = rgbToHsl(255, 136, 0);
+  print(
+    'hsl(${h.toStringAsFixed(0)}, ${(s * 100).toStringAsFixed(0)}%, ${(l * 100).toStringAsFixed(0)}%)',
+  );
+}
