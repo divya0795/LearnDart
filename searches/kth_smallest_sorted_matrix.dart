@@ -13,3 +13,16 @@ int countAtMost(List<List<int>> m, int x) {
   }
   return count;
 }
+
+int kthSmallest(List<List<int>> m, int k) {
+  var lo = m.first.first, hi = m.last.last;
+  while (lo < hi) {
+    final mid = lo + (hi - lo) ~/ 2;
+    if (countAtMost(m, mid) >= k) {
+      hi = mid;
+    } else {
+      lo = mid + 1;
+    }
+  }
+  return lo;
+}
