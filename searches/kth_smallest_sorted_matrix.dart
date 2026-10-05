@@ -26,3 +26,14 @@ int kthSmallest(List<List<int>> m, int k) {
   }
   return lo;
 }
+
+void main() {
+  final m = [
+    [1, 5, 9],
+    [10, 11, 13],
+    [12, 13, 15],
+  ];
+  for (final k in [1, 5, 8, 9]) {
+    print('k=$k -> ${kthSmallest(m, k)}');
+  }
+}
