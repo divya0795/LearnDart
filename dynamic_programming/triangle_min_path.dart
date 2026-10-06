@@ -31,3 +31,14 @@ List<int> minimumPath(List<List<int>> tri) {
   }
   return path;
 }
+
+void main() {
+  final t = [
+    [2],
+    [3, 4],
+    [6, 5, 7],
+    [4, 1, 8, 3],
+  ];
+  print(minimumTotal(t));
+  print(minimumPath(t));
+}
