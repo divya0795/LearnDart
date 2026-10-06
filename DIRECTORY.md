@@ -248,6 +248,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## design_patterns
 - [builder](design_patterns/builder.dart)
+- [chain_of_responsibility](design_patterns/chain_of_responsibility.dart)
 - [factory_method](design_patterns/factory_method.dart)
 - [state_machine_pattern](design_patterns/state_machine_pattern.dart)
 
@@ -314,6 +315,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [polygon_area](geometry/polygon_area.dart)
 - [rotate_matrix](geometry/rotate_matrix.dart)
 - [segment_intersection](geometry/segment_intersection.dart)
+- [triangle_area_heron](geometry/triangle_area_heron.dart)
 
 ## graphs
 - [a_star](graphs/a_star.dart)
@@ -521,6 +523,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [event_emitter_typed](reactive/event_emitter_typed.dart)
 - [observable](reactive/observable.dart)
 - [rx_operators](reactive/rx_operators.dart)
+- [store_with_reducer](reactive/store_with_reducer.dart)
 - [switchmap](reactive/switchmap.dart)
 
 ## recursion
@@ -547,6 +550,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [find_minimum_rotated](searches/find_minimum_rotated.dart)
 - [interpolation_search](searches/interpolation_search.dart)
 - [jump_search](searches/jump_search.dart)
+- [kth_smallest_sorted_matrix](searches/kth_smallest_sorted_matrix.dart)
 - [linear_search](searches/linear_search.dart)
 - [peak_element](searches/peak_element.dart)
 - [rotated_sorted_search](searches/rotated_sorted_search.dart)
