@@ -1,0 +1,12 @@
+// Polynomial feature expansion lets a linear model fit curves: turn x
+// into [x, x^2, ..., x^d]. Combined with linear regression this fits a
+// polynomial.
+List<double> expand(double x, int degree) {
+  final out = <double>[];
+  var p = 1.0;
+  for (var i = 1; i <= degree; i++) {
+    p *= x;
+    out.add(p);
+  }
+  return out;
+}
