@@ -10,3 +10,24 @@ int minimumTotal(List<List<int>> tri) {
   }
   return dp[0];
 }
+
+List<int> minimumPath(List<List<int>> tri) {
+  final n = tri.length;
+  final best = [
+    for (final r in tri) [...r],
+  ];
+  for (var r = n - 2; r >= 0; r--) {
+    for (var c = 0; c <= r; c++) {
+      best[r][c] += best[r + 1][c] < best[r + 1][c + 1]
+          ? best[r + 1][c]
+          : best[r + 1][c + 1];
+    }
+  }
+  final path = [tri[0][0]];
+  var c = 0;
+  for (var r = 1; r < n; r++) {
+    if (best[r][c + 1] < best[r][c]) c++;
+    path.add(tri[r][c]);
+  }
+  return path;
+}
