@@ -18,3 +18,11 @@ double horner(List<double> coeffs, double x) {
   }
   return r;
 }
+
+void main() {
+  print(expand(3, 4));
+  final c = [1.0, -2.0, 3.0]; // 1 - 2x + 3x^2
+  for (final x in [0.0, 1.0, 2.0]) {
+    print('p($x) = ${horner(c, x)}');
+  }
+}
