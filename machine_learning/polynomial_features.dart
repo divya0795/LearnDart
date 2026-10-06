@@ -10,3 +10,11 @@ List<double> expand(double x, int degree) {
   }
   return out;
 }
+
+double horner(List<double> coeffs, double x) {
+  var r = 0.0;
+  for (final c in coeffs.reversed) {
+    r = r * x + c;
+  }
+  return r;
+}
