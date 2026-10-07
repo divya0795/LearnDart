@@ -17,3 +17,15 @@ class GCounter {
     }
   }
 }
+
+class PNCounter {
+  final GCounter _p, _n;
+  PNCounter(String id) : _p = GCounter(id), _n = GCounter(id);
+  void increment() => _p.increment();
+  void decrement() => _n.increment();
+  int get value => _p.value - _n.value;
+  void merge(PNCounter o) {
+    _p.merge(o._p);
+    _n.merge(o._n);
+  }
+}
