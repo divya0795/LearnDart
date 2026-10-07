@@ -30,3 +30,8 @@ int sumNonAbundantSums(int limit) {
   }
   return total;
 }
+
+void main() {
+  print('first abundant: ${abundantNumbers(100).take(5).toList()}');
+  print('answer: ${sumNonAbundantSums(28123)}');
+}
