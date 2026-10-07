@@ -29,3 +29,19 @@ class PNCounter {
     _n.merge(o._n);
   }
 }
+
+void main() {
+  final a = GCounter('a'), b = GCounter('b');
+  a.increment(3);
+  b.increment(2);
+  a.merge(b);
+  b.merge(a);
+  b.merge(a); // merging again changes nothing
+  print('a=${a.value} b=${b.value}');
+  final x = PNCounter('x'), y = PNCounter('y');
+  x.increment();
+  x.increment();
+  y.decrement();
+  x.merge(y);
+  print('pn = ${x.value}');
+}
