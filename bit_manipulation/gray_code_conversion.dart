@@ -10,3 +10,8 @@ int fromGray(int g) {
   }
   return n;
 }
+
+bool isOneBitApart(int a, int b) {
+  final x = a ^ b;
+  return x != 0 && (x & (x - 1)) == 0;
+}
