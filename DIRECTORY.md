@@ -191,6 +191,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## conversions
 - [bytes_humanize](conversions/bytes_humanize.dart)
+- [color_conversions](conversions/color_conversions.dart)
 - [decimal_to_binary](conversions/decimal_to_binary.dart)
 - [decimal_to_hexadecimal](conversions/decimal_to_hexadecimal.dart)
 - [integer_to_roman](conversions/integer_to_roman.dart)
@@ -477,6 +478,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## probabilistic
 - [count_min_sketch](probabilistic/count_min_sketch.dart)
 - [hyperloglog](probabilistic/hyperloglog.dart)
+- [linear_counting_distinct](probabilistic/linear_counting_distinct.dart)
 - [minhash](probabilistic/minhash.dart)
 - [monte_carlo_pi](probabilistic/monte_carlo_pi.dart)
 - [reservoir_sampling](probabilistic/reservoir_sampling.dart)
@@ -588,6 +590,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [anagram_palindrome_permutation](strings/anagram_palindrome_permutation.dart)
 - [boyer_moore_search](strings/boyer_moore_search.dart)
 - [character_frequency](strings/character_frequency.dart)
+- [hamming_and_similarity](strings/hamming_and_similarity.dart)
 - [is_anagram](strings/is_anagram.dart)
 - [is_palindrome](strings/is_palindrome.dart)
 - [isomorphic_strings](strings/isomorphic_strings.dart)
@@ -626,5 +629,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## trees
 - [binary_tree_traversals](trees/binary_tree_traversals.dart)
 - [lowest_common_ancestor](trees/lowest_common_ancestor.dart)
+- [serialize_binary_tree](trees/serialize_binary_tree.dart)
 - [tree_height_and_balance](trees/tree_height_and_balance.dart)
+- [trie_autocomplete](trees/trie_autocomplete.dart)
 - [validate_bst](trees/validate_bst.dart)
