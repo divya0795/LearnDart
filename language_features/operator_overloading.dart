@@ -19,3 +19,15 @@ class Vec2 {
   @override
   String toString() => 'Vec2($x, $y)';
 }
+
+void main() {
+  const a = Vec2(1, 2), b = Vec2(3, 4);
+  print(a + b);
+  print(b - a);
+  print(a * 3);
+  print(-a);
+  print('${a == const Vec2(1, 2)} ${a == b}');
+  final dup = Vec2(1, 2);
+  print(<Vec2>{a, dup, b}.length);
+  print('a[0]=${a[0]} a[1]=${a[1]}');
+}
