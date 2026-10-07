@@ -13,3 +13,20 @@ List<int> abundantNumbers(int limit) {
       if (s[n] > n) n,
   ];
 }
+
+int sumNonAbundantSums(int limit) {
+  final abundant = abundantNumbers(limit);
+  final can = List.filled(limit + 1, false);
+  for (var i = 0; i < abundant.length; i++) {
+    for (var j = i; j < abundant.length; j++) {
+      final s = abundant[i] + abundant[j];
+      if (s > limit) break;
+      can[s] = true;
+    }
+  }
+  var total = 0;
+  for (var n = 1; n <= limit; n++) {
+    if (!can[n]) total += n;
+  }
+  return total;
+}
