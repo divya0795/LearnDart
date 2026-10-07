@@ -35,3 +35,14 @@ class UnionFind {
   bool connected(int a, int b) => find(a) == find(b);
   int sizeOf(int x) => _size[find(x)];
 }
+
+void main() {
+  final u = UnionFind(8);
+  for (final (a, b) in [(0, 1), (2, 3), (1, 3), (4, 5)]) {
+    u.union(a, b);
+  }
+  print('components: ${u.components}');
+  print('0~3: ${u.connected(0, 3)}, 0~4: ${u.connected(0, 4)}');
+  print('size of group with 2: ${u.sizeOf(2)}');
+  print('redundant union: ${u.union(0, 2)}');
+}
