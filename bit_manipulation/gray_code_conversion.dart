@@ -2,3 +2,11 @@
 // bit, which avoids glitches in rotary encoders. Convert binary to Gray
 // with n ^ (n >> 1).
 int toGray(int n) => n ^ (n >> 1);
+
+int fromGray(int g) {
+  var n = g;
+  for (var shift = 1; (g >> shift) > 0; shift++) {
+    n ^= g >> shift;
+  }
+  return n;
+}
