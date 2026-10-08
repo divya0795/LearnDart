@@ -23,3 +23,16 @@ String toCamel(String s) {
   final p = toPascal(s);
   return p.isEmpty ? p : p[0].toLowerCase() + p.substring(1);
 }
+
+void main() {
+  for (final s in [
+    'parseHTTPResponse',
+    'user_account_id',
+    'XMLHttpRequest',
+    'my-cool-name',
+  ]) {
+    print(
+      '$s -> ${toSnake(s)} | ${toKebab(s)} | ${toCamel(s)} | ${toPascal(s)}',
+    );
+  }
+}
