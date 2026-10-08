@@ -11,3 +11,8 @@ int spiralDiagonalSum(int n) {
   }
   return sum;
 }
+
+void main() {
+  print('5x5: ${spiralDiagonalSum(5)}');
+  print('1001x1001: ${spiralDiagonalSum(1001)}');
+}
