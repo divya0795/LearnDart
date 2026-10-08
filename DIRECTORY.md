@@ -256,6 +256,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## distributed
 - [consistent_hashing](distributed/consistent_hashing.dart)
 - [crdt](distributed/crdt.dart)
+- [g_counter_crdt](distributed/g_counter_crdt.dart)
 - [hash_ring_virtual_nodes](distributed/hash_ring_virtual_nodes.dart)
 - [heartbeat_failure_detector](distributed/heartbeat_failure_detector.dart)
 - [lamport_clock](distributed/lamport_clock.dart)
@@ -294,6 +295,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [regex_matching_dp](dynamic_programming/regex_matching_dp.dart)
 - [rod_cutting](dynamic_programming/rod_cutting.dart)
 - [stock_profit_dp](dynamic_programming/stock_profit_dp.dart)
+- [triangle_min_path](dynamic_programming/triangle_min_path.dart)
 - [unique_paths](dynamic_programming/unique_paths.dart)
 - [word_break_count](dynamic_programming/word_break_count.dart)
 
@@ -393,6 +395,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [naive_bayes](machine_learning/naive_bayes.dart)
 - [neural_network](machine_learning/neural_network.dart)
 - [perceptron](machine_learning/perceptron.dart)
+- [polynomial_features](machine_learning/polynomial_features.dart)
 - [relu](machine_learning/relu.dart)
 - [sigmoid](machine_learning/sigmoid.dart)
 - [softmax_cross_entropy](machine_learning/softmax_cross_entropy.dart)
@@ -503,6 +506,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [problem_017_number_letter_counts](project_euler/problem_017_number_letter_counts.dart)
 - [problem_019_counting_sundays](project_euler/problem_019_counting_sundays.dart)
 - [problem_020_factorial_digit_sum](project_euler/problem_020_factorial_digit_sum.dart)
+- [problem_023_abundant_sums](project_euler/problem_023_abundant_sums.dart)
 - [problem_024_lexicographic_permutation](project_euler/problem_024_lexicographic_permutation.dart)
 - [problem_031_coin_sums](project_euler/problem_031_coin_sums.dart)
 - [problem_036_double_base_palindromes](project_euler/problem_036_double_base_palindromes.dart)
