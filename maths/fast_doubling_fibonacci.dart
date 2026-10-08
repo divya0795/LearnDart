@@ -11,3 +11,9 @@
 }
 
 BigInt fib(int n) => _fib(n).$1;
+
+void main() {
+  print([for (var i = 0; i < 15; i++) fib(i)]);
+  print('fib(100) = ${fib(100)}');
+  print('fib(10000) has ${fib(10000).toString().length} digits');
+}
