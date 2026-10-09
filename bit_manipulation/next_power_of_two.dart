@@ -16,3 +16,9 @@ int nextPowerOfTwo(int n) {
 }
 
 int nextPowerOfTwoFast(int n) => n <= 1 ? 1 : 1 << (n - 1).bitLength;
+
+void main() {
+  for (final n in [0, 1, 5, 16, 17, 1000, 1025]) {
+    print('$n -> ${nextPowerOfTwo(n)} / ${nextPowerOfTwoFast(n)}');
+  }
+}
