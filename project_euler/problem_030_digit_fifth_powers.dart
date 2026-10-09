@@ -18,3 +18,9 @@ List<int> digitPowerNumbers(int power, int limit) => [
   for (var n = 10; n <= limit; n++)
     if (_powSum(n, power) == n) n,
 ];
+
+void main() {
+  print('fourth powers: ${digitPowerNumbers(4, 10000)}');
+  final fifth = digitPowerNumbers(5, 354294);
+  print('fifth powers: $fifth sum=${fifth.fold(0, (a, b) => a + b)}');
+}
