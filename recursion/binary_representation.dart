@@ -6,3 +6,9 @@
 String toBinary(int n) => n < 2 ? '$n' : toBinary(n ~/ 2) + '${n % 2}';
 
 int countOnes(int n) => n == 0 ? 0 : (n & 1) + countOnes(n >> 1);
+
+void main() {
+  for (final n in [0, 1, 6, 10, 255]) {
+    print('$n = ${toBinary(n)} (${countOnes(n)} ones)');
+  }
+}
