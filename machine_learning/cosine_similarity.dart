@@ -15,3 +15,11 @@ double norm(List<double> a) => sqrt(dot(a, a));
 
 double cosine(List<double> a, List<double> b) =>
     dot(a, b) / (norm(a) * norm(b));
+
+List<(int, double)> rank(List<double> query, List<List<double>> docs) {
+  final scored = [
+    for (var i = 0; i < docs.length; i++) (i, cosine(query, docs[i])),
+  ];
+  scored.sort((a, b) => b.$2.compareTo(a.$2));
+  return scored;
+}
