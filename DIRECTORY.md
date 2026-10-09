@@ -122,6 +122,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [count_set_bits](bit_manipulation/count_set_bits.dart)
 - [count_trailing_zeros](bit_manipulation/count_trailing_zeros.dart)
 - [gray_code](bit_manipulation/gray_code.dart)
+- [gray_code_conversion](bit_manipulation/gray_code_conversion.dart)
 - [hamming_distance](bit_manipulation/hamming_distance.dart)
 - [is_power_of_two](bit_manipulation/is_power_of_two.dart)
 - [missing_number_xor](bit_manipulation/missing_number_xor.dart)
@@ -246,6 +247,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [stack](data_structures/stack.dart)
 - [treap](data_structures/treap.dart)
 - [trie](data_structures/trie.dart)
+- [union_find_with_sizes](data_structures/union_find_with_sizes.dart)
 
 ## design_patterns
 - [builder](design_patterns/builder.dart)
@@ -372,6 +374,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [immutability_and_const](language_features/immutability_and_const.dart)
 - [mixins_and_composition](language_features/mixins_and_composition.dart)
 - [null_safety_patterns](language_features/null_safety_patterns.dart)
+- [operator_overloading](language_features/operator_overloading.dart)
 - [records_and_patterns](language_features/records_and_patterns.dart)
 - [sealed_classes_exhaustive](language_features/sealed_classes_exhaustive.dart)
 - [typedefs_and_function_types](language_features/typedefs_and_function_types.dart)
