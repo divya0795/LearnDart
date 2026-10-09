@@ -16,3 +16,14 @@ class Subject<T> {
     }
   }
 }
+
+class Thermostat {
+  final changes = Subject<double>();
+  double _temp = 20;
+
+  set temp(double t) {
+    if (t == _temp) return;
+    _temp = t;
+    changes.notify(t);
+  }
+}
