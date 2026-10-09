@@ -27,3 +27,15 @@ class Thermostat {
     changes.notify(t);
   }
 }
+
+void main() {
+  final t = Thermostat();
+  final off = t.changes.subscribe((v) => print('display: $v'));
+  t.changes.subscribe((v) {
+    if (v > 25) print('alarm: too hot');
+  });
+  t.temp = 22;
+  t.temp = 30;
+  off();
+  t.temp = 18;
+}
