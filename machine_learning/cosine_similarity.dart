@@ -23,3 +23,18 @@ List<(int, double)> rank(List<double> query, List<List<double>> docs) {
   scored.sort((a, b) => b.$2.compareTo(a.$2));
   return scored;
 }
+
+void main() {
+  print(cosine([1, 2, 3], [2, 4, 6]));
+  print(cosine([1, 0], [0, 1]));
+  print(
+    rank(
+      [1, 1, 0],
+      [
+        [2, 2, 0],
+        [0, 1, 1],
+        [1, 0, 0],
+      ],
+    ),
+  );
+}
