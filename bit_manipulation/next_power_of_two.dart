@@ -14,3 +14,5 @@ int nextPowerOfTwo(int n) {
   n |= n >> 32;
   return n + 1;
 }
+
+int nextPowerOfTwoFast(int n) => n <= 1 ? 1 : 1 << (n - 1).bitLength;
