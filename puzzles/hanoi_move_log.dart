@@ -21,3 +21,12 @@ List<(String, String)> hanoi(
     ...hanoi(n - 1, spare, to, from),
   ];
 }
+
+void main() {
+  for (final (a, b) in hanoi(3)) {
+    print('move disk $a -> $b');
+  }
+  for (final n in [1, 5, 10]) {
+    print('n=$n moves=${hanoi(n).length} (expected ${(1 << n) - 1})');
+  }
+}
