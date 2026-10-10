@@ -126,6 +126,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [hamming_distance](bit_manipulation/hamming_distance.dart)
 - [is_power_of_two](bit_manipulation/is_power_of_two.dart)
 - [missing_number_xor](bit_manipulation/missing_number_xor.dart)
+- [next_power_of_two](bit_manipulation/next_power_of_two.dart)
 - [power_set_via_bits](bit_manipulation/power_set_via_bits.dart)
 - [reverse_bits](bit_manipulation/reverse_bits.dart)
 - [single_number_xor](bit_manipulation/single_number_xor.dart)
@@ -412,6 +413,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [factorial_iterative](maths/factorial_iterative.dart)
 - [factorial_recursive](maths/factorial_recursive.dart)
 - [factorial_stirling](maths/factorial_stirling.dart)
+- [fast_doubling_fibonacci](maths/fast_doubling_fibonacci.dart)
 - [fibonacci_iterative](maths/fibonacci_iterative.dart)
 - [fibonacci_memoized](maths/fibonacci_memoized.dart)
 - [fibonacci_recursive](maths/fibonacci_recursive.dart)
@@ -511,6 +513,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [problem_020_factorial_digit_sum](project_euler/problem_020_factorial_digit_sum.dart)
 - [problem_023_abundant_sums](project_euler/problem_023_abundant_sums.dart)
 - [problem_024_lexicographic_permutation](project_euler/problem_024_lexicographic_permutation.dart)
+- [problem_028_spiral_diagonals](project_euler/problem_028_spiral_diagonals.dart)
 - [problem_031_coin_sums](project_euler/problem_031_coin_sums.dart)
 - [problem_036_double_base_palindromes](project_euler/problem_036_double_base_palindromes.dart)
 - [problem_048_self_powers](project_euler/problem_048_self_powers.dart)
@@ -537,6 +540,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## recursion
 - [ackermann](recursion/ackermann.dart)
+- [binary_representation](recursion/binary_representation.dart)
 - [collatz_depth](recursion/collatz_depth.dart)
 - [combinations](recursion/combinations.dart)
 - [flatten_nested_list](recursion/flatten_nested_list.dart)
@@ -627,6 +631,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [test_doubles_spy](testing/test_doubles_spy.dart)
 
 ## text_processing
+- [camel_snake_case_converter](text_processing/camel_snake_case_converter.dart)
 - [myers_diff](text_processing/myers_diff.dart)
 - [ngrams](text_processing/ngrams.dart)
 - [soundex_phonetic](text_processing/soundex_phonetic.dart)
