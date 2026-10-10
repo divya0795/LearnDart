@@ -21,3 +21,9 @@ import 'dart:math' as math;
   final r = math.sqrt(math.pow(a.$1 - ux, 2) + math.pow(a.$2 - uy, 2));
   return (x: ux, y: uy, r: r);
 }
+
+void main() {
+  final c = circumcircle((0, 0), (4, 0), (0, 3))!;
+  print('centre (${c.x}, ${c.y}) radius ${c.r}');
+  print('collinear -> ${circumcircle((0, 0), (1, 1), (2, 2))}');
+}
