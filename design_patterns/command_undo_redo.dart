@@ -40,3 +40,15 @@ class Editor {
     _done.add(c);
   }
 }
+
+void main() {
+  final doc = Document();
+  final ed = Editor();
+  ed.run(Append(doc, 'Hello'));
+  ed.run(Append(doc, ', world'));
+  print(doc.text);
+  ed.undo();
+  print(doc.text);
+  ed.redo();
+  print(doc.text);
+}
