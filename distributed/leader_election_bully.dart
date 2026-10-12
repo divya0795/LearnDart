@@ -13,3 +13,12 @@ class Cluster {
     return elect(higher.first);
   }
 }
+
+void main() {
+  final c = Cluster({1: true, 2: true, 3: true, 4: true, 5: true});
+  print('start from 2: leader ${c.elect(2)}');
+  c.alive[5] = false;
+  print('after 5 fails, from 1: leader ${c.elect(1)}');
+  c.alive[4] = false;
+  print('after 4 fails, from 2: leader ${c.elect(2)}');
+}
