@@ -18,3 +18,25 @@ class Append implements Command {
   @override
   void undo() => doc.text = doc.text.substring(0, doc.text.length - s.length);
 }
+
+class Editor {
+  final _done = <Command>[], _undone = <Command>[];
+
+  void run(Command c) {
+    c.execute();
+    _done.add(c);
+    _undone.clear();
+  }
+
+  void undo() {
+    if (_done.isEmpty) return;
+    final c = _done.removeLast()..undo();
+    _undone.add(c);
+  }
+
+  void redo() {
+    if (_undone.isEmpty) return;
+    final c = _undone.removeLast()..execute();
+    _done.add(c);
+  }
+}
