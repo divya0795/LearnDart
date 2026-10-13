@@ -12,3 +12,16 @@ M mul(M a, M b) => [
     a[1][0] * b[0][1] + a[1][1] * b[1][1],
   ],
 ];
+
+M power(M m, int n) {
+  M result = [
+    [1, 0],
+    [0, 1],
+  ];
+  while (n > 0) {
+    if (n.isOdd) result = mul(result, m);
+    m = mul(m, m);
+    n >>= 1;
+  }
+  return result;
+}
