@@ -22,3 +22,10 @@ List<String> sentences(String text) => text
     avgWordLength: w.isEmpty ? 0 : total / w.length,
   );
 }
+
+void main() {
+  const t = "Dart's tokenizer is simple. Is it enough? Yes! Mostly.";
+  print(words(t));
+  print(sentences(t));
+  print(summarize(t));
+}
