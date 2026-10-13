@@ -15,3 +15,16 @@ int isqrt(int n) {
   }
   return lo;
 }
+
+double sqrtApprox(double x, [double eps = 1e-9]) {
+  var lo = 0.0, hi = x < 1 ? 1.0 : x;
+  while (hi - lo > eps) {
+    final mid = (lo + hi) / 2;
+    if (mid * mid > x) {
+      hi = mid;
+    } else {
+      lo = mid;
+    }
+  }
+  return lo;
+}
