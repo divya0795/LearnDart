@@ -6,3 +6,9 @@ List<String> words(String text) =>
         .allMatches(text)
         .map((m) => m[0]!.toLowerCase())
         .toList();
+
+List<String> sentences(String text) => text
+    .split(RegExp(r'(?<=[.!?])\s+'))
+    .map((s) => s.trim())
+    .where((s) => s.isNotEmpty)
+    .toList();
