@@ -24,3 +24,13 @@ class BehaviorSubject<T> {
     return () => _listeners.remove(onData);
   }
 }
+
+void main() {
+  final user = BehaviorSubject<String>('guest');
+  final cancelA = user.listen((v) => print('A sees $v'));
+  user.next('alice');
+  user.listen((v) => print('B sees $v')); // late subscriber gets "alice"
+  cancelA();
+  user.next('bob'); // only B
+  print('current = ${user.value}');
+}
