@@ -12,3 +12,13 @@ List<String> sentences(String text) => text
     .map((s) => s.trim())
     .where((s) => s.isNotEmpty)
     .toList();
+
+({int words, int sentences, double avgWordLength}) summarize(String text) {
+  final w = words(text);
+  final total = w.fold(0, (a, b) => a + b.length);
+  return (
+    words: w.length,
+    sentences: sentences(text).length,
+    avgWordLength: w.isEmpty ? 0 : total / w.length,
+  );
+}
