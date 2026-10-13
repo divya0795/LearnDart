@@ -25,3 +25,8 @@ M power(M m, int n) {
   }
   return result;
 }
+
+int fib(int n) => power([
+  [1, 1],
+  [1, 0],
+], n)[0][1];
