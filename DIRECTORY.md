@@ -254,6 +254,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [builder](design_patterns/builder.dart)
 - [chain_of_responsibility](design_patterns/chain_of_responsibility.dart)
 - [factory_method](design_patterns/factory_method.dart)
+- [observer](design_patterns/observer.dart)
 - [state_machine_pattern](design_patterns/state_machine_pattern.dart)
 
 ## distributed
@@ -312,6 +313,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [tic_tac_toe_minimax](game_theory/tic_tac_toe_minimax.dart)
 
 ## geometry
+- [circle_from_three_points](geometry/circle_from_three_points.dart)
 - [closest_pair](geometry/closest_pair.dart)
 - [convex_hull_graham](geometry/convex_hull_graham.dart)
 - [haversine](geometry/haversine.dart)
@@ -389,6 +391,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## machine_learning
 - [confusion_matrix_metrics](machine_learning/confusion_matrix_metrics.dart)
+- [cosine_similarity](machine_learning/cosine_similarity.dart)
 - [decision_tree](machine_learning/decision_tree.dart)
 - [gradient_descent_1d](machine_learning/gradient_descent_1d.dart)
 - [k_means](machine_learning/k_means.dart)
@@ -514,6 +517,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [problem_023_abundant_sums](project_euler/problem_023_abundant_sums.dart)
 - [problem_024_lexicographic_permutation](project_euler/problem_024_lexicographic_permutation.dart)
 - [problem_028_spiral_diagonals](project_euler/problem_028_spiral_diagonals.dart)
+- [problem_030_digit_fifth_powers](project_euler/problem_030_digit_fifth_powers.dart)
 - [problem_031_coin_sums](project_euler/problem_031_coin_sums.dart)
 - [problem_036_double_base_palindromes](project_euler/problem_036_double_base_palindromes.dart)
 - [problem_048_self_powers](project_euler/problem_048_self_powers.dart)
@@ -522,6 +526,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [collatz_and_happy_numbers](puzzles/collatz_and_happy_numbers.dart)
 - [fizzbuzz](puzzles/fizzbuzz.dart)
 - [game_of_life](puzzles/game_of_life.dart)
+- [hanoi_move_log](puzzles/hanoi_move_log.dart)
 - [josephus_problem](puzzles/josephus_problem.dart)
 - [magic_square_odd](puzzles/magic_square_odd.dart)
 - [roman_clock_angle](puzzles/roman_clock_angle.dart)
