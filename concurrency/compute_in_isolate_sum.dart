@@ -10,3 +10,13 @@ int heavySum(int n) {
   }
   return s;
 }
+
+Future<void> main() async {
+  final results = await Future.wait([
+    Isolate.run(() => heavySum(5000000)),
+    Isolate.run(() => heavySum(7000000)),
+    Isolate.run(() => heavySum(9000000)),
+  ]);
+  print(results);
+  print('same as main isolate: ${results[0] == heavySum(5000000)}');
+}
