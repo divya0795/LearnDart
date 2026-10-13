@@ -37,3 +37,18 @@ class BloomFilter {
 
   bool mightContain(String s) => _idx(s).every((i) => _bits[i]);
 }
+
+void main() {
+  final bf = BloomFilter(2000, 4);
+  for (var i = 0; i < 200; i++) {
+    bf.add('user$i');
+  }
+  final missing = [for (var i = 0; i < 200; i++) 'user$i']
+      .where((s) => !bf.mightContain(s))
+      .length;
+  print('false negatives: $missing (must be 0)');
+  final fp = [for (var i = 1000; i < 2000; i++) 'user$i']
+      .where(bf.mightContain)
+      .length;
+  print('false positives: $fp / 1000');
+}
