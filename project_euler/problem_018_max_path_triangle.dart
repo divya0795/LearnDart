@@ -10,3 +10,13 @@ int maxPathSum(List<List<int>> tri) {
   }
   return dp[0];
 }
+
+void main() {
+  final tri = [
+    [3],
+    [7, 4],
+    [2, 4, 6],
+    [8, 5, 9, 3],
+  ];
+  print(maxPathSum(tri));
+}
