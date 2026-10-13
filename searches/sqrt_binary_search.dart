@@ -28,3 +28,10 @@ double sqrtApprox(double x, [double eps = 1e-9]) {
   }
   return lo;
 }
+
+void main() {
+  for (final n in [0, 1, 15, 16, 1000000]) {
+    print('isqrt($n) = ${isqrt(n)}');
+  }
+  print('sqrt(2) ~ ${sqrtApprox(2)}');
+}
