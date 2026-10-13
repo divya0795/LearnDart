@@ -30,3 +30,8 @@ int fib(int n) => power([
   [1, 1],
   [1, 0],
 ], n)[0][1];
+
+void main() {
+  print([for (var i = 0; i <= 15; i++) fib(i)]);
+  print('fib(90) = ${fib(90)}');
+}
