@@ -12,3 +12,24 @@ class Espresso implements Coffee {
   @override
   String get description => 'espresso';
 }
+
+abstract class Extra implements Coffee {
+  final Coffee inner;
+  Extra(this.inner);
+}
+
+class Milk extends Extra {
+  Milk(super.inner);
+  @override
+  double get cost => inner.cost + 0.5;
+  @override
+  String get description => '${inner.description} + milk';
+}
+
+class Sugar extends Extra {
+  Sugar(super.inner);
+  @override
+  double get cost => inner.cost + 0.2;
+  @override
+  String get description => '${inner.description} + sugar';
+}
