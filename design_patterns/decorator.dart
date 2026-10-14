@@ -33,3 +33,10 @@ class Sugar extends Extra {
   @override
   String get description => '${inner.description} + sugar';
 }
+
+void main() {
+  Coffee c = Espresso();
+  c = Milk(c);
+  c = Sugar(Sugar(c));
+  print('${c.description}: \$${c.cost.toStringAsFixed(2)}');
+}
