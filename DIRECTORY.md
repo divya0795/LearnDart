@@ -253,6 +253,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## design_patterns
 - [builder](design_patterns/builder.dart)
 - [chain_of_responsibility](design_patterns/chain_of_responsibility.dart)
+- [command_undo_redo](design_patterns/command_undo_redo.dart)
 - [factory_method](design_patterns/factory_method.dart)
 - [observer](design_patterns/observer.dart)
 - [state_machine_pattern](design_patterns/state_machine_pattern.dart)
@@ -264,6 +265,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [hash_ring_virtual_nodes](distributed/hash_ring_virtual_nodes.dart)
 - [heartbeat_failure_detector](distributed/heartbeat_failure_detector.dart)
 - [lamport_clock](distributed/lamport_clock.dart)
+- [leader_election_bully](distributed/leader_election_bully.dart)
 - [raft](distributed/raft.dart)
 - [vector_clock](distributed/vector_clock.dart)
 
@@ -487,6 +489,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [url_parser](parsers/url_parser.dart)
 
 ## probabilistic
+- [bloom_filter](probabilistic/bloom_filter.dart)
 - [count_min_sketch](probabilistic/count_min_sketch.dart)
 - [hyperloglog](probabilistic/hyperloglog.dart)
 - [linear_counting_distinct](probabilistic/linear_counting_distinct.dart)
@@ -512,6 +515,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [problem_015_lattice_paths](project_euler/problem_015_lattice_paths.dart)
 - [problem_016_power_digit_sum](project_euler/problem_016_power_digit_sum.dart)
 - [problem_017_number_letter_counts](project_euler/problem_017_number_letter_counts.dart)
+- [problem_018_max_path_triangle](project_euler/problem_018_max_path_triangle.dart)
 - [problem_019_counting_sundays](project_euler/problem_019_counting_sundays.dart)
 - [problem_020_factorial_digit_sum](project_euler/problem_020_factorial_digit_sum.dart)
 - [problem_023_abundant_sums](project_euler/problem_023_abundant_sums.dart)
@@ -572,6 +576,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [linear_search](searches/linear_search.dart)
 - [peak_element](searches/peak_element.dart)
 - [rotated_sorted_search](searches/rotated_sorted_search.dart)
+- [sqrt_binary_search](searches/sqrt_binary_search.dart)
 - [ternary_search](searches/ternary_search.dart)
 - [ternary_search_recursive](searches/ternary_search_recursive.dart)
 
