@@ -16,3 +16,16 @@ List<T> stableSort<T>(List<T> xs, int Function(T, T) cmp) {
     ..addAll(l.sublist(i))
     ..addAll(r.sublist(j));
 }
+
+void main() {
+  final people = [
+    ('Zed', 30),
+    ('Amy', 25),
+    ('Bob', 30),
+    ('Cat', 25),
+    ('Dan', 30),
+  ];
+  final byName = stableSort(people, (a, b) => a.$1.compareTo(b.$1));
+  final byAgeStable = stableSort(byName, (a, b) => a.$2.compareTo(b.$2));
+  print(byAgeStable);
+}
