@@ -18,3 +18,11 @@ List<(int, int, int)> primitiveTriples(int maxC) {
   }
   return out..sort((x, y) => x.$3.compareTo(y.$3));
 }
+
+void main() {
+  final ts = primitiveTriples(100);
+  for (final (a, b, c) in ts) {
+    print('$a^2 + $b^2 = $c^2 : ${a * a + b * b == c * c}');
+  }
+  print('${ts.length} primitive triples with c <= 100');
+}
