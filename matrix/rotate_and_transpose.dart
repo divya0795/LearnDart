@@ -9,3 +9,23 @@ void transpose(List<List<int>> m) {
     }
   }
 }
+
+void rotateClockwise(List<List<int>> m) {
+  transpose(m);
+  for (final row in m) {
+    for (var i = 0, j = row.length - 1; i < j; i++, j--) {
+      final t = row[i];
+      row[i] = row[j];
+      row[j] = t;
+    }
+  }
+}
+
+void rotateCounterClockwise(List<List<int>> m) {
+  transpose(m);
+  for (var i = 0, j = m.length - 1; i < j; i++, j--) {
+    final t = m[i];
+    m[i] = m[j];
+    m[j] = t;
+  }
+}
