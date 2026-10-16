@@ -29,3 +29,15 @@ void rotateCounterClockwise(List<List<int>> m) {
     m[j] = t;
   }
 }
+
+void main() {
+  final m = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+  ];
+  rotateClockwise(m);
+  print('clockwise: $m');
+  rotateCounterClockwise(m);
+  print('back:      $m');
+}
