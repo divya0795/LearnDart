@@ -27,3 +27,19 @@ List<int> daysUntilWarmer(List<int> t) {
   }
   return res;
 }
+
+int largestRectangle(List<int> h) {
+  final st = <int>[];
+  var best = 0;
+  for (var i = 0; i <= h.length; i++) {
+    final cur = i == h.length ? 0 : h[i];
+    while (st.isNotEmpty && h[st.last] >= cur) {
+      final height = h[st.removeLast()];
+      final left = st.isEmpty ? -1 : st.last;
+      final area = height * (i - left - 1);
+      if (area > best) best = area;
+    }
+    st.add(i);
+  }
+  return best;
+}
