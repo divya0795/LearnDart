@@ -10,3 +10,8 @@ int powMod(int b, int e, int m) {
   }
   return r;
 }
+
+int legendre(int a, int p) {
+  final r = powMod(a, (p - 1) ~/ 2, p);
+  return r == p - 1 ? -1 : r;
+}
