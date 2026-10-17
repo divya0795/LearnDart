@@ -10,3 +10,14 @@ class TaskQueue {
     return result;
   }
 }
+
+Future<void> main() async {
+  final q = TaskQueue();
+  final order = <String>[];
+  Future<void> job(String name, int ms) => q.add(() async {
+    await Future.delayed(Duration(milliseconds: ms));
+    order.add(name);
+  });
+  await Future.wait([job('slow', 40), job('fast', 5), job('medium', 20)]);
+  print(order);
+}
