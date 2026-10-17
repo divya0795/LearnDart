@@ -20,3 +20,11 @@ Map<String, double> inverseDocFrequency(List<List<String>> docs) {
   }
   return {for (final e in df.entries) e.key: log(docs.length / e.value) + 1};
 }
+
+List<Map<String, double>> tfidf(List<List<String>> docs) {
+  final idf = inverseDocFrequency(docs);
+  return [
+    for (final d in docs)
+      {for (final e in termFrequency(d).entries) e.key: e.value * idf[e.key]!},
+  ];
+}
