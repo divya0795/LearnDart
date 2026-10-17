@@ -171,6 +171,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [cancellation_token](concurrency/cancellation_token.dart)
 - [circuit_breaker](concurrency/circuit_breaker.dart)
 - [completer_basics](concurrency/completer_basics.dart)
+- [compute_in_isolate_sum](concurrency/compute_in_isolate_sum.dart)
 - [debounce](concurrency/debounce.dart)
 - [event_bus](concurrency/event_bus.dart)
 - [future_pool](concurrency/future_pool.dart)
@@ -254,6 +255,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [builder](design_patterns/builder.dart)
 - [chain_of_responsibility](design_patterns/chain_of_responsibility.dart)
 - [command_undo_redo](design_patterns/command_undo_redo.dart)
+- [decorator](design_patterns/decorator.dart)
 - [factory_method](design_patterns/factory_method.dart)
 - [observer](design_patterns/observer.dart)
 - [state_machine_pattern](design_patterns/state_machine_pattern.dart)
@@ -430,6 +432,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [is_prime](maths/is_prime.dart)
 - [karatsuba_multiplication](maths/karatsuba_multiplication.dart)
 - [lcm](maths/lcm.dart)
+- [matrix_exponent_fibonacci](maths/matrix_exponent_fibonacci.dart)
 - [n_bonacci](maths/n_bonacci.dart)
 - [newton_method_root](maths/newton_method_root.dart)
 - [perfect_number](maths/perfect_number.dart)
@@ -539,6 +542,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [water_jug_problem](puzzles/water_jug_problem.dart)
 
 ## reactive
+- [behavior_subject](reactive/behavior_subject.dart)
 - [combine_latest](reactive/combine_latest.dart)
 - [debounce_operator](reactive/debounce_operator.dart)
 - [event_emitter_typed](reactive/event_emitter_typed.dart)
@@ -601,6 +605,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [shell_sort](sorts/shell_sort.dart)
 - [sleep_sort_simulated](sorts/sleep_sort_simulated.dart)
 - [sort_by_multiple_keys](sorts/sort_by_multiple_keys.dart)
+- [stable_merge_sort](sorts/stable_merge_sort.dart)
 - [stooge_sort](sorts/stooge_sort.dart)
 - [tim_sort](sorts/tim_sort.dart)
 - [tree_sort](sorts/tree_sort.dart)
@@ -646,6 +651,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [ngrams](text_processing/ngrams.dart)
 - [soundex_phonetic](text_processing/soundex_phonetic.dart)
 - [template_renderer](text_processing/template_renderer.dart)
+- [tokenize_words_sentences](text_processing/tokenize_words_sentences.dart)
 - [word_wrap_and_justify](text_processing/word_wrap_and_justify.dart)
 
 ## trees
