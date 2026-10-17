@@ -28,3 +28,20 @@ List<Map<String, double>> tfidf(List<List<String>> docs) {
       {for (final e in termFrequency(d).entries) e.key: e.value * idf[e.key]!},
   ];
 }
+
+void main() {
+  final docs = [
+    'the cat sat on the mat'.split(' '),
+    'the dog sat on the log'.split(' '),
+    'cats and dogs are pets'.split(' '),
+  ];
+  final v = tfidf(docs);
+  for (var i = 0; i < docs.length; i++) {
+    final top =
+        (v[i].entries.toList()..sort((a, b) => b.value.compareTo(a.value)))
+            .take(2);
+    print(
+      'doc $i: ${top.map((e) => '${e.key}=${e.value.toStringAsFixed(2)}').join(', ')}',
+    );
+  }
+}
