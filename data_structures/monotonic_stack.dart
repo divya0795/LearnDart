@@ -14,3 +14,16 @@ List<int> nextGreater(List<int> a) {
   }
   return res;
 }
+
+List<int> daysUntilWarmer(List<int> t) {
+  final res = List.filled(t.length, 0);
+  final st = <int>[];
+  for (var i = 0; i < t.length; i++) {
+    while (st.isNotEmpty && t[st.last] < t[i]) {
+      final j = st.removeLast();
+      res[j] = i - j;
+    }
+    st.add(i);
+  }
+  return res;
+}
