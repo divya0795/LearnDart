@@ -23,3 +23,13 @@ String firstDifference(String a, String b) {
   }
   return 'identical';
 }
+
+void main() {
+  final s = SnapshotStore();
+  String render(int n) => [for (var i = 1; i <= n; i++) 'row $i'].join('\n');
+  print(s.check('table', render(3)) ?? 'recorded');
+  print(s.check('table', render(3)) ?? 'matches snapshot');
+  print(
+    s.check('table', render(4).replaceFirst('row 2', 'row two')) ?? 'matches',
+  );
+}
