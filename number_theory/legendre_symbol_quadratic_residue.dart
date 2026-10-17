@@ -15,3 +15,6 @@ int legendre(int a, int p) {
   final r = powMod(a, (p - 1) ~/ 2, p);
   return r == p - 1 ? -1 : r;
 }
+
+List<int> quadraticResidues(int p) =>
+    {for (var x = 1; x < p; x++) x * x % p}.toList()..sort();
