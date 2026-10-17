@@ -43,3 +43,9 @@ int largestRectangle(List<int> h) {
   }
   return best;
 }
+
+void main() {
+  print(nextGreater([4, 5, 2, 25, 7, 8]));
+  print(daysUntilWarmer([73, 74, 75, 71, 69, 72, 76, 73]));
+  print(largestRectangle([2, 1, 5, 6, 2, 3]));
+}
