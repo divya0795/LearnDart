@@ -18,3 +18,11 @@ int legendre(int a, int p) {
 
 List<int> quadraticResidues(int p) =>
     {for (var x = 1; x < p; x++) x * x % p}.toList()..sort();
+
+void main() {
+  const p = 23;
+  print('residues mod $p: ${quadraticResidues(p)}');
+  print('legendre(2, $p) = ${legendre(2, p)}');
+  print('legendre(5, $p) = ${legendre(5, p)}');
+  print('legendre(23k) = ${legendre(46, p)}');
+}
