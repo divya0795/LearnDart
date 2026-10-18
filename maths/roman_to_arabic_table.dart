@@ -28,3 +28,15 @@ String toRoman(int n) {
   }
   return b.toString();
 }
+
+int fromRoman(String s) {
+  var i = 0, total = 0;
+  for (final (v, sym) in _table) {
+    while (s.startsWith(sym, i)) {
+      total += v;
+      i += sym.length;
+    }
+  }
+  if (i != s.length) throw FormatException('bad numeral $s');
+  return total;
+}
