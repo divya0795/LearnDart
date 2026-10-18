@@ -16,3 +16,13 @@ class HitCounter {
     return _hits.length;
   }
 }
+
+void main() {
+  final c = HitCounter();
+  for (final t in [1, 2, 3, 100, 299, 300, 301]) {
+    c.hit(t);
+  }
+  print('at 300: ${c.count(300)}');
+  print('at 302: ${c.count(302)}');
+  print('at 700: ${c.count(700)}');
+}
