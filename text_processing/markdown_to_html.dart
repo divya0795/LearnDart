@@ -35,3 +35,11 @@ String toHtml(String md) {
   if (inList) out.add('</ul>');
   return out.join('\n');
 }
+
+void main() {
+  print(
+    toHtml(
+      '# Title\n\nSome **bold** and *italic* with `code` <b>.\n\n- one\n- two\n\nEnd',
+    ),
+  );
+}
