@@ -440,6 +440,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [power_iterative](maths/power_iterative.dart)
 - [power_recursive](maths/power_recursive.dart)
 - [prime_factorization](maths/prime_factorization.dart)
+- [pythagorean_triples](maths/pythagorean_triples.dart)
 - [quadratic_formula](maths/quadratic_formula.dart)
 - [sieve_of_eratosthenes](maths/sieve_of_eratosthenes.dart)
 - [simpson_rule](maths/simpson_rule.dart)
@@ -450,6 +451,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## matrix
 - [game_of_life_step](matrix/game_of_life_step.dart)
+- [rotate_and_transpose](matrix/rotate_and_transpose.dart)
 - [set_matrix_zeroes](matrix/set_matrix_zeroes.dart)
 
 ## number_theory
@@ -639,6 +641,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [z_algorithm](strings/z_algorithm.dart)
 
 ## testing
+- [golden_snapshot_compare](testing/golden_snapshot_compare.dart)
 - [mini_test_runner](testing/mini_test_runner.dart)
 - [mocks_and_fakes](testing/mocks_and_fakes.dart)
 - [property_based_testing](testing/property_based_testing.dart)
@@ -651,6 +654,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [ngrams](text_processing/ngrams.dart)
 - [soundex_phonetic](text_processing/soundex_phonetic.dart)
 - [template_renderer](text_processing/template_renderer.dart)
+- [tf_idf](text_processing/tf_idf.dart)
 - [tokenize_words_sentences](text_processing/tokenize_words_sentences.dart)
 - [word_wrap_and_justify](text_processing/word_wrap_and_justify.dart)
 
