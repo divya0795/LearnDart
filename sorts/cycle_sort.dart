@@ -36,3 +36,9 @@ int cycleSort(List<int> a) {
   }
   return writes;
 }
+
+void main() {
+  final a = [5, 2, 8, 2, 9, 1];
+  final w = cycleSort(a);
+  print('$a using $w writes');
+}
