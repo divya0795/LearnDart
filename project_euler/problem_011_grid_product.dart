@@ -19,3 +19,15 @@ int maxAdjacentProduct(List<List<int>> g, {int n = 4}) {
   }
   return best;
 }
+
+void main() {
+  final g = [
+    [8, 2, 22, 97, 38],
+    [49, 49, 99, 40, 17],
+    [81, 18, 57, 60, 87],
+    [52, 70, 95, 23, 4],
+    [22, 31, 16, 71, 51],
+  ];
+  print(maxAdjacentProduct(g));
+  print(maxAdjacentProduct(g, n: 2));
+}
