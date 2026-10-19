@@ -10,3 +10,19 @@ int parseClock(String s) {
   final parts = s.split(':').map(int.parse).toList();
   return parts.fold(0, (acc, p) => acc * 60 + p);
 }
+
+String humanDuration(int seconds) {
+  if (seconds == 0) return '0 seconds';
+  final parts = <String>[];
+  for (final (unit, size) in [
+    ('day', 86400),
+    ('hour', 3600),
+    ('minute', 60),
+    ('second', 1),
+  ]) {
+    final n = seconds ~/ size;
+    seconds %= size;
+    if (n > 0) parts.add('$n $unit${n == 1 ? '' : 's'}');
+  }
+  return parts.join(', ');
+}
