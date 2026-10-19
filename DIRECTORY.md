@@ -168,6 +168,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## concurrency
 - [async_lock_keyed](concurrency/async_lock_keyed.dart)
+- [async_queue_sequential](concurrency/async_queue_sequential.dart)
 - [cancellation_token](concurrency/cancellation_token.dart)
 - [circuit_breaker](concurrency/circuit_breaker.dart)
 - [completer_basics](concurrency/completer_basics.dart)
@@ -238,6 +239,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [merge_sorted_lists](data_structures/merge_sorted_lists.dart)
 - [min_heap](data_structures/min_heap.dart)
 - [min_stack](data_structures/min_stack.dart)
+- [monotonic_stack](data_structures/monotonic_stack.dart)
 - [patricia_trie](data_structures/patricia_trie.dart)
 - [priority_queue](data_structures/priority_queue.dart)
 - [queue](data_structures/queue.dart)
@@ -462,6 +464,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [fermat_primality](number_theory/fermat_primality.dart)
 - [gcd_lcm_of_list](number_theory/gcd_lcm_of_list.dart)
 - [goldbach_and_twin_primes](number_theory/goldbach_and_twin_primes.dart)
+- [legendre_symbol_quadratic_residue](number_theory/legendre_symbol_quadratic_residue.dart)
 - [linear_diophantine](number_theory/linear_diophantine.dart)
 - [linear_sieve](number_theory/linear_sieve.dart)
 - [lucas_lehmer](number_theory/lucas_lehmer.dart)
@@ -593,6 +596,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [cocktail_sort](sorts/cocktail_sort.dart)
 - [comb_sort](sorts/comb_sort.dart)
 - [counting_sort](sorts/counting_sort.dart)
+- [cycle_sort](sorts/cycle_sort.dart)
 - [gnome_sort](sorts/gnome_sort.dart)
 - [heap_sort](sorts/heap_sort.dart)
 - [insertion_sort](sorts/insertion_sort.dart)
