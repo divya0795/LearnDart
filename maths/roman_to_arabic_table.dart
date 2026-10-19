@@ -40,3 +40,14 @@ int fromRoman(String s) {
   if (i != s.length) throw FormatException('bad numeral $s');
   return total;
 }
+
+void main() {
+  for (final n in [4, 9, 14, 40, 90, 400, 1994, 2024, 3999]) {
+    print('$n = ${toRoman(n)}');
+  }
+  var ok = true;
+  for (var n = 1; n <= 3999; n++) {
+    if (fromRoman(toRoman(n)) != n) ok = false;
+  }
+  print('round trip 1..3999 ok: $ok');
+}
