@@ -26,3 +26,10 @@ String humanDuration(int seconds) {
   }
   return parts.join(', ');
 }
+
+void main() {
+  for (final s in [5, 65, 3600, 3725, 90061]) {
+    print('$s -> ${formatSeconds(s)} | ${humanDuration(s)}');
+  }
+  print(parseClock('1:02:05'));
+}
