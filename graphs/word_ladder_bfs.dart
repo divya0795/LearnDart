@@ -25,3 +25,9 @@ int ladderLength(String begin, String end, List<String> words) {
   }
   return 0;
 }
+
+void main() {
+  const dict = ['hot', 'dot', 'dog', 'lot', 'log', 'cog'];
+  print(ladderLength('hit', 'cog', dict));
+  print(ladderLength('hit', 'cog', ['hot', 'dot', 'dog', 'lot', 'log']));
+}
