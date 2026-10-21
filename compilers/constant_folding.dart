@@ -48,3 +48,12 @@ Expr fold(Expr e) {
     return Num(0);
   return Bin(e.op, l, r);
 }
+
+void main() {
+  final e1 = Bin('+', Bin('*', Num(2), Num(3)), Var('x'));
+  print('$e1  =>  ${fold(e1)}');
+  final e2 = Bin('*', Bin('+', Var('y'), Num(0)), Bin('-', Num(5), Num(4)));
+  print('$e2  =>  ${fold(e2)}');
+  final e3 = Bin('*', Var('z'), Bin('-', Num(3), Num(3)));
+  print('$e3  =>  ${fold(e3)}');
+}
