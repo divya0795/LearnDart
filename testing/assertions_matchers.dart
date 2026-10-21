@@ -12,3 +12,13 @@ Matcher greaterThan(num x) =>
 Matcher isEmptyList = Matcher((v) => v is List && v.isEmpty, 'an empty list');
 Matcher contains(Object? x) =>
     Matcher((v) => v is Iterable && v.contains(x), 'contains $x');
+
+Matcher allOf(List<Matcher> ms) => Matcher(
+  (v) => ms.every((m) => m.test(v)),
+  ms.map((m) => m.description).join(' and '),
+);
+Matcher anyOf(List<Matcher> ms) => Matcher(
+  (v) => ms.any((m) => m.test(v)),
+  ms.map((m) => m.description).join(' or '),
+);
+Matcher not(Matcher m) => Matcher((v) => !m.test(v), 'not ${m.description}');
