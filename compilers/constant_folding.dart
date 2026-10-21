@@ -28,3 +28,23 @@ class Bin extends Expr {
   @override
   String toString() => '($l $op $r)';
 }
+
+Expr fold(Expr e) {
+  if (e is! Bin) return e;
+  final l = fold(e.l), r = fold(e.r);
+  if (l is Num && r is Num) {
+    return Num(switch (e.op) {
+      '+' => l.v + r.v,
+      '-' => l.v - r.v,
+      '*' => l.v * r.v,
+      _ => throw ArgumentError('unknown op ${e.op}'),
+    });
+  }
+  if (e.op == '+' && r is Num && r.v == 0) return l;
+  if (e.op == '+' && l is Num && l.v == 0) return r;
+  if (e.op == '*' && ((r is Num && r.v == 1))) return l;
+  if (e.op == '*' && ((l is Num && l.v == 1))) return r;
+  if (e.op == '*' && ((l is Num && l.v == 0) || (r is Num && r.v == 0)))
+    return Num(0);
+  return Bin(e.op, l, r);
+}
