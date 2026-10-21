@@ -1,0 +1,14 @@
+// Matchers describe expectations as values. A matcher is a predicate plus
+// a description, so failure messages can say what was wanted.
+class Matcher {
+  final bool Function(Object?) test;
+  final String description;
+  const Matcher(this.test, this.description);
+}
+
+Matcher equals(Object? x) => Matcher((v) => v == x, 'equals $x');
+Matcher greaterThan(num x) =>
+    Matcher((v) => v is num && v > x, 'greater than $x');
+Matcher isEmptyList = Matcher((v) => v is List && v.isEmpty, 'an empty list');
+Matcher contains(Object? x) =>
+    Matcher((v) => v is Iterable && v.contains(x), 'contains $x');
