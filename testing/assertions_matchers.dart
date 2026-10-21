@@ -25,3 +25,10 @@ Matcher not(Matcher m) => Matcher((v) => !m.test(v), 'not ${m.description}');
 
 String? check(Object? actual, Matcher m) =>
     m.test(actual) ? null : 'Expected: ${m.description}\n  Actual: $actual';
+
+void main() {
+  print(check(5, greaterThan(3)) ?? 'ok');
+  print(check(5, allOf([greaterThan(3), not(equals(5))])) ?? 'ok');
+  print(check([1, 2], contains(2)) ?? 'ok');
+  print(check([1, 2], anyOf([isEmptyList, contains(9)])) ?? 'ok');
+}
