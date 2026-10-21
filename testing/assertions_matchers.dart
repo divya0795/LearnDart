@@ -22,3 +22,6 @@ Matcher anyOf(List<Matcher> ms) => Matcher(
   ms.map((m) => m.description).join(' or '),
 );
 Matcher not(Matcher m) => Matcher((v) => !m.test(v), 'not ${m.description}');
+
+String? check(Object? actual, Matcher m) =>
+    m.test(actual) ? null : 'Expected: ${m.description}\n  Actual: $actual';
