@@ -53,3 +53,16 @@ List<List<int>> generateSpiral(int n) {
   }
   return m;
 }
+
+void main() {
+  print(
+    spiral([
+      [1, 2, 3, 4],
+      [5, 6, 7, 8],
+      [9, 10, 11, 12],
+    ]),
+  );
+  for (final r in generateSpiral(4)) {
+    print(r.map((v) => v.toString().padLeft(3)).join());
+  }
+}
