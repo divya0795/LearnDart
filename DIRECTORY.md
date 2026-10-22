@@ -198,6 +198,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [color_conversions](conversions/color_conversions.dart)
 - [decimal_to_binary](conversions/decimal_to_binary.dart)
 - [decimal_to_hexadecimal](conversions/decimal_to_hexadecimal.dart)
+- [duration_formatting](conversions/duration_formatting.dart)
 - [integer_to_roman](conversions/integer_to_roman.dart)
 - [number_to_words](conversions/number_to_words.dart)
 - [roman_to_integer](conversions/roman_to_integer.dart)
@@ -374,6 +375,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [minimum_arrows_balloons](greedy/minimum_arrows_balloons.dart)
 
 ## interview_classics
+- [design_hit_counter](interview_classics/design_hit_counter.dart)
 - [two_sum_variants](interview_classics/two_sum_variants.dart)
 - [valid_sudoku_and_anagram_checks](interview_classics/valid_sudoku_and_anagram_checks.dart)
 
@@ -444,6 +446,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [prime_factorization](maths/prime_factorization.dart)
 - [pythagorean_triples](maths/pythagorean_triples.dart)
 - [quadratic_formula](maths/quadratic_formula.dart)
+- [roman_to_arabic_table](maths/roman_to_arabic_table.dart)
 - [sieve_of_eratosthenes](maths/sieve_of_eratosthenes.dart)
 - [simpson_rule](maths/simpson_rule.dart)
 - [stats_mean_median_mode](maths/stats_mean_median_mode.dart)
@@ -517,6 +520,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [problem_008_largest_product_in_series](project_euler/problem_008_largest_product_in_series.dart)
 - [problem_009_pythagorean_triplet](project_euler/problem_009_pythagorean_triplet.dart)
 - [problem_010_summation_of_primes](project_euler/problem_010_summation_of_primes.dart)
+- [problem_011_grid_product](project_euler/problem_011_grid_product.dart)
 - [problem_012_highly_divisible_triangular](project_euler/problem_012_highly_divisible_triangular.dart)
 - [problem_013_large_sum](project_euler/problem_013_large_sum.dart)
 - [problem_014_longest_collatz](project_euler/problem_014_longest_collatz.dart)
@@ -654,6 +658,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## text_processing
 - [camel_snake_case_converter](text_processing/camel_snake_case_converter.dart)
+- [markdown_to_html](text_processing/markdown_to_html.dart)
 - [myers_diff](text_processing/myers_diff.dart)
 - [ngrams](text_processing/ngrams.dart)
 - [soundex_phonetic](text_processing/soundex_phonetic.dart)
