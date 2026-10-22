@@ -29,3 +29,27 @@ List<int> spiral(List<List<int>> m) {
   }
   return out;
 }
+
+List<List<int>> generateSpiral(int n) {
+  final m = List.generate(n, (_) => List.filled(n, 0));
+  var top = 0, bottom = n - 1, left = 0, right = n - 1, k = 1;
+  while (top <= bottom && left <= right) {
+    for (var c = left; c <= right; c++) {
+      m[top][c] = k++;
+    }
+    top++;
+    for (var r = top; r <= bottom; r++) {
+      m[r][right] = k++;
+    }
+    right--;
+    for (var c = right; c >= left && top <= bottom; c--) {
+      m[bottom][c] = k++;
+    }
+    bottom--;
+    for (var r = bottom; r >= top && left <= right; r--) {
+      m[r][left] = k++;
+    }
+    left++;
+  }
+  return m;
+}
