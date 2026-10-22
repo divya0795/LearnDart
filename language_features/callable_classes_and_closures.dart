@@ -7,3 +7,9 @@ int Function() makeCounter() {
 
 Function(int) makeAdder(int k) =>
     (int x) => x + k;
+
+class Multiplier {
+  final int k;
+  Multiplier(this.k);
+  int call(int x) => x * k;
+}
