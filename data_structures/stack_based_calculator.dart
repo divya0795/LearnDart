@@ -21,3 +21,15 @@ double evalPostfix(String expr) {
   if (st.length != 1) throw const FormatException('malformed expression');
   return st.single;
 }
+
+void main() {
+  print(evalPostfix('3 4 + 2 *'));
+  print(evalPostfix('5 1 2 + 4 * + 3 -'));
+  for (final bad in ['1 +', '1 2', 'x']) {
+    try {
+      evalPostfix(bad);
+    } on FormatException catch (e) {
+      print('"$bad": ${e.message}');
+    }
+  }
+}
