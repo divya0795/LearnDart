@@ -13,3 +13,9 @@ class Multiplier {
   Multiplier(this.k);
   int call(int x) => x * k;
 }
+
+int apply(int Function(int) f, int x) => f(x);
+
+List<int> compose(List<int Function(int)> fs, List<int> xs) => [
+  for (final x in xs) fs.fold(x, (acc, f) => f(acc)),
+];
