@@ -26,3 +26,32 @@ int numIslands(List<List<int>> grid) {
   }
   return count;
 }
+
+int numIslandsBfs(List<List<int>> grid) {
+  final seen = [for (final r in grid) List.filled(r.length, false)];
+  var count = 0;
+  for (var r = 0; r < grid.length; r++) {
+    for (var c = 0; c < grid[0].length; c++) {
+      if (grid[r][c] != 1 || seen[r][c]) continue;
+      count++;
+      final q = [(r, c)];
+      seen[r][c] = true;
+      while (q.isNotEmpty) {
+        final (y, x) = q.removeLast();
+        for (final (dy, dx) in [(1, 0), (-1, 0), (0, 1), (0, -1)]) {
+          final ny = y + dy, nx = x + dx;
+          if (ny >= 0 &&
+              nx >= 0 &&
+              ny < grid.length &&
+              nx < grid[0].length &&
+              grid[ny][nx] == 1 &&
+              !seen[ny][nx]) {
+            seen[ny][nx] = true;
+            q.add((ny, nx));
+          }
+        }
+      }
+    }
+  }
+  return count;
+}
