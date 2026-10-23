@@ -19,3 +19,12 @@ int apply(int Function(int) f, int x) => f(x);
 List<int> compose(List<int Function(int)> fs, List<int> xs) => [
   for (final x in xs) fs.fold(x, (acc, f) => f(acc)),
 ];
+
+void main() {
+  final a = makeCounter(), b = makeCounter();
+  print('${a()} ${a()} ${b()}');
+  print(makeAdder(10)(5));
+  final triple = Multiplier(3);
+  print('${triple(4)} ${apply(triple.call, 5)}');
+  print(compose([(x) => x + 1, triple.call, (x) => x - 2], [1, 2, 3]));
+}
