@@ -55,3 +55,13 @@ int numIslandsBfs(List<List<int>> grid) {
   }
   return count;
 }
+
+void main() {
+  final grid = [
+    [1, 1, 0, 0, 0],
+    [1, 1, 0, 0, 0],
+    [0, 0, 1, 0, 0],
+    [0, 0, 0, 1, 1],
+  ];
+  print('dfs: ${numIslands(grid)}, bfs: ${numIslandsBfs(grid)}');
+}
