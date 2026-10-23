@@ -151,6 +151,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## compilers
 - [ast](compilers/ast.dart)
 - [compiler](compilers/compiler.dart)
+- [constant_folding](compilers/constant_folding.dart)
 - [infix_to_three_address_code](compilers/infix_to_three_address_code.dart)
 - [interpreter](compilers/interpreter.dart)
 - [regex_to_nfa_thompson](compilers/regex_to_nfa_thompson.dart)
@@ -360,6 +361,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [tarjan_scc](graphs/tarjan_scc.dart)
 - [topological_sort](graphs/topological_sort.dart)
 - [union_find_cycle_detection](graphs/union_find_cycle_detection.dart)
+- [word_ladder_bfs](graphs/word_ladder_bfs.dart)
 
 ## greedy
 - [activity_selection](greedy/activity_selection.dart)
@@ -458,6 +460,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [game_of_life_step](matrix/game_of_life_step.dart)
 - [rotate_and_transpose](matrix/rotate_and_transpose.dart)
 - [set_matrix_zeroes](matrix/set_matrix_zeroes.dart)
+- [spiral_order](matrix/spiral_order.dart)
 
 ## number_theory
 - [binary_exponentiation_mod](number_theory/binary_exponentiation_mod.dart)
@@ -649,6 +652,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [z_algorithm](strings/z_algorithm.dart)
 
 ## testing
+- [assertions_matchers](testing/assertions_matchers.dart)
 - [golden_snapshot_compare](testing/golden_snapshot_compare.dart)
 - [mini_test_runner](testing/mini_test_runner.dart)
 - [mocks_and_fakes](testing/mocks_and_fakes.dart)
