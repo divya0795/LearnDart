@@ -47,3 +47,22 @@ List<int>? findCycle(List<List<int>> g) {
   }
   return null;
 }
+
+void main() {
+  print(
+    hasCycle([
+      [1],
+      [2],
+      [3],
+      [],
+    ]),
+  );
+  final List<List<int>> g = [
+    [1],
+    [2],
+    [0, 3],
+    [],
+  ];
+  print(hasCycle(g));
+  print(findCycle(g));
+}
