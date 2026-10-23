@@ -15,3 +15,9 @@ int numDecodings(String s) {
   }
   return prev1;
 }
+
+void main() {
+  for (final s in ['12', '226', '06', '10', '2101', '11106']) {
+    print('"$s" -> ${numDecodings(s)}');
+  }
+}
