@@ -26,3 +26,9 @@ int maxAreaBrute(List<int> h) {
   }
   return best;
 }
+
+void main() {
+  final h = [1, 8, 6, 2, 5, 4, 8, 3, 7];
+  print('${maxArea(h)} (brute ${maxAreaBrute(h)})');
+  print(maxArea([1, 1]));
+}
