@@ -18,3 +18,32 @@ bool hasCycle(List<List<int>> g) {
   }
   return false;
 }
+
+List<int>? findCycle(List<List<int>> g) {
+  final color = List.filled(g.length, 0), parent = List.filled(g.length, -1);
+  List<int>? found;
+  bool dfs(int u) {
+    color[u] = 1;
+    for (final v in g[u]) {
+      if (color[v] == 1) {
+        final cyc = [v];
+        for (var x = u; x != v; x = parent[x]) {
+          cyc.add(x);
+        }
+        found = cyc.reversed.toList();
+        return true;
+      }
+      if (color[v] == 0) {
+        parent[v] = u;
+        if (dfs(v)) return true;
+      }
+    }
+    color[u] = 2;
+    return false;
+  }
+
+  for (var i = 0; i < g.length; i++) {
+    if (color[i] == 0 && dfs(i)) return found;
+  }
+  return null;
+}
