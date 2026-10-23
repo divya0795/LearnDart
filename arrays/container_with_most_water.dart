@@ -15,3 +15,14 @@ int maxArea(List<int> h) {
   }
   return best;
 }
+
+int maxAreaBrute(List<int> h) {
+  var best = 0;
+  for (var i = 0; i < h.length; i++) {
+    for (var j = i + 1; j < h.length; j++) {
+      final a = (j - i) * (h[i] < h[j] ? h[i] : h[j]);
+      if (a > best) best = a;
+    }
+  }
+  return best;
+}
