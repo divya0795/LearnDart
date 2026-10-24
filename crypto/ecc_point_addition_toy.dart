@@ -41,3 +41,12 @@ Pt mul(int k, Pt q) {
   }
   return result;
 }
+
+void main() {
+  final g = (3, 6);
+  print('G on curve: ${onCurve(g)}');
+  for (var k = 1; k <= 5; k++) {
+    final q = mul(k, g);
+    print('$k*G = $q on curve: ${onCurve(q)}');
+  }
+}
