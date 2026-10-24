@@ -10,3 +10,6 @@ int maxOf(List<int> a) {
   final m = maxOf(a.sublist(1));
   return a.first > m ? a.first : m;
 }
+
+List<int> reversed(List<int> a) =>
+    a.isEmpty ? [] : [...reversed(a.sublist(1)), a.first];
