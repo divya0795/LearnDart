@@ -13,3 +13,9 @@ List<int> digitFactorialNumbers(int limit) {
         n,
   ];
 }
+
+void main() {
+  print(_fact);
+  final r = digitFactorialNumbers(2540160);
+  print('$r sum=${r.fold(0, (a, b) => a + b)}');
+}
