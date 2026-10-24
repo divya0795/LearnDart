@@ -251,6 +251,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [segment_tree](data_structures/segment_tree.dart)
 - [skip_list](data_structures/skip_list.dart)
 - [stack](data_structures/stack.dart)
+- [stack_based_calculator](data_structures/stack_based_calculator.dart)
 - [treap](data_structures/treap.dart)
 - [trie](data_structures/trie.dart)
 - [union_find_with_sizes](data_structures/union_find_with_sizes.dart)
@@ -282,6 +283,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [climb_stairs](dynamic_programming/climb_stairs.dart)
 - [coin_change](dynamic_programming/coin_change.dart)
 - [convex_hull_trick](dynamic_programming/convex_hull_trick.dart)
+- [decode_ways](dynamic_programming/decode_ways.dart)
 - [distinct_subsequences](dynamic_programming/distinct_subsequences.dart)
 - [divide_conquer_dp](dynamic_programming/divide_conquer_dp.dart)
 - [edit_distance](dynamic_programming/edit_distance.dart)
@@ -342,6 +344,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [bipartite_check](graphs/bipartite_check.dart)
 - [connected_components](graphs/connected_components.dart)
 - [course_schedule_cycle](graphs/course_schedule_cycle.dart)
+- [detect_cycle_directed](graphs/detect_cycle_directed.dart)
 - [dfs](graphs/dfs.dart)
 - [dijkstra](graphs/dijkstra.dart)
 - [dijkstra_with_path](graphs/dijkstra_with_path.dart)
@@ -382,6 +385,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [valid_sudoku_and_anagram_checks](interview_classics/valid_sudoku_and_anagram_checks.dart)
 
 ## language_features
+- [callable_classes_and_closures](language_features/callable_classes_and_closures.dart)
 - [error_handling_custom_exceptions](language_features/error_handling_custom_exceptions.dart)
 - [generics_bounded](language_features/generics_bounded.dart)
 - [immutability_and_const](language_features/immutability_and_const.dart)
