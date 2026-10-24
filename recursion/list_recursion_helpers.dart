@@ -13,3 +13,8 @@ int maxOf(List<int> a) {
 
 List<int> reversed(List<int> a) =>
     a.isEmpty ? [] : [...reversed(a.sublist(1)), a.first];
+
+void main() {
+  final a = [3, 9, 2, 7];
+  print('sum=${sum(a)} max=${maxOf(a)} reversed=${reversed(a)}');
+}
