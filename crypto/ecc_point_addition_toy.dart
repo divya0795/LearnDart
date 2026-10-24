@@ -29,3 +29,15 @@ Pt add(Pt x, Pt y) {
   final ry = ((s * (x.$1 - rx) - x.$2) % p + p) % p;
   return (rx, ry);
 }
+
+Pt mul(int k, Pt q) {
+  Pt result;
+  result = null;
+  var addend = q;
+  while (k > 0) {
+    if (k.isOdd) result = add(result, addend);
+    addend = add(addend, addend);
+    k >>= 1;
+  }
+  return result;
+}
