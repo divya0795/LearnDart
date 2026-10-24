@@ -32,3 +32,10 @@ int lastOccurrence(List<int> a, int x) {
   }
   return ans;
 }
+
+void main() {
+  final a = [1, 2, 2, 2, 2, 3, 5, 5];
+  print('2 spans ${firstOccurrence(a, 2)}..${lastOccurrence(a, 2)}');
+  print('count of 5: ${lastOccurrence(a, 5) - firstOccurrence(a, 5) + 1}');
+  print('missing 4: ${firstOccurrence(a, 4)}');
+}
