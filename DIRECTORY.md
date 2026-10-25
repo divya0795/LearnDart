@@ -4,6 +4,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## arrays
 - [car_pooling](arrays/car_pooling.dart)
+- [container_with_most_water](arrays/container_with_most_water.dart)
 - [dutch_national_flag](arrays/dutch_national_flag.dart)
 - [find_duplicates_floyd](arrays/find_duplicates_floyd.dart)
 - [first_missing_positive](arrays/first_missing_positive.dart)
@@ -359,6 +360,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [kruskal](graphs/kruskal.dart)
 - [max_area_of_island](graphs/max_area_of_island.dart)
 - [minimum_spanning_tree_boruvka](graphs/minimum_spanning_tree_boruvka.dart)
+- [number_of_islands_dfs](graphs/number_of_islands_dfs.dart)
 - [prim](graphs/prim.dart)
 - [shortest_path_unweighted_grid](graphs/shortest_path_unweighted_grid.dart)
 - [tarjan_scc](graphs/tarjan_scc.dart)
@@ -590,6 +592,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [exponential_search](searches/exponential_search.dart)
 - [fibonacci_search](searches/fibonacci_search.dart)
 - [find_minimum_rotated](searches/find_minimum_rotated.dart)
+- [first_last_occurrence](searches/first_last_occurrence.dart)
 - [interpolation_search](searches/interpolation_search.dart)
 - [jump_search](searches/jump_search.dart)
 - [kth_smallest_sorted_matrix](searches/kth_smallest_sorted_matrix.dart)
