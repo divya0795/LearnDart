@@ -22,3 +22,9 @@ List<int> slidingMax(List<int> a, int k) {
 
 List<int> slidingMin(List<int> a, int k) =>
     slidingMax(a.map((x) => -x).toList(), k).map((x) => -x).toList();
+
+void main() {
+  final a = [1, 3, -1, -3, 5, 3, 6, 7];
+  print('max: ${slidingMax(a, 3)}');
+  print('min: ${slidingMin(a, 3)}');
+}
