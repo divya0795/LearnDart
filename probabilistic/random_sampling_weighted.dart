@@ -31,3 +31,13 @@ class WeightedSampler<T> {
     return items[lo];
   }
 }
+
+void main() {
+  final s = WeightedSampler(['a', 'b', 'c'], [1, 3, 6]);
+  final counts = <String, int>{};
+  for (var i = 0; i < 10000; i++) {
+    final x = s.sample();
+    counts[x] = (counts[x] ?? 0) + 1;
+  }
+  print(counts);
+}
