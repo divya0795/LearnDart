@@ -16,3 +16,19 @@ Future<List<T>> runLimited<T>(
   await Future.wait([for (var i = 0; i < limit; i++) worker()]);
   return results.cast<T>();
 }
+
+Future<void> main() async {
+  var running = 0, peak = 0;
+  final tasks = [
+    for (var i = 0; i < 8; i++)
+      () async {
+        running++;
+        if (running > peak) peak = running;
+        await Future.delayed(Duration(milliseconds: 10 + i * 3));
+        running--;
+        return i * i;
+      },
+  ];
+  print(await runLimited(tasks, 3));
+  print('peak concurrency: $peak');
+}
