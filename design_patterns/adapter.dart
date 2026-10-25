@@ -16,3 +16,10 @@ class SensorAdapter implements TemperatureSource {
   @override
   double celsius() => (_s.readFahrenheit() - 32) * 5 / 9;
 }
+
+void report(TemperatureSource t) =>
+    print('${t.celsius().toStringAsFixed(1)} C');
+
+void main() {
+  report(SensorAdapter(LegacySensor()));
+}
