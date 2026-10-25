@@ -19,3 +19,6 @@ List<int> slidingMax(List<int> a, int k) {
   }
   return out;
 }
+
+List<int> slidingMin(List<int> a, int k) =>
+    slidingMax(a.map((x) => -x).toList(), k).map((x) => -x).toList();
