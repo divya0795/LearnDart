@@ -20,3 +20,10 @@ List<String> generateParentheses(int n) {
   go('', 0, 0);
   return out;
 }
+
+void main() {
+  print(generateParentheses(3));
+  for (var n = 1; n <= 6; n++) {
+    print('n=$n -> ${generateParentheses(n).length}');
+  }
+}
