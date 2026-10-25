@@ -19,3 +19,27 @@ bool isUpperTriangular(List<List<num>> m) => [
   for (var i = 1; i < m.length; i++)
     for (var j = 0; j < i; j++) m[i][j] == 0,
 ].every((b) => b);
+
+void main() {
+  final id = [
+    [1, 0],
+    [0, 1],
+  ];
+  final sym = [
+    [2, 5],
+    [5, 3],
+  ];
+  final up = [
+    [1, 2],
+    [0, 3],
+  ];
+  for (final (name, m) in [
+    ('identity', id),
+    ('symmetric', sym),
+    ('upper', up),
+  ]) {
+    print(
+      '$name: id=${isIdentity(m)} diag=${isDiagonal(m)} sym=${isSymmetric(m)} upper=${isUpperTriangular(m)}',
+    );
+  }
+}
