@@ -24,3 +24,10 @@ String? mostCommonLetter(String s) {
   if (counts.isEmpty) return null;
   return counts.entries.reduce((a, b) => b.value > a.value ? b : a).key;
 }
+
+void main() {
+  const s = 'Dart 3 is a great language, 2 of 3 agree';
+  print(stats(s));
+  print(mostCommonLetter(s));
+  print(mostCommonLetter('123'));
+}
