@@ -209,6 +209,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## crypto
 - [aes_sbox](crypto/aes_sbox.dart)
 - [diffie_hellman](crypto/diffie_hellman.dart)
+- [ecc_point_addition_toy](crypto/ecc_point_addition_toy.dart)
 - [hmac_construction](crypto/hmac_construction.dart)
 - [lfsr_stream_cipher](crypto/lfsr_stream_cipher.dart)
 - [merkle_tree](crypto/merkle_tree.dart)
@@ -464,6 +465,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## matrix
 - [game_of_life_step](matrix/game_of_life_step.dart)
+- [pascal_and_identity_checks](matrix/pascal_and_identity_checks.dart)
 - [rotate_and_transpose](matrix/rotate_and_transpose.dart)
 - [set_matrix_zeroes](matrix/set_matrix_zeroes.dart)
 - [spiral_order](matrix/spiral_order.dart)
@@ -544,6 +546,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [problem_028_spiral_diagonals](project_euler/problem_028_spiral_diagonals.dart)
 - [problem_030_digit_fifth_powers](project_euler/problem_030_digit_fifth_powers.dart)
 - [problem_031_coin_sums](project_euler/problem_031_coin_sums.dart)
+- [problem_034_digit_factorials](project_euler/problem_034_digit_factorials.dart)
 - [problem_036_double_base_palindromes](project_euler/problem_036_double_base_palindromes.dart)
 - [problem_048_self_powers](project_euler/problem_048_self_powers.dart)
 
@@ -575,6 +578,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [collatz_depth](recursion/collatz_depth.dart)
 - [combinations](recursion/combinations.dart)
 - [flatten_nested_list](recursion/flatten_nested_list.dart)
+- [list_recursion_helpers](recursion/list_recursion_helpers.dart)
 - [palindrome_check_recursive](recursion/palindrome_check_recursive.dart)
 - [pascal_triangle](recursion/pascal_triangle.dart)
 - [permutations](recursion/permutations.dart)
