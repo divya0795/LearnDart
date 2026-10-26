@@ -14,3 +14,10 @@ List<int> deltaDecode(List<int> d) {
   }
   return out;
 }
+
+void main() {
+  final ts = [1700000000, 1700000003, 1700000007, 1700000008, 1700000015];
+  final d = deltaEncode(ts);
+  print(d);
+  print('round trip: ${deltaDecode(d).toString() == ts.toString()}');
+}
