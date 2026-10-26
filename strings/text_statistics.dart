@@ -15,3 +15,12 @@
   }
   return (vowels: v, consonants: c, digits: d, spaces: sp);
 }
+
+String? mostCommonLetter(String s) {
+  final counts = <String, int>{};
+  for (final ch in s.toLowerCase().split('')) {
+    if (RegExp('[a-z]').hasMatch(ch)) counts[ch] = (counts[ch] ?? 0) + 1;
+  }
+  if (counts.isEmpty) return null;
+  return counts.entries.reduce((a, b) => b.value > a.value ? b : a).key;
+}
