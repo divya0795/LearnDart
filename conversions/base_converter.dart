@@ -17,3 +17,14 @@ String toBase(int n, int base) {
   }
   return out.reversed.join();
 }
+
+int fromBase(String s, int base) {
+  var v = 0;
+  for (final c in s.toLowerCase().split('')) {
+    final d = _digits.indexOf(c);
+    if (d < 0 || d >= base)
+      throw FormatException('bad digit "$c" for base $base');
+    v = v * base + d;
+  }
+  return v;
+}
