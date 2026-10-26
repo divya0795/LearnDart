@@ -28,3 +28,13 @@ int fromBase(String s, int base) {
   }
   return v;
 }
+
+void main() {
+  print(
+    '255 -> base2 ${toBase(255, 2)}, base8 ${toBase(255, 8)}, base16 ${toBase(255, 16)}, base36 ${toBase(255, 36)}',
+  );
+  print('"zz" base36 -> ${fromBase('zz', 36)}');
+  print(
+    'round trip 987654321 via base 7: ${fromBase(toBase(987654321, 7), 7)}',
+  );
+}
