@@ -26,3 +26,17 @@ List<List<int>> allPaths(Node? root) {
 
 List<List<int>> pathsWithSum(Node? root, int target) =>
     allPaths(root).where((p) => p.fold(0, (a, b) => a + b) == target).toList();
+
+int maxPathSum(Node? root) {
+  var best = -1 << 31;
+  int go(Node? n) {
+    if (n == null) return 0;
+    final l = go(n.left) > 0 ? go(n.left) : 0;
+    final r = go(n.right) > 0 ? go(n.right) : 0;
+    if (n.val + l + r > best) best = n.val + l + r;
+    return n.val + (l > r ? l : r);
+  }
+
+  go(root);
+  return best;
+}
