@@ -30,3 +30,10 @@ int quickselect(List<int> a, int k) {
     }
   }
 }
+
+double median(List<int> a) {
+  final n = a.length;
+  return n.isOdd
+      ? quickselect(a, n ~/ 2).toDouble()
+      : (quickselect(a, n ~/ 2 - 1) + quickselect(a, n ~/ 2)) / 2;
+}
