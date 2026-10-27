@@ -40,3 +40,14 @@ int maxPathSum(Node? root) {
   go(root);
   return best;
 }
+
+void main() {
+  final t = Node(
+    5,
+    Node(4, Node(11, Node(7), Node(2))),
+    Node(8, Node(13), Node(4, null, Node(1))),
+  );
+  print(allPaths(t));
+  print(pathsWithSum(t, 22));
+  print('max path sum: ${maxPathSum(t)}');
+}
