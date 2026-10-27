@@ -31,6 +31,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## backtracking
 - [combination_sum](backtracking/combination_sum.dart)
+- [generate_parentheses](backtracking/generate_parentheses.dart)
 - [hamiltonian_path](backtracking/hamiltonian_path.dart)
 - [knight_tour](backtracking/knight_tour.dart)
 - [letter_combinations_phone](backtracking/letter_combinations_phone.dart)
@@ -194,8 +195,10 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [stream_transformers](concurrency/stream_transformers.dart)
 - [throttle](concurrency/throttle.dart)
 - [timeout_race](concurrency/timeout_race.dart)
+- [worker_pool_limit](concurrency/worker_pool_limit.dart)
 
 ## conversions
+- [base_converter](conversions/base_converter.dart)
 - [bytes_humanize](conversions/bytes_humanize.dart)
 - [color_conversions](conversions/color_conversions.dart)
 - [decimal_to_binary](conversions/decimal_to_binary.dart)
@@ -252,6 +255,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [ring_buffer](data_structures/ring_buffer.dart)
 - [segment_tree](data_structures/segment_tree.dart)
 - [skip_list](data_structures/skip_list.dart)
+- [sliding_window_maximum](data_structures/sliding_window_maximum.dart)
 - [stack](data_structures/stack.dart)
 - [stack_based_calculator](data_structures/stack_based_calculator.dart)
 - [treap](data_structures/treap.dart)
@@ -259,6 +263,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [union_find_with_sizes](data_structures/union_find_with_sizes.dart)
 
 ## design_patterns
+- [adapter](design_patterns/adapter.dart)
 - [builder](design_patterns/builder.dart)
 - [chain_of_responsibility](design_patterns/chain_of_responsibility.dart)
 - [command_undo_redo](design_patterns/command_undo_redo.dart)
@@ -517,6 +522,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [linear_counting_distinct](probabilistic/linear_counting_distinct.dart)
 - [minhash](probabilistic/minhash.dart)
 - [monte_carlo_pi](probabilistic/monte_carlo_pi.dart)
+- [random_sampling_weighted](probabilistic/random_sampling_weighted.dart)
 - [reservoir_sampling](probabilistic/reservoir_sampling.dart)
 - [skip_list_random_levels](probabilistic/skip_list_random_levels.dart)
 
