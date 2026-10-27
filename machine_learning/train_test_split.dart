@@ -28,3 +28,11 @@ List<(List<int>, List<int>)> kFold(int n, int k, {int seed = 1}) {
       ),
   ];
 }
+
+void main() {
+  final s = trainTestSplit(List.generate(10, (i) => i));
+  print('train ${s.train} test ${s.test}');
+  for (final (train, test) in kFold(6, 3)) {
+    print('train $train  validate $test');
+  }
+}
