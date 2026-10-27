@@ -37,3 +37,10 @@ double median(List<int> a) {
       ? quickselect(a, n ~/ 2).toDouble()
       : (quickselect(a, n ~/ 2 - 1) + quickselect(a, n ~/ 2)) / 2;
 }
+
+void main() {
+  final a = [7, 10, 4, 3, 20, 15];
+  print('3rd smallest: ${quickselect(a, 2)}');
+  print('median: ${median(a)}');
+  print('check: ${([...a]..sort())}');
+}
