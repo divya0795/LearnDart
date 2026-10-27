@@ -19,3 +19,15 @@ class InvertedIndex {
   Set<int> or(List<String> terms) =>
       terms.map((t) => _index[t] ?? <int>{}).reduce((a, b) => a.union(b));
 }
+
+void main() {
+  final idx = InvertedIndex([
+    'dart is fast',
+    'dart and flutter build apps',
+    'flutter is a ui toolkit',
+    'rust is fast too',
+  ]);
+  print('dart AND fast: ${idx.and(['dart', 'fast'])}');
+  print('fast OR flutter: ${idx.or(['fast', 'flutter'])}');
+  print('missing: ${idx.and(['dart', 'python'])}');
+}
