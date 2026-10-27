@@ -23,3 +23,6 @@ List<List<int>> allPaths(Node? root) {
   go(root, []);
   return out;
 }
+
+List<List<int>> pathsWithSum(Node? root, int target) =>
+    allPaths(root).where((p) => p.fold(0, (a, b) => a + b) == target).toList();
