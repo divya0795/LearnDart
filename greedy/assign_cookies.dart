@@ -12,3 +12,9 @@ int contentChildren(List<int> greed, List<int> cookies) {
   }
   return child;
 }
+
+void main() {
+  print(contentChildren([1, 2, 3], [1, 1]));
+  print(contentChildren([1, 2], [1, 2, 3]));
+  print(contentChildren([10, 9, 8, 7], [5, 6, 7, 8]));
+}
