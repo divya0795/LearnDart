@@ -12,3 +12,10 @@ class Rect {
 
 bool overlaps(Rect a, Rect b) =>
     a.x1 < b.x2 && b.x1 < a.x2 && a.y1 < b.y2 && b.y1 < a.y2;
+
+double overlapArea(Rect a, Rect b) {
+  if (!overlaps(a, b)) return 0;
+  final w = (a.x2 < b.x2 ? a.x2 : b.x2) - (a.x1 > b.x1 ? a.x1 : b.x1);
+  final h = (a.y2 < b.y2 ? a.y2 : b.y2) - (a.y1 > b.y1 ? a.y1 : b.y1);
+  return w * h;
+}
