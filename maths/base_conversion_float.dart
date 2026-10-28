@@ -14,3 +14,9 @@ String fractionToBinary(double f, {int bits = 24}) {
   }
   return b.toString();
 }
+
+void demoSurprises() {
+  print('0.1 + 0.2 = ${0.1 + 0.2}');
+  print('equal: ${0.1 + 0.2 == 0.3}');
+  print('close enough: ${(0.1 + 0.2 - 0.3).abs() < 1e-9}');
+}
