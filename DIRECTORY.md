@@ -164,6 +164,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## compression
 - [arithmetic_coding](compression/arithmetic_coding.dart)
 - [burrows_wheeler](compression/burrows_wheeler.dart)
+- [delta_encoding](compression/delta_encoding.dart)
 - [huffman_codec](compression/huffman_codec.dart)
 - [lz77](compression/lz77.dart)
 - [lzw_compression](compression/lzw_compression.dart)
@@ -172,6 +173,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## concurrency
 - [async_lock_keyed](concurrency/async_lock_keyed.dart)
 - [async_queue_sequential](concurrency/async_queue_sequential.dart)
+- [broadcast_stream_controller](concurrency/broadcast_stream_controller.dart)
 - [cancellation_token](concurrency/cancellation_token.dart)
 - [circuit_breaker](concurrency/circuit_breaker.dart)
 - [completer_basics](concurrency/completer_basics.dart)
@@ -630,6 +632,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [odd_even_sort](sorts/odd_even_sort.dart)
 - [pancake_sort](sorts/pancake_sort.dart)
 - [quick_sort](sorts/quick_sort.dart)
+- [quickselect_kth](sorts/quickselect_kth.dart)
 - [radix_sort](sorts/radix_sort.dart)
 - [selection_sort](sorts/selection_sort.dart)
 - [shell_sort](sorts/shell_sort.dart)
@@ -664,6 +667,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [string_compression](strings/string_compression.dart)
 - [string_rotation_checks](strings/string_rotation_checks.dart)
 - [suffix_array](strings/suffix_array.dart)
+- [text_statistics](strings/text_statistics.dart)
 - [valid_parentheses](strings/valid_parentheses.dart)
 - [word_count](strings/word_count.dart)
 - [z_algorithm](strings/z_algorithm.dart)
