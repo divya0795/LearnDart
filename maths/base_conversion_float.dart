@@ -20,3 +20,10 @@ void demoSurprises() {
   print('equal: ${0.1 + 0.2 == 0.3}');
   print('close enough: ${(0.1 + 0.2 - 0.3).abs() < 1e-9}');
 }
+
+void main() {
+  print('0.5   = ${fractionToBinary(0.5)}');
+  print('0.625 = ${fractionToBinary(0.625)}');
+  print('0.1   = ${fractionToBinary(0.1)} ...');
+  demoSurprises();
+}
