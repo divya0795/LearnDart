@@ -19,3 +19,10 @@ double overlapArea(Rect a, Rect b) {
   final h = (a.y2 < b.y2 ? a.y2 : b.y2) - (a.y1 > b.y1 ? a.y1 : b.y1);
   return w * h;
 }
+
+void main() {
+  const a = Rect(0, 0, 4, 4);
+  print(overlapArea(a, const Rect(2, 2, 6, 6)));
+  print(overlapArea(a, const Rect(4, 0, 6, 4))); // edge touching only
+  print(overlapArea(a, const Rect(1, 1, 2, 2))); // fully inside
+}
