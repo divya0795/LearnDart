@@ -9,3 +9,6 @@ class Rect {
   const Rect(this.x1, this.y1, this.x2, this.y2);
   double get area => (x2 - x1) * (y2 - y1);
 }
+
+bool overlaps(Rect a, Rect b) =>
+    a.x1 < b.x2 && b.x1 < a.x2 && a.y1 < b.y2 && b.y1 < a.y2;
