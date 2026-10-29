@@ -27,3 +27,11 @@ List<String> suggest(String word, List<String> dict, {int maxDistance = 2}) {
         ..sort((x, y) => x.$2.compareTo(y.$2));
   return scored.map((e) => e.$1).toList();
 }
+
+void main() {
+  print(levenshtein('kitten', 'sitting'));
+  print(levenshtein('', 'abc'));
+  const dict = ['apple', 'apply', 'ample', 'maple', 'orange'];
+  print(suggest('appel', dict));
+  print(suggest('zzz', dict));
+}
