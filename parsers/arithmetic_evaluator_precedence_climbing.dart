@@ -59,3 +59,17 @@ double _pow(double b, double e) {
   }
   return r;
 }
+
+double evaluate(String s) => Evaluator(s).parse(1);
+
+void main() {
+  for (final e in [
+    '1 + 2 * 3',
+    '(1 + 2) * 3',
+    '2 ^ 3 ^ 2',
+    '10 / 4 - 1',
+    '-(2 + 3) * 2',
+  ]) {
+    print('$e = ${evaluate(e)}');
+  }
+}
