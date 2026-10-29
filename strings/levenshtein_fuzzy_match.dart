@@ -18,3 +18,12 @@ int levenshtein(String a, String b) {
   }
   return prev[b.length];
 }
+
+List<String> suggest(String word, List<String> dict, {int maxDistance = 2}) {
+  final scored =
+      [for (final d in dict) (d, levenshtein(word, d))]
+          .where((e) => e.$2 <= maxDistance)
+          .toList()
+        ..sort((x, y) => x.$2.compareTo(y.$2));
+  return scored.map((e) => e.$1).toList();
+}
