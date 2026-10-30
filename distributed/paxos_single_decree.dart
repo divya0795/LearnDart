@@ -25,3 +25,21 @@ class Acceptor {
     return false;
   }
 }
+
+String? propose(List<Acceptor> acceptors, int n, String value) {
+  final majority = acceptors.length ~/ 2 + 1;
+  final promises = [for (final a in acceptors) a.prepare(n)]
+      .where((p) => p.$1)
+      .toList();
+  if (promises.length < majority) return null;
+  var chosen = value;
+  var best = 0;
+  for (final (_, an, av) in promises) {
+    if (av != null && an > best) {
+      best = an;
+      chosen = av; // must adopt the highest-numbered accepted value
+    }
+  }
+  final accepts = acceptors.where((a) => a.accept(n, chosen)).length;
+  return accepts >= majority ? chosen : null;
+}
