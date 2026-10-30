@@ -43,3 +43,10 @@ String? propose(List<Acceptor> acceptors, int n, String value) {
   final accepts = acceptors.where((a) => a.accept(n, chosen)).length;
   return accepts >= majority ? chosen : null;
 }
+
+void main() {
+  final acceptors = List.generate(5, (_) => Acceptor());
+  print('proposer 1: ${propose(acceptors, 1, 'A')}');
+  print('proposer 2 wants B: ${propose(acceptors, 2, 'B')}');
+  print('stale proposer 0: ${propose(acceptors, 0, 'C')}');
+}
