@@ -19,3 +19,7 @@ Future<T> retry<T>(
     }
   }
 }
+
+Duration withJitter(Duration d, Random r) => Duration(
+  microseconds: (d.inMicroseconds * (0.5 + r.nextDouble() / 2)).round(),
+);
