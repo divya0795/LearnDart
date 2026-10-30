@@ -23,3 +23,19 @@ Future<T> retry<T>(
 Duration withJitter(Duration d, Random r) => Duration(
   microseconds: (d.inMicroseconds * (0.5 + r.nextDouble() / 2)).round(),
 );
+
+Future<void> main() async {
+  var calls = 0;
+  final v = await retry(
+    () async {
+      if (++calls < 4) throw StateError('transient #$calls');
+      return 'success after $calls calls';
+    },
+    onRetry: (n, d) =>
+        print('attempt $n failed, waiting ${d.inMilliseconds}ms'),
+  );
+  print(v);
+  print(
+    'jittered: ${withJitter(const Duration(milliseconds: 100), Random(1)).inMilliseconds}ms',
+  );
+}
