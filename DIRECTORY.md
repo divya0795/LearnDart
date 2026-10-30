@@ -340,6 +340,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [point_distance](geometry/point_distance.dart)
 - [point_in_polygon](geometry/point_in_polygon.dart)
 - [polygon_area](geometry/polygon_area.dart)
+- [rectangle_overlap](geometry/rectangle_overlap.dart)
 - [rotate_matrix](geometry/rotate_matrix.dart)
 - [segment_intersection](geometry/segment_intersection.dart)
 - [triangle_area_heron](geometry/triangle_area_heron.dart)
@@ -378,6 +379,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## greedy
 - [activity_selection](greedy/activity_selection.dart)
+- [assign_cookies](greedy/assign_cookies.dart)
 - [candy_distribution](greedy/candy_distribution.dart)
 - [coin_change_greedy](greedy/coin_change_greedy.dart)
 - [fractional_knapsack](greedy/fractional_knapsack.dart)
@@ -430,10 +432,12 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [relu](machine_learning/relu.dart)
 - [sigmoid](machine_learning/sigmoid.dart)
 - [softmax_cross_entropy](machine_learning/softmax_cross_entropy.dart)
+- [train_test_split](machine_learning/train_test_split.dart)
 
 ## maths
 - [amicable_numbers](maths/amicable_numbers.dart)
 - [armstrong_number](maths/armstrong_number.dart)
+- [base_conversion_float](maths/base_conversion_float.dart)
 - [binomial_coefficient](maths/binomial_coefficient.dart)
 - [collatz_sequence](maths/collatz_sequence.dart)
 - [divisors](maths/divisors.dart)
@@ -688,6 +692,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [ngrams](text_processing/ngrams.dart)
 - [soundex_phonetic](text_processing/soundex_phonetic.dart)
 - [template_renderer](text_processing/template_renderer.dart)
+- [text_search_inverted_index](text_processing/text_search_inverted_index.dart)
 - [tf_idf](text_processing/tf_idf.dart)
 - [tokenize_words_sentences](text_processing/tokenize_words_sentences.dart)
 - [word_wrap_and_justify](text_processing/word_wrap_and_justify.dart)
@@ -697,5 +702,6 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [lowest_common_ancestor](trees/lowest_common_ancestor.dart)
 - [serialize_binary_tree](trees/serialize_binary_tree.dart)
 - [tree_height_and_balance](trees/tree_height_and_balance.dart)
+- [tree_paths_and_sums](trees/tree_paths_and_sums.dart)
 - [trie_autocomplete](trees/trie_autocomplete.dart)
 - [validate_bst](trees/validate_bst.dart)
