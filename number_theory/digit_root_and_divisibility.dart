@@ -23,3 +23,12 @@ int bigMod(String n, int m) {
   }
   return r;
 }
+
+void main() {
+  const big = '123456789012345678901234567890';
+  print(
+    '3: ${divisibleBy3(big)} 9: ${divisibleBy9(big)} 11: ${divisibleBy11(big)}',
+  );
+  print('big mod 97 = ${bigMod(big, 97)}');
+  print('check: ${BigInt.parse(big) % BigInt.from(97)}');
+}
