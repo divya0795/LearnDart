@@ -13,3 +13,11 @@ class RateLimiter {
     return true;
   }
 }
+
+void main() {
+  final r = RateLimiter(3, 1000);
+  for (final t in [0, 100, 200, 300, 999, 1000, 1150, 1250]) {
+    print('t=$t alice: ${r.allow('alice', t)}');
+  }
+  print('bob is independent: ${r.allow('bob', 300)}');
+}
