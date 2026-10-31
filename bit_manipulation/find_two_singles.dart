@@ -20,3 +20,8 @@
   }
   return a < b ? (a, b) : (b, a);
 }
+
+void main() {
+  print(findTwoSingles([1, 2, 1, 3, 2, 5]));
+  print(findTwoSingles([7, 4, 9, 4, 9, 12]));
+}
