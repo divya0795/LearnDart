@@ -55,3 +55,8 @@ List<int> topK(List<int> xs, int k) {
   }
   return out.reversed.toList();
 }
+
+void main() {
+  print(topK([3, 2, 1, 5, 6, 4, 9, 7], 3));
+  print(topK([5, 5, 5], 2));
+}
