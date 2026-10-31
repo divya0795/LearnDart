@@ -16,3 +16,11 @@ int roundsToSpread(int n, {int seed = 7}) {
   }
   return rounds;
 }
+
+void main() {
+  for (final n in [8, 64, 512, 4096]) {
+    print(
+      'n=$n rounds=${roundsToSpread(n)} (log2 = ${(log(n) / ln2).toStringAsFixed(1)})',
+    );
+  }
+}
