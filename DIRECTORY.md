@@ -511,6 +511,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [simpson_integration](numeric/simpson_integration.dart)
 
 ## parsers
+- [arithmetic_evaluator_precedence_climbing](parsers/arithmetic_evaluator_precedence_climbing.dart)
 - [brace_expansion](parsers/brace_expansion.dart)
 - [ini_parser](parsers/ini_parser.dart)
 - [json_parser](parsers/json_parser.dart)
@@ -658,6 +659,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [is_palindrome](strings/is_palindrome.dart)
 - [isomorphic_strings](strings/isomorphic_strings.dart)
 - [kmp_search](strings/kmp_search.dart)
+- [levenshtein_fuzzy_match](strings/levenshtein_fuzzy_match.dart)
 - [longest_common_prefix](strings/longest_common_prefix.dart)
 - [longest_common_subsequence_string](strings/longest_common_subsequence_string.dart)
 - [longest_palindromic_substring](strings/longest_palindromic_substring.dart)
