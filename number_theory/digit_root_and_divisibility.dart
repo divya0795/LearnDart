@@ -15,3 +15,11 @@ bool divisibleBy11(String n) {
   }
   return alt % 11 == 0;
 }
+
+int bigMod(String n, int m) {
+  var r = 0;
+  for (final d in n.split('')) {
+    r = (r * 10 + int.parse(d)) % m;
+  }
+  return r;
+}
