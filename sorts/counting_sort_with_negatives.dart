@@ -13,3 +13,9 @@ List<int> countingSort(List<int> a) {
       for (var k = 0; k < counts[i]; k++) i + lo,
   ];
 }
+
+void main() {
+  print(countingSort([4, -2, 7, 0, -2, 3, 4]));
+  print(countingSort([]));
+  print(countingSort([5]));
+}
