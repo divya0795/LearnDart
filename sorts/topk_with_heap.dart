@@ -38,3 +38,20 @@ class MinHeap {
     return top;
   }
 }
+
+List<int> topK(List<int> xs, int k) {
+  final h = MinHeap();
+  for (final x in xs) {
+    if (h.length < k) {
+      h.add(x);
+    } else if (x > h.min) {
+      h.removeMin();
+      h.add(x);
+    }
+  }
+  final out = <int>[];
+  while (h.length > 0) {
+    out.add(h.removeMin());
+  }
+  return out.reversed.toList();
+}
