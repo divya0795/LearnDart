@@ -28,6 +28,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## async_patterns
 - [future_memoize_cache](async_patterns/future_memoize_cache.dart)
 - [pub_sub_topics](async_patterns/pub_sub_topics.dart)
+- [retry_with_jitter](async_patterns/retry_with_jitter.dart)
 
 ## backtracking
 - [combination_sum](backtracking/combination_sum.dart)
@@ -123,6 +124,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [bit_set_class](bit_manipulation/bit_set_class.dart)
 - [count_set_bits](bit_manipulation/count_set_bits.dart)
 - [count_trailing_zeros](bit_manipulation/count_trailing_zeros.dart)
+- [find_two_singles](bit_manipulation/find_two_singles.dart)
 - [gray_code](bit_manipulation/gray_code.dart)
 - [gray_code_conversion](bit_manipulation/gray_code_conversion.dart)
 - [hamming_distance](bit_manipulation/hamming_distance.dart)
@@ -282,6 +284,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [heartbeat_failure_detector](distributed/heartbeat_failure_detector.dart)
 - [lamport_clock](distributed/lamport_clock.dart)
 - [leader_election_bully](distributed/leader_election_bully.dart)
+- [paxos_single_decree](distributed/paxos_single_decree.dart)
 - [raft](distributed/raft.dart)
 - [vector_clock](distributed/vector_clock.dart)
 
@@ -393,6 +396,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## interview_classics
 - [design_hit_counter](interview_classics/design_hit_counter.dart)
+- [rate_limiter_sliding_window](interview_classics/rate_limiter_sliding_window.dart)
 - [two_sum_variants](interview_classics/two_sum_variants.dart)
 - [valid_sudoku_and_anagram_checks](interview_classics/valid_sudoku_and_anagram_checks.dart)
 
@@ -627,6 +631,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [cocktail_sort](sorts/cocktail_sort.dart)
 - [comb_sort](sorts/comb_sort.dart)
 - [counting_sort](sorts/counting_sort.dart)
+- [counting_sort_with_negatives](sorts/counting_sort_with_negatives.dart)
 - [cycle_sort](sorts/cycle_sort.dart)
 - [gnome_sort](sorts/gnome_sort.dart)
 - [heap_sort](sorts/heap_sort.dart)
