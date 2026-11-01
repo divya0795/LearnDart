@@ -25,3 +25,24 @@ Result benchmark(void Function() f, {int runs = 20, int warmup = 3}) {
   );
   return Result(best, avg);
 }
+
+void main() {
+  print(
+    'concat:  ${benchmark(() {
+      var s = '';
+      for (var i = 0; i < 2000; i++) {
+        s += 'x';
+      }
+      s.length;
+    })}',
+  );
+  print(
+    'buffer:  ${benchmark(() {
+      final b = StringBuffer();
+      for (var i = 0; i < 2000; i++) {
+        b.write('x');
+      }
+      b.toString();
+    })}',
+  );
+}
