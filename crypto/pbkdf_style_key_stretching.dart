@@ -19,3 +19,17 @@ int stretch(String password, List<int> salt, int iterations) {
   }
   return h;
 }
+
+void main() {
+  final salt = [1, 2, 3, 4];
+  for (final n in [1, 1000, 100000]) {
+    final sw = Stopwatch()..start();
+    final k = stretch('hunter2', salt, n);
+    print(
+      'iterations=$n key=${k.toRadixString(16)} time=${sw.elapsedMicroseconds}us',
+    );
+  }
+  print(
+    'different salt, different key: ${stretch('hunter2', [9], 1000) != stretch('hunter2', salt, 1000)}',
+  );
+}
