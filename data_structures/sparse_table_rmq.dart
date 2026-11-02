@@ -28,3 +28,11 @@ class SparseTable {
     return x < y ? x : y;
   }
 }
+
+void main() {
+  final st = SparseTable([5, 2, 4, 7, 1, 3, 6, 8]);
+  print(st.min(0, 7));
+  print(st.min(0, 3));
+  print(st.min(5, 7));
+  print(st.min(3, 3));
+}
