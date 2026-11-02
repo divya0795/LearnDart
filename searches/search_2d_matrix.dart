@@ -18,3 +18,16 @@ bool searchMatrix(List<List<int>> m, int target) {
   }
   return false;
 }
+
+bool searchStaircase(List<List<int>> m, int target) {
+  var r = 0, c = m[0].length - 1;
+  while (r < m.length && c >= 0) {
+    if (m[r][c] == target) return true;
+    if (m[r][c] > target) {
+      c--;
+    } else {
+      r++;
+    }
+  }
+  return false;
+}
