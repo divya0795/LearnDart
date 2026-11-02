@@ -10,3 +10,13 @@ int countWays(int amount, List<int> coins) {
   }
   return ways[amount];
 }
+
+int countOrderedWays(int amount, List<int> coins) {
+  final ways = List.filled(amount + 1, 0)..[0] = 1;
+  for (var a = 1; a <= amount; a++) {
+    for (final c in coins) {
+      if (c <= a) ways[a] += ways[a - c];
+    }
+  }
+  return ways[amount];
+}
