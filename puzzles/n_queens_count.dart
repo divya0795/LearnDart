@@ -18,3 +18,9 @@ int countQueens(int n) {
 
   return go(0, 0, 0);
 }
+
+void main() {
+  for (var n = 1; n <= 9; n++) {
+    print('n=$n -> ${countQueens(n)}');
+  }
+}
