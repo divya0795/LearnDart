@@ -20,3 +20,9 @@ int countOrderedWays(int amount, List<int> coins) {
   }
   return ways[amount];
 }
+
+void main() {
+  print('combinations of 5 from {1,2,5}: ${countWays(5, [1, 2, 5])}');
+  print('sequences of 4 from {1,2,3}: ${countOrderedWays(4, [1, 2, 3])}');
+  print('no way: ${countWays(3, [2])}');
+}
