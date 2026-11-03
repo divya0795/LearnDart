@@ -24,3 +24,10 @@ bool twoPhaseCommit(List<Participant> ps) {
   }
   return ok;
 }
+
+void main() {
+  final good = [Participant('db', true), Participant('queue', true)];
+  print('commit: ${twoPhaseCommit(good)} ${good.map((p) => p.state)}');
+  final bad = [Participant('db', true), Participant('cache', false)];
+  print('commit: ${twoPhaseCommit(bad)} ${bad.map((p) => p.state)}');
+}
