@@ -7,3 +7,17 @@ Map<String, int> wordFrequencies(String text) {
   }
   return counts;
 }
+
+List<MapEntry<String, int>> topWords(
+  String text,
+  int n, {
+  Set<String> stop = const {},
+}) {
+  final entries =
+      wordFrequencies(text).entries.where((e) => !stop.contains(e.key)).toList()
+        ..sort((a, b) {
+          final c = b.value.compareTo(a.value);
+          return c != 0 ? c : a.key.compareTo(b.key);
+        });
+  return entries.take(n).toList();
+}
