@@ -221,6 +221,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [lfsr_stream_cipher](crypto/lfsr_stream_cipher.dart)
 - [merkle_tree](crypto/merkle_tree.dart)
 - [password_salt_storage](crypto/password_salt_storage.dart)
+- [pbkdf_style_key_stretching](crypto/pbkdf_style_key_stretching.dart)
 - [rsa](crypto/rsa.dart)
 - [sha256](crypto/sha256.dart)
 - [shamir_secret_sharing](crypto/shamir_secret_sharing.dart)
@@ -280,6 +281,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [consistent_hashing](distributed/consistent_hashing.dart)
 - [crdt](distributed/crdt.dart)
 - [g_counter_crdt](distributed/g_counter_crdt.dart)
+- [gossip_protocol_simulation](distributed/gossip_protocol_simulation.dart)
 - [hash_ring_virtual_nodes](distributed/hash_ring_virtual_nodes.dart)
 - [heartbeat_failure_detector](distributed/heartbeat_failure_detector.dart)
 - [lamport_clock](distributed/lamport_clock.dart)
@@ -488,6 +490,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## number_theory
 - [binary_exponentiation_mod](number_theory/binary_exponentiation_mod.dart)
 - [chinese_remainder](number_theory/chinese_remainder.dart)
+- [digit_root_and_divisibility](number_theory/digit_root_and_divisibility.dart)
 - [euler_totient](number_theory/euler_totient.dart)
 - [extended_euclidean](number_theory/extended_euclidean.dart)
 - [fermat_primality](number_theory/fermat_primality.dart)
@@ -651,6 +654,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [stable_merge_sort](sorts/stable_merge_sort.dart)
 - [stooge_sort](sorts/stooge_sort.dart)
 - [tim_sort](sorts/tim_sort.dart)
+- [topk_with_heap](sorts/topk_with_heap.dart)
 - [tree_sort](sorts/tree_sort.dart)
 
 ## strings
@@ -685,6 +689,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## testing
 - [assertions_matchers](testing/assertions_matchers.dart)
+- [benchmark_harness](testing/benchmark_harness.dart)
 - [golden_snapshot_compare](testing/golden_snapshot_compare.dart)
 - [mini_test_runner](testing/mini_test_runner.dart)
 - [mocks_and_fakes](testing/mocks_and_fakes.dart)
