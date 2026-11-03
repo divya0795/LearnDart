@@ -15,3 +15,12 @@ class Participant {
   void commit() => state = 'committed';
   void abort() => state = 'aborted';
 }
+
+bool twoPhaseCommit(List<Participant> ps) {
+  final votes = [for (final p in ps) p.prepare()];
+  final ok = votes.every((v) => v);
+  for (final p in ps) {
+    ok ? p.commit() : p.abort();
+  }
+  return ok;
+}
