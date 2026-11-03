@@ -21,3 +21,10 @@ List<MapEntry<String, int>> topWords(
         });
   return entries.take(n).toList();
 }
+
+void main() {
+  const text =
+      'The cat and the hat. The cat sat; the hat did not. And that is that.';
+  print(topWords(text, 3));
+  print(topWords(text, 3, stop: {'the', 'and', 'is'}));
+}
