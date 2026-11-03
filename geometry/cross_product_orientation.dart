@@ -12,3 +12,6 @@ Turn orientation((num, num) a, (num, num) b, (num, num) c) {
   if (cross < 0) return Turn.right;
   return Turn.straight;
 }
+
+double signedArea2((num, num) a, (num, num) b, (num, num) c) =>
+    ((b.$1 - a.$1) * (c.$2 - a.$2) - (b.$2 - a.$2) * (c.$1 - a.$1)).toDouble();
