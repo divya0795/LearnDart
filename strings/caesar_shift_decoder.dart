@@ -70,3 +70,13 @@ double score(String s) {
   }
   return (bestK, shift(cipher, -bestK));
 }
+
+void main() {
+  final secret = shift(
+    'the quick brown fox jumps over the lazy dog and runs away',
+    11,
+  );
+  print(secret);
+  final (k, plain) = crack(secret);
+  print('shift $k -> $plain');
+}
