@@ -57,3 +57,16 @@ double score(String s) {
   }
   return chi;
 }
+
+(int, String) crack(String cipher) {
+  var bestK = 0;
+  var best = double.infinity;
+  for (var k = 0; k < 26; k++) {
+    final sc = score(shift(cipher, -k));
+    if (sc < best) {
+      best = sc;
+      bestK = k;
+    }
+  }
+  return (bestK, shift(cipher, -bestK));
+}
