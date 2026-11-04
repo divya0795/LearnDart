@@ -47,3 +47,10 @@ List<Map<String, String>> toRecords(List<List<String>> rows) {
       {for (var i = 0; i < header.length; i++) header[i]: r[i]},
   ];
 }
+
+void main() {
+  const csv = 'name,quote\nAda,"Hello, ""world"""\nLin,"two\nlines"\n';
+  final rows = parseCsv(csv);
+  print(rows);
+  print(toRecords(rows));
+}
