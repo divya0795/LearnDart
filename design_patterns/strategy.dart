@@ -13,3 +13,13 @@ class Checkout {
   double total(List<double> prices) =>
       prices.fold(0.0, (sum, p) => sum + discount(p));
 }
+
+void main() {
+  final cart = [10.0, 20.0, 4.0];
+  final c = Checkout(noDiscount);
+  print('none: ${c.total(cart)}');
+  c.discount = tenPercent;
+  print('10%: ${c.total(cart)}');
+  c.discount = flatFive;
+  print('flat 5: ${c.total(cart)}');
+}
