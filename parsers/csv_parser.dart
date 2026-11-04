@@ -39,3 +39,11 @@ List<List<String>> parseCsv(String input) {
   }
   return rows;
 }
+
+List<Map<String, String>> toRecords(List<List<String>> rows) {
+  final header = rows.first;
+  return [
+    for (final r in rows.skip(1))
+      {for (var i = 0; i < header.length; i++) header[i]: r[i]},
+  ];
+}
