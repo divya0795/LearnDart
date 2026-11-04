@@ -261,6 +261,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [segment_tree](data_structures/segment_tree.dart)
 - [skip_list](data_structures/skip_list.dart)
 - [sliding_window_maximum](data_structures/sliding_window_maximum.dart)
+- [sparse_table_rmq](data_structures/sparse_table_rmq.dart)
 - [stack](data_structures/stack.dart)
 - [stack_based_calculator](data_structures/stack_based_calculator.dart)
 - [treap](data_structures/treap.dart)
@@ -288,6 +289,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [leader_election_bully](distributed/leader_election_bully.dart)
 - [paxos_single_decree](distributed/paxos_single_decree.dart)
 - [raft](distributed/raft.dart)
+- [two_phase_commit](distributed/two_phase_commit.dart)
 - [vector_clock](distributed/vector_clock.dart)
 
 ## dynamic_programming
@@ -325,6 +327,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [stock_profit_dp](dynamic_programming/stock_profit_dp.dart)
 - [triangle_min_path](dynamic_programming/triangle_min_path.dart)
 - [unique_paths](dynamic_programming/unique_paths.dart)
+- [ways_to_make_change_count](dynamic_programming/ways_to_make_change_count.dart)
 - [word_break_count](dynamic_programming/word_break_count.dart)
 
 ## game_theory
@@ -577,6 +580,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [hanoi_move_log](puzzles/hanoi_move_log.dart)
 - [josephus_problem](puzzles/josephus_problem.dart)
 - [magic_square_odd](puzzles/magic_square_odd.dart)
+- [n_queens_count](puzzles/n_queens_count.dart)
 - [roman_clock_angle](puzzles/roman_clock_angle.dart)
 - [sudoku_row_col_box_check](puzzles/sudoku_row_col_box_check.dart)
 - [sudoku_validator](puzzles/sudoku_validator.dart)
@@ -623,6 +627,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [linear_search](searches/linear_search.dart)
 - [peak_element](searches/peak_element.dart)
 - [rotated_sorted_search](searches/rotated_sorted_search.dart)
+- [search_2d_matrix](searches/search_2d_matrix.dart)
 - [sqrt_binary_search](searches/sqrt_binary_search.dart)
 - [ternary_search](searches/ternary_search.dart)
 - [ternary_search_recursive](searches/ternary_search_recursive.dart)
