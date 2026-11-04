@@ -28,3 +28,15 @@ List<int>? colorGraph(List<List<int>> g, int m) {
 
   return go(0) ? color : null;
 }
+
+void main() {
+  // edges: 0-1, 1-2, 2-3, 3-0, 0-2
+  final g = [
+    [1, 3, 2],
+    [0, 2],
+    [1, 3, 0],
+    [2, 0],
+  ];
+  print('2 colours: ${colorGraph(g, 2)}');
+  print('3 colours: ${colorGraph(g, 3)}');
+}
