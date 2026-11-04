@@ -11,3 +11,20 @@ bool _safe(List<List<int>> g, List<int> color, int v, int c) {
   }
   return true;
 }
+
+List<int>? colorGraph(List<List<int>> g, int m) {
+  final color = List.filled(g.length, -1);
+  bool go(int v) {
+    if (v == g.length) return true;
+    for (var c = 0; c < m; c++) {
+      if (_safe(g, color, v, c)) {
+        color[v] = c;
+        if (go(v + 1)) return true;
+        color[v] = -1;
+      }
+    }
+    return false;
+  }
+
+  return go(0) ? color : null;
+}
