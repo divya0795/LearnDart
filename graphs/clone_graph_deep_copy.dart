@@ -34,3 +34,14 @@ String describe(Node start) {
   go(start);
   return lines.join(' | ');
 }
+
+void main() {
+  final n = List.generate(4, (i) => Node(i + 1));
+  for (var i = 0; i < 4; i++) {
+    n[i].neighbors.addAll([n[(i + 1) % 4], n[(i + 3) % 4]]);
+  }
+  final c = cloneGraph(n[0]);
+  print(describe(n[0]));
+  print(describe(c));
+  print('distinct objects: ${!identical(n[0], c)}');
+}
