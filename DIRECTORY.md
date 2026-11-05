@@ -277,6 +277,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [factory_method](design_patterns/factory_method.dart)
 - [observer](design_patterns/observer.dart)
 - [state_machine_pattern](design_patterns/state_machine_pattern.dart)
+- [strategy](design_patterns/strategy.dart)
 
 ## distributed
 - [consistent_hashing](distributed/consistent_hashing.dart)
@@ -343,6 +344,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [circle_from_three_points](geometry/circle_from_three_points.dart)
 - [closest_pair](geometry/closest_pair.dart)
 - [convex_hull_graham](geometry/convex_hull_graham.dart)
+- [cross_product_orientation](geometry/cross_product_orientation.dart)
 - [haversine](geometry/haversine.dart)
 - [line_intersection](geometry/line_intersection.dart)
 - [point_distance](geometry/point_distance.dart)
@@ -523,6 +525,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## parsers
 - [arithmetic_evaluator_precedence_climbing](parsers/arithmetic_evaluator_precedence_climbing.dart)
 - [brace_expansion](parsers/brace_expansion.dart)
+- [csv_parser](parsers/csv_parser.dart)
 - [ini_parser](parsers/ini_parser.dart)
 - [json_parser](parsers/json_parser.dart)
 - [pratt_parser](parsers/pratt_parser.dart)
@@ -667,6 +670,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [anagram_groups](strings/anagram_groups.dart)
 - [anagram_palindrome_permutation](strings/anagram_palindrome_permutation.dart)
 - [boyer_moore_search](strings/boyer_moore_search.dart)
+- [caesar_shift_decoder](strings/caesar_shift_decoder.dart)
 - [character_frequency](strings/character_frequency.dart)
 - [hamming_and_similarity](strings/hamming_and_similarity.dart)
 - [is_anagram](strings/is_anagram.dart)
@@ -690,6 +694,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [text_statistics](strings/text_statistics.dart)
 - [valid_parentheses](strings/valid_parentheses.dart)
 - [word_count](strings/word_count.dart)
+- [word_frequency_top_n](strings/word_frequency_top_n.dart)
 - [z_algorithm](strings/z_algorithm.dart)
 
 ## testing
