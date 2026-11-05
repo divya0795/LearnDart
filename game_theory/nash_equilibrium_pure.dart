@@ -18,3 +18,24 @@ List<(int, int)> pureNash(List<List<(int, int)>> payoff) {
   }
   return out;
 }
+
+void main() {
+  print(
+    'prisoner dilemma: ${pureNash([
+      [(3, 3), (0, 5)],
+      [(5, 0), (1, 1)],
+    ])}',
+  );
+  print(
+    'coordination: ${pureNash([
+      [(2, 2), (0, 0)],
+      [(0, 0), (1, 1)],
+    ])}',
+  );
+  print(
+    'matching pennies: ${pureNash([
+      [(1, -1), (-1, 1)],
+      [(-1, 1), (1, -1)],
+    ])}',
+  );
+}
