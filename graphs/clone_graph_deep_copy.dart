@@ -21,3 +21,16 @@ Node cloneGraph(Node start) {
 
   return go(start);
 }
+
+String describe(Node start) {
+  final seen = <Node>{};
+  final lines = <String>[];
+  void go(Node n) {
+    if (!seen.add(n)) return;
+    lines.add('${n.val}: ${n.neighbors.map((m) => m.val).join(',')}');
+    n.neighbors.forEach(go);
+  }
+
+  go(start);
+  return lines.join(' | ');
+}
