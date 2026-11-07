@@ -12,3 +12,17 @@ enum Planet {
   double get surfaceGravity => _g * mass / (radius * radius);
   double weightOn(double massKg) => massKg * surfaceGravity;
 }
+
+enum Level implements Comparable<Level> {
+  low,
+  medium,
+  high;
+
+  @override
+  int compareTo(Level other) => index - other.index;
+  String get label => switch (this) {
+    Level.low => 'LOW',
+    Level.medium => 'MED',
+    Level.high => 'HIGH',
+  };
+}
