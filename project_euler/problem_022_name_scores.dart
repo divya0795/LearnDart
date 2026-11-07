@@ -12,3 +12,8 @@ int totalScore(List<String> names) {
   }
   return total;
 }
+
+void main() {
+  print('COLIN = ${alphaValue('COLIN')}');
+  print(totalScore(['MARY', 'PATRICIA', 'LINDA', 'BARBARA', 'ELIZABETH']));
+}
