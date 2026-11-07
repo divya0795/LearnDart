@@ -3,3 +3,12 @@
 // sorted list. Sum all the scores.
 int alphaValue(String name) =>
     name.toUpperCase().codeUnits.fold(0, (a, c) => a + c - 64);
+
+int totalScore(List<String> names) {
+  final sorted = [...names]..sort();
+  var total = 0;
+  for (var i = 0; i < sorted.length; i++) {
+    total += alphaValue(sorted[i]) * (i + 1);
+  }
+  return total;
+}
