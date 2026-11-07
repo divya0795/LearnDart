@@ -26,3 +26,14 @@ enum Level implements Comparable<Level> {
     Level.high => 'HIGH',
   };
 }
+
+void main() {
+  for (final p in Planet.values) {
+    print(
+      '${p.name}: g=${p.surfaceGravity.toStringAsFixed(2)} 70kg -> ${p.weightOn(70).toStringAsFixed(0)} N',
+    );
+  }
+  print(Level.values.map((l) => l.label).toList());
+  print(Level.high.compareTo(Level.low));
+  print(Level.values.byName('medium'));
+}
