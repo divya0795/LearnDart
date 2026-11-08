@@ -13,3 +13,9 @@ List<double> ema(List<num> xs, double alpha) {
   }
   return out;
 }
+
+void main() {
+  const data = [10, 12, 9, 14, 20, 18, 25, 22];
+  print(sma(data, 3).map((x) => x.toStringAsFixed(1)).toList());
+  print(ema(data, 0.5).map((x) => x.toStringAsFixed(1)).toList());
+}
