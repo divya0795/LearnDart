@@ -30,3 +30,15 @@ List<int> mergeAll(List<List<int>> lists) {
   }
   return cur.first;
 }
+
+void main() {
+  print(merge([1, 3, 5], [2, 4, 6, 8]));
+  print(merge([], [1, 2]));
+  print(
+    mergeAll([
+      [1, 4, 7],
+      [2, 5],
+      [0, 3, 6, 9],
+    ]),
+  );
+}
