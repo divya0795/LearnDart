@@ -17,3 +17,16 @@ List<int> merge(List<int> a, List<int> b) {
     ..addAll(b.sublist(j));
   return out;
 }
+
+List<int> mergeAll(List<List<int>> lists) {
+  if (lists.isEmpty) return [];
+  var cur = lists;
+  while (cur.length > 1) {
+    final next = <List<int>>[];
+    for (var i = 0; i < cur.length; i += 2) {
+      next.add(i + 1 < cur.length ? merge(cur[i], cur[i + 1]) : cur[i]);
+    }
+    cur = next;
+  }
+  return cur.first;
+}
