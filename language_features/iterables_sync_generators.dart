@@ -28,3 +28,10 @@ Iterable<List<int>> pairs(List<int> xs) sync* {
     }
   }
 }
+
+void main() {
+  print(naturals().where((n) => n % 7 == 0).take(4).toList());
+  print(fibonacci().take(12).toList());
+  print(countdownThenUp(3).toList());
+  print(pairs([1, 2, 3]).toList());
+}
