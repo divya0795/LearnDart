@@ -14,3 +14,9 @@ int popCount(int n) {
 }
 
 int bitFlips(int a, int b) => popCount(a ^ b);
+
+void main() {
+  print('flips 29 -> 15: ${bitFlips(29, 15)}');
+  print('flips 10 -> 10: ${bitFlips(10, 10)}');
+  print('flips 0 -> 255: ${bitFlips(0, 255)}');
+}
