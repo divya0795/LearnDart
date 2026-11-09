@@ -12,3 +12,5 @@ int popCount(int n) {
   }
   return c;
 }
+
+int bitFlips(int a, int b) => popCount(a ^ b);
