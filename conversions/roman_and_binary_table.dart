@@ -25,3 +25,11 @@ String toRoman(int n) {
   }
   return b.toString();
 }
+
+String table(Iterable<int> ns) {
+  final rows = [
+    for (final n in ns)
+      '${'$n'.padLeft(4)} | ${n.toRadixString(2).padLeft(8, '0')} | ${n.toRadixString(8).padLeft(4)} | ${n.toRadixString(16).toUpperCase().padLeft(3)} | ${toRoman(n)}',
+  ];
+  return ['   n |   binary  | oct  | hex | roman', ...rows].join('\n');
+}
