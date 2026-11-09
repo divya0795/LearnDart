@@ -412,6 +412,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## language_features
 - [callable_classes_and_closures](language_features/callable_classes_and_closures.dart)
+- [enhanced_enums](language_features/enhanced_enums.dart)
 - [error_handling_custom_exceptions](language_features/error_handling_custom_exceptions.dart)
 - [generics_bounded](language_features/generics_bounded.dart)
 - [immutability_and_const](language_features/immutability_and_const.dart)
@@ -570,6 +571,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [problem_018_max_path_triangle](project_euler/problem_018_max_path_triangle.dart)
 - [problem_019_counting_sundays](project_euler/problem_019_counting_sundays.dart)
 - [problem_020_factorial_digit_sum](project_euler/problem_020_factorial_digit_sum.dart)
+- [problem_022_name_scores](project_euler/problem_022_name_scores.dart)
 - [problem_023_abundant_sums](project_euler/problem_023_abundant_sums.dart)
 - [problem_024_lexicographic_permutation](project_euler/problem_024_lexicographic_permutation.dart)
 - [problem_028_spiral_diagonals](project_euler/problem_028_spiral_diagonals.dart)
