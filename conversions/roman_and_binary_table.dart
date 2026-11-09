@@ -33,3 +33,5 @@ String table(Iterable<int> ns) {
   ];
   return ['   n |   binary  | oct  | hex | roman', ...rows].join('\n');
 }
+
+void main() => print(table([1, 4, 9, 14, 40, 90, 255]));
