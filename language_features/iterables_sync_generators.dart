@@ -15,3 +15,16 @@ Iterable<int> fibonacci() sync* {
     (a, b) = (b, a + b);
   }
 }
+
+Iterable<int> countdownThenUp(int n) sync* {
+  yield* [for (var i = n; i > 0; i--) i];
+  yield* Iterable.generate(n, (i) => i + 1);
+}
+
+Iterable<List<int>> pairs(List<int> xs) sync* {
+  for (var i = 0; i < xs.length; i++) {
+    for (var j = i + 1; j < xs.length; j++) {
+      yield [xs[i], xs[j]];
+    }
+  }
+}
