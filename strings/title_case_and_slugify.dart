@@ -7,3 +7,15 @@ String titleCase(String s) =>
     _words(s)
         .map((w) => w[0].toUpperCase() + w.substring(1).toLowerCase())
         .join(' ');
+
+String snakeCase(String s) => _words(s).map((w) => w.toLowerCase()).join('_');
+
+String camelCase(String s) {
+  final w = _words(s);
+  if (w.isEmpty) return '';
+  return w.first.toLowerCase() +
+      w
+          .skip(1)
+          .map((x) => x[0].toUpperCase() + x.substring(1).toLowerCase())
+          .join();
+}
