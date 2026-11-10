@@ -21,3 +21,11 @@ String camelCase(String s) {
 }
 
 String slugify(String s) => _words(s).map((w) => w.toLowerCase()).join('-');
+
+void main() {
+  const s = 'Hello, wORLD of Dart 3!';
+  print(titleCase(s));
+  print(snakeCase(s));
+  print(camelCase(s));
+  print(slugify(s));
+}
