@@ -24,3 +24,12 @@ class Zobrist {
   int move(int h, int piece, int from, int to) =>
       h ^ _keys[piece][from] ^ _keys[piece][to];
 }
+
+void main() {
+  final z = Zobrist(2, 9);
+  final board = {0: 0, 4: 1, 8: 0};
+  final h = z.hash(board);
+  final moved = {0: 0, 5: 1, 8: 0};
+  print('incremental == full: ${z.move(h, 1, 4, 5) == z.hash(moved)}');
+  print('different positions differ: ${h != z.hash(moved)}');
+}
