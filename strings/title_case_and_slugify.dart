@@ -19,3 +19,5 @@ String camelCase(String s) {
           .map((x) => x[0].toUpperCase() + x.substring(1).toLowerCase())
           .join();
 }
+
+String slugify(String s) => _words(s).map((w) => w.toLowerCase()).join('-');
