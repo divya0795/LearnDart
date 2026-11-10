@@ -15,3 +15,8 @@ List<(String, int)> runs(String s) {
 
 (String, int)? longestRun(String s) =>
     runs(s).isEmpty ? null : runs(s).reduce((a, b) => b.$2 > a.$2 ? b : a);
+
+String compressIfSmaller(String s) {
+  final c = runs(s).map((r) => '${r.$1}${r.$2}').join();
+  return c.length < s.length ? c : s;
+}
