@@ -18,3 +18,8 @@ double secant(
   }
   return x1;
 }
+
+void main() {
+  print(secant((x) => x * x - 2, 1, 2));
+  print(secant((x) => x * x * x - x - 2, 1, 2));
+}
