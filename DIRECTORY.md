@@ -11,6 +11,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [fisher_yates_shuffle](arrays/fisher_yates_shuffle.dart)
 - [majority_element_boyer_moore](arrays/majority_element_boyer_moore.dart)
 - [max_subarray_with_range](arrays/max_subarray_with_range.dart)
+- [merge_sorted_arrays](arrays/merge_sorted_arrays.dart)
 - [move_zeroes](arrays/move_zeroes.dart)
 - [next_permutation](arrays/next_permutation.dart)
 - [pivot_index](arrays/pivot_index.dart)
@@ -122,6 +123,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [try_catch](basics/11_errors/try_catch.dart)
 
 ## bit_manipulation
+- [bit_flip_count](bit_manipulation/bit_flip_count.dart)
 - [bit_set_class](bit_manipulation/bit_set_class.dart)
 - [count_set_bits](bit_manipulation/count_set_bits.dart)
 - [count_trailing_zeros](bit_manipulation/count_trailing_zeros.dart)
@@ -416,6 +418,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [error_handling_custom_exceptions](language_features/error_handling_custom_exceptions.dart)
 - [generics_bounded](language_features/generics_bounded.dart)
 - [immutability_and_const](language_features/immutability_and_const.dart)
+- [iterables_sync_generators](language_features/iterables_sync_generators.dart)
 - [mixins_and_composition](language_features/mixins_and_composition.dart)
 - [null_safety_patterns](language_features/null_safety_patterns.dart)
 - [operator_overloading](language_features/operator_overloading.dart)
@@ -440,6 +443,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [linear_regression](machine_learning/linear_regression.dart)
 - [logistic_regression](machine_learning/logistic_regression.dart)
 - [min_max_scaler](machine_learning/min_max_scaler.dart)
+- [moving_average_smoothing](machine_learning/moving_average_smoothing.dart)
 - [naive_bayes](machine_learning/naive_bayes.dart)
 - [neural_network](machine_learning/neural_network.dart)
 - [perceptron](machine_learning/perceptron.dart)
