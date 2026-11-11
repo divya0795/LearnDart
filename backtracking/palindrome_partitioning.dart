@@ -30,3 +30,8 @@ List<List<String>> partition(String s) {
   go(0);
   return out;
 }
+
+void main() {
+  print(partition('aab'));
+  print('"aaaa" has ${partition('aaaa').length} partitions');
+}
