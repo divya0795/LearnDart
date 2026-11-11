@@ -20,3 +20,12 @@ class Lazy {
   }
   static Lazy get instance => _i ??= Lazy._();
 }
+
+void main() {
+  Config().set('theme', 'dark');
+  print('same object: ${identical(Config(), Config())}');
+  print('shared state: ${Config().get('theme')}');
+  Lazy.instance;
+  Lazy.instance;
+  print('lazy created ${Lazy.created} time(s)');
+}
