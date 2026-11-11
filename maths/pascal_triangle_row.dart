@@ -7,3 +7,7 @@ List<int> pascalRow(int n) {
   }
   return row;
 }
+
+List<List<int>> pascalTriangle(int rows) => [
+  for (var n = 0; n < rows; n++) pascalRow(n),
+];
