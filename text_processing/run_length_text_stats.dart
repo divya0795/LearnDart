@@ -20,3 +20,10 @@ String compressIfSmaller(String s) {
   final c = runs(s).map((r) => '${r.$1}${r.$2}').join();
   return c.length < s.length ? c : s;
 }
+
+void main() {
+  print(runs('aaabccdddd'));
+  print(longestRun('aaabccdddd'));
+  print(compressIfSmaller('aaabccdddd'));
+  print(compressIfSmaller('abcd'));
+}
