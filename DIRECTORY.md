@@ -213,6 +213,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [duration_formatting](conversions/duration_formatting.dart)
 - [integer_to_roman](conversions/integer_to_roman.dart)
 - [number_to_words](conversions/number_to_words.dart)
+- [roman_and_binary_table](conversions/roman_and_binary_table.dart)
 - [roman_to_integer](conversions/roman_to_integer.dart)
 - [temperature_conversions](conversions/temperature_conversions.dart)
 
@@ -343,6 +344,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [nim_sprague_grundy](game_theory/nim_sprague_grundy.dart)
 - [prisoners_dilemma_tournament](game_theory/prisoners_dilemma_tournament.dart)
 - [tic_tac_toe_minimax](game_theory/tic_tac_toe_minimax.dart)
+- [zobrist_hashing](game_theory/zobrist_hashing.dart)
 
 ## geometry
 - [circle_from_three_points](geometry/circle_from_three_points.dart)
@@ -701,6 +703,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [string_rotation_checks](strings/string_rotation_checks.dart)
 - [suffix_array](strings/suffix_array.dart)
 - [text_statistics](strings/text_statistics.dart)
+- [title_case_and_slugify](strings/title_case_and_slugify.dart)
 - [valid_parentheses](strings/valid_parentheses.dart)
 - [word_count](strings/word_count.dart)
 - [word_frequency_top_n](strings/word_frequency_top_n.dart)
@@ -714,6 +717,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [mocks_and_fakes](testing/mocks_and_fakes.dart)
 - [property_based_testing](testing/property_based_testing.dart)
 - [shrinking_counterexamples](testing/shrinking_counterexamples.dart)
+- [table_driven_tests](testing/table_driven_tests.dart)
 - [test_doubles_spy](testing/test_doubles_spy.dart)
 
 ## text_processing
