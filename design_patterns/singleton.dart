@@ -11,3 +11,12 @@ class Config {
   void set(String k, String v) => _values[k] = v;
   String? get(String k) => _values[k];
 }
+
+class Lazy {
+  static Lazy? _i;
+  static int created = 0;
+  Lazy._() {
+    created++;
+  }
+  static Lazy get instance => _i ??= Lazy._();
+}
