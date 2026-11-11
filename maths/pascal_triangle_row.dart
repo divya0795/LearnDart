@@ -14,3 +14,10 @@ List<List<int>> pascalTriangle(int rows) => [
 
 bool rowSumsToPowerOfTwo(int n) =>
     pascalRow(n).fold(0, (a, b) => a + b) == 1 << n;
+
+void main() {
+  for (final r in pascalTriangle(6)) {
+    print(r.join(' ').padLeft(14 + r.join(' ').length ~/ 2));
+  }
+  print('row 10 sums to 2^10: ${rowSumsToPowerOfTwo(10)}');
+}
