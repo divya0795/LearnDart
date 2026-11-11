@@ -11,3 +11,6 @@ List<int> pascalRow(int n) {
 List<List<int>> pascalTriangle(int rows) => [
   for (var n = 0; n < rows; n++) pascalRow(n),
 ];
+
+bool rowSumsToPowerOfTwo(int n) =>
+    pascalRow(n).fold(0, (a, b) => a + b) == 1 << n;
