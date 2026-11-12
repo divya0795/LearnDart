@@ -480,6 +480,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [matrix_exponent_fibonacci](maths/matrix_exponent_fibonacci.dart)
 - [n_bonacci](maths/n_bonacci.dart)
 - [newton_method_root](maths/newton_method_root.dart)
+- [pascal_triangle_row](maths/pascal_triangle_row.dart)
 - [perfect_number](maths/perfect_number.dart)
 - [perfect_square_check](maths/perfect_square_check.dart)
 - [power_iterative](maths/power_iterative.dart)
@@ -530,6 +531,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [matrix_multiplication](numeric/matrix_multiplication.dart)
 - [newton_raphson](numeric/newton_raphson.dart)
 - [ntt](numeric/ntt.dart)
+- [secant_method](numeric/secant_method.dart)
 - [simpson_integration](numeric/simpson_integration.dart)
 
 ## parsers
@@ -725,6 +727,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [markdown_to_html](text_processing/markdown_to_html.dart)
 - [myers_diff](text_processing/myers_diff.dart)
 - [ngrams](text_processing/ngrams.dart)
+- [run_length_text_stats](text_processing/run_length_text_stats.dart)
 - [soundex_phonetic](text_processing/soundex_phonetic.dart)
 - [template_renderer](text_processing/template_renderer.dart)
 - [text_search_inverted_index](text_processing/text_search_inverted_index.dart)
