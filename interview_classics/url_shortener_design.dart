@@ -16,3 +16,17 @@ String encode62(int id) {
 
 int decode62(String s) =>
     s.split('').fold(0, (n, c) => n * 62 + _alphabet.indexOf(c));
+
+class Shortener {
+  final _byCode = <String, String>{};
+  final _byUrl = <String, String>{};
+  var _next = 1000;
+
+  String shorten(String url) => _byUrl.putIfAbsent(url, () {
+    final code = encode62(_next++);
+    _byCode[code] = url;
+    return code;
+  });
+
+  String? resolve(String code) => _byCode[code];
+}
