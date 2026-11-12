@@ -30,3 +30,12 @@ class Shortener {
 
   String? resolve(String code) => _byCode[code];
 }
+
+void main() {
+  final s = Shortener();
+  final c = s.shorten('https://dart.dev/language');
+  print('$c -> ${s.resolve(c)}');
+  print('same url, same code: ${s.shorten('https://dart.dev/language') == c}');
+  print('round trip: ${decode62(encode62(123456789))}');
+  print('6 chars hold up to ${decode62('ZZZZZZ')}');
+}
