@@ -27,3 +27,13 @@ Map<String, int> merge(Map<String, int> a, Map<String, int>? b) => {
   ...a,
   ...?b,
 };
+
+void main() {
+  final p = drawSquare();
+  print('${p.color} ${p.width}');
+  p.log.forEach(print);
+  print(build());
+  print(build(includeZero: true));
+  print(merge({'a': 1, 'b': 2}, {'b': 3}));
+  print(merge({'a': 1}, null));
+}
