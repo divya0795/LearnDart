@@ -16,3 +16,14 @@ Pen drawSquare() => Pen()
   ..draw(10, 10)
   ..draw(0, 10)
   ..draw(0, 0);
+
+List<int> build({bool includeZero = false}) => [
+  if (includeZero) 0,
+  for (var i = 1; i <= 3; i++) i * i,
+  ...[100, 200],
+];
+
+Map<String, int> merge(Map<String, int> a, Map<String, int>? b) => {
+  ...a,
+  ...?b,
+};
