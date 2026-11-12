@@ -35,3 +35,11 @@ class Computed {
     _current = prev;
   }
 }
+
+void main() {
+  final price = Signal(10), qty = Signal(2);
+  Computed(() => print('total = ${price.value * qty.value}'));
+  qty.value = 3;
+  price.value = 12;
+  price.value = 12; // unchanged: no recompute
+}
