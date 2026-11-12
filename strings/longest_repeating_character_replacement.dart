@@ -21,3 +21,9 @@ int characterReplacement(String s, int k) {
   }
   return best;
 }
+
+void main() {
+  print(characterReplacement('ABAB', 2));
+  print(characterReplacement('AABABBA', 1));
+  print(characterReplacement('AAAA', 0));
+}
