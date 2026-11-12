@@ -11,3 +11,8 @@ int firstFibWithDigits(int digits) {
   }
   return i;
 }
+
+void main() {
+  print('3 digits: term ${firstFibWithDigits(3)}');
+  print('1000 digits: term ${firstFibWithDigits(1000)}');
+}
