@@ -11,3 +11,10 @@ Stream<List<T>> batch<T>(Stream<T> s, int size) async* {
   }
   if (buf.isNotEmpty) yield buf;
 }
+
+Future<void> main() async {
+  final s = Stream.fromIterable(List.generate(10, (i) => i + 1));
+  await for (final b in batch(s, 4)) {
+    print('insert ${b.length} rows: $b');
+  }
+}
