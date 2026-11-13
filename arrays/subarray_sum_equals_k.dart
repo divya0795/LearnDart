@@ -11,3 +11,17 @@ int subarraySum(List<int> a, int k) {
   }
   return count;
 }
+
+int longestSubarrayWithSum(List<int> a, int k) {
+  final first = <int, int>{0: -1};
+  var prefix = 0, best = 0;
+  for (var i = 0; i < a.length; i++) {
+    prefix += a[i];
+    if (first.containsKey(prefix - k)) {
+      final len = i - first[prefix - k]!;
+      if (len > best) best = len;
+    }
+    first.putIfAbsent(prefix, () => i);
+  }
+  return best;
+}
