@@ -23,3 +23,12 @@ class ReplaySubject<T> {
     return () => _listeners.remove(onData);
   }
 }
+
+void main() {
+  final s = ReplaySubject<String>(2);
+  for (final m in ['m1', 'm2', 'm3', 'm4']) {
+    s.next(m);
+  }
+  s.listen((m) => print('late subscriber got $m'));
+  s.next('m5');
+}
