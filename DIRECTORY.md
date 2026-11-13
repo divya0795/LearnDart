@@ -39,6 +39,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [letter_combinations_phone](backtracking/letter_combinations_phone.dart)
 - [m_coloring_problem](backtracking/m_coloring_problem.dart)
 - [n_queens](backtracking/n_queens.dart)
+- [palindrome_partitioning](backtracking/palindrome_partitioning.dart)
 - [permutations_unique](backtracking/permutations_unique.dart)
 - [rat_in_a_maze](backtracking/rat_in_a_maze.dart)
 - [subset_sum](backtracking/subset_sum.dart)
@@ -280,6 +281,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [decorator](design_patterns/decorator.dart)
 - [factory_method](design_patterns/factory_method.dart)
 - [observer](design_patterns/observer.dart)
+- [singleton](design_patterns/singleton.dart)
 - [state_machine_pattern](design_patterns/state_machine_pattern.dart)
 - [strategy](design_patterns/strategy.dart)
 
@@ -412,6 +414,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [design_hit_counter](interview_classics/design_hit_counter.dart)
 - [rate_limiter_sliding_window](interview_classics/rate_limiter_sliding_window.dart)
 - [two_sum_variants](interview_classics/two_sum_variants.dart)
+- [url_shortener_design](interview_classics/url_shortener_design.dart)
 - [valid_sudoku_and_anagram_checks](interview_classics/valid_sudoku_and_anagram_checks.dart)
 
 ## language_features
@@ -605,6 +608,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 ## reactive
 - [behavior_subject](reactive/behavior_subject.dart)
 - [combine_latest](reactive/combine_latest.dart)
+- [computed_signals](reactive/computed_signals.dart)
 - [debounce_operator](reactive/debounce_operator.dart)
 - [event_emitter_typed](reactive/event_emitter_typed.dart)
 - [observable](reactive/observable.dart)
@@ -694,6 +698,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [longest_common_prefix](strings/longest_common_prefix.dart)
 - [longest_common_subsequence_string](strings/longest_common_subsequence_string.dart)
 - [longest_palindromic_substring](strings/longest_palindromic_substring.dart)
+- [longest_repeating_character_replacement](strings/longest_repeating_character_replacement.dart)
 - [longest_substring_without_repeat](strings/longest_substring_without_repeat.dart)
 - [manacher](strings/manacher.dart)
 - [rabin_karp](strings/rabin_karp.dart)
