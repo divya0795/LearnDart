@@ -25,3 +25,9 @@ int longestSubarrayWithSum(List<int> a, int k) {
   }
   return best;
 }
+
+void main() {
+  print(subarraySum([1, 1, 1], 2));
+  print(subarraySum([1, 2, 3, -3, 3], 3));
+  print(longestSubarrayWithSum([1, -1, 5, -2, 3], 3));
+}
