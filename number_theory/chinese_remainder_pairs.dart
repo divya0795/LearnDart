@@ -20,3 +20,8 @@ int? solvePair(int a1, int m1, int a2, int m2) {
   }
   return (a, m);
 }
+
+void main() {
+  print(solveSystem([(2, 3), (3, 5), (2, 7)]));
+  print(solveSystem([(1, 4), (3, 6)])); // not coprime, may have no solution
+}
