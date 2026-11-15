@@ -8,3 +8,19 @@ extension StringX on String {
     return s == s.split('').reversed.join();
   }
 }
+
+extension IterableX<T> on Iterable<T> {
+  Iterable<List<T>> chunked(int n) sync* {
+    final it = iterator;
+    while (true) {
+      final chunk = <T>[];
+      while (chunk.length < n && it.moveNext()) {
+        chunk.add(it.current);
+      }
+      if (chunk.isEmpty) return;
+      yield chunk;
+    }
+  }
+
+  T? get secondOrNull => length >= 2 ? elementAt(1) : null;
+}
