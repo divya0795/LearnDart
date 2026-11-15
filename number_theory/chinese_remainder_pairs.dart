@@ -8,3 +8,15 @@ int? solvePair(int a1, int m1, int a2, int m2) {
   }
   return null;
 }
+
+(int, int)? solveSystem(List<(int, int)> congruences) {
+  var (a, m) = congruences.first;
+  for (final (a2, m2) in congruences.skip(1)) {
+    final x = solvePair(a, m, a2, m2);
+    if (x == null) return null;
+    a = x;
+    m *= m2;
+    a %= m;
+  }
+  return (a, m);
+}
