@@ -24,3 +24,8 @@ extension IterableX<T> on Iterable<T> {
 
   T? get secondOrNull => length >= 2 ? elementAt(1) : null;
 }
+
+extension NumX on num {
+  Duration get seconds => Duration(milliseconds: (this * 1000).round());
+  num clampTo(num lo, num hi) => this < lo ? lo : (this > hi ? hi : this);
+}
