@@ -10,3 +10,14 @@ List<int> properDivisorSums(int limit) {
   }
   return d;
 }
+
+void main() {
+  final d = properDivisorSums(10000);
+  var sum = 0;
+  for (var a = 2; a < 10000; a++) {
+    final b = d[a];
+    if (b != a && b < 10001 && d[b] == a) sum += a;
+  }
+  print('220/284 check: ${d[220]} ${d[284]}');
+  print('answer: $sum');
+}
