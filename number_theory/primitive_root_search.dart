@@ -25,3 +25,11 @@ List<int> _primeFactors(int n) {
   if (n > 1) f.add(n);
   return f;
 }
+
+int primitiveRoot(int p) {
+  final qs = _primeFactors(p - 1);
+  for (var g = 2; g < p; g++) {
+    if (qs.every((q) => _pow(g, (p - 1) ~/ q, p) != 1)) return g;
+  }
+  return 1;
+}
