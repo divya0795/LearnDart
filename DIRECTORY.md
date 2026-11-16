@@ -21,6 +21,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [rotate_array](arrays/rotate_array.dart)
 - [sliding_window_fixed](arrays/sliding_window_fixed.dart)
 - [sorted_squared_array](arrays/sorted_squared_array.dart)
+- [subarray_sum_equals_k](arrays/subarray_sum_equals_k.dart)
 - [trapping_rain_water](arrays/trapping_rain_water.dart)
 - [two_pointers_three_sum](arrays/two_pointers_three_sum.dart)
 - [two_sum](arrays/two_sum.dart)
@@ -30,6 +31,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [future_memoize_cache](async_patterns/future_memoize_cache.dart)
 - [pub_sub_topics](async_patterns/pub_sub_topics.dart)
 - [retry_with_jitter](async_patterns/retry_with_jitter.dart)
+- [stream_batching](async_patterns/stream_batching.dart)
 
 ## backtracking
 - [combination_sum](backtracking/combination_sum.dart)
@@ -419,6 +421,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 
 ## language_features
 - [callable_classes_and_closures](language_features/callable_classes_and_closures.dart)
+- [cascade_and_spread](language_features/cascade_and_spread.dart)
 - [enhanced_enums](language_features/enhanced_enums.dart)
 - [error_handling_custom_exceptions](language_features/error_handling_custom_exceptions.dart)
 - [generics_bounded](language_features/generics_bounded.dart)
@@ -585,6 +588,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [problem_022_name_scores](project_euler/problem_022_name_scores.dart)
 - [problem_023_abundant_sums](project_euler/problem_023_abundant_sums.dart)
 - [problem_024_lexicographic_permutation](project_euler/problem_024_lexicographic_permutation.dart)
+- [problem_025_thousand_digit_fibonacci](project_euler/problem_025_thousand_digit_fibonacci.dart)
 - [problem_028_spiral_diagonals](project_euler/problem_028_spiral_diagonals.dart)
 - [problem_030_digit_fifth_powers](project_euler/problem_030_digit_fifth_powers.dart)
 - [problem_031_coin_sums](project_euler/problem_031_coin_sums.dart)
@@ -612,6 +616,7 @@ Every `.dart` file in this repo, grouped by category. Any file can be run with `
 - [debounce_operator](reactive/debounce_operator.dart)
 - [event_emitter_typed](reactive/event_emitter_typed.dart)
 - [observable](reactive/observable.dart)
+- [replay_subject](reactive/replay_subject.dart)
 - [rx_operators](reactive/rx_operators.dart)
 - [store_with_reducer](reactive/store_with_reducer.dart)
 - [switchmap](reactive/switchmap.dart)
