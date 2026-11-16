@@ -33,3 +33,11 @@ int primitiveRoot(int p) {
   }
   return 1;
 }
+
+void main() {
+  for (final p in [7, 11, 23, 101]) {
+    final g = primitiveRoot(p);
+    final seen = {for (var k = 0; k < p - 1; k++) _pow(g, k, p)};
+    print('p=$p g=$g covers ${seen.length} of ${p - 1} residues');
+  }
+}
